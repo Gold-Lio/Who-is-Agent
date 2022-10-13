@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275562d9033814f41a17465bb680ada6, type: 3}
+  m_Name: 12_NPC1_IDCard
+  m_EditorClassIdentifier: 
+  id: 12
+  itemName: "NPC1 \uC2E0\uBD84\uC99D"
+  itemIcon: {fileID: 21300000, guid: 66ab248a9397e7543ad30c30c712bc65, type: 3}
+  itemType: 2
+  itemIDCode: 12
+  prefab: {fileID: 3314258523087313166, guid: 07a83e9e4bc0490478d1f28039aab6ad, type: 3}
+  NPCID: 1
