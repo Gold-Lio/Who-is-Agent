@@ -6,6 +6,7 @@ using System.Collections;
 using UnityEditor;
 using static NetworkManager;
 using static UIManager;
+
 public class Player : MonoBehaviourPun
 {
     private PhotonView PV;
@@ -190,6 +191,15 @@ public class Player : MonoBehaviourPun
         colorIndex = _colorIndex;
     }
 
+    public void SetNickColor()
+    {
+        if (!isSpy) return;
+
+        for (int i = 0; i < NM.Players.Count; i++)
+        {
+            if (NM.Players[i].isSpy) NM.Players[i].nickNameText.color = Color.red;
+        }
+    }
 
     public void SetPos(Vector3 target)
     {

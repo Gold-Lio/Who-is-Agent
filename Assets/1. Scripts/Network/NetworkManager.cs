@@ -48,10 +48,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public PlayerType playerType;
 
+    public bool isWaitingRoom = false;
     public bool isGameStart = false;
     public bool isResiWin;
 
     public Transform spawnPoint;
+
+
     public float baseTime;
     private float selectCountdown;
 
@@ -82,7 +85,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         MyPlayer = PhotonNetwork.Instantiate("Player", new Vector2(Random.Range(-12f, -8f), Random.Range(-38f, -41f)), Quaternion.identity).GetComponent<Player>();
         SetRandColor();
-
+        isWaitingRoom = true;
     }
 
     //// 생성할 랜덤 위치 지정
@@ -163,7 +166,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         //나중에 스파이 1명 더 추가 ㅡ 플레이어들이 자유롭게 선택할 수 있도록 조정
     }
 
-
     //------------------------------------------------------------------------------------------------------------------
     [PunRPC]
     void GameStartRPC()
@@ -171,12 +173,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         StartCoroutine(GameStartCo());
     }
 
+
     IEnumerator GameStartCo()
     {
         ShowPanel(infoPanel);
         //ShowMap(MainMap);
         //WaitingMap.SetActive(false);
-
 
         if (MyPlayer.isSpy)
         {
@@ -188,10 +190,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
 
         yield return new WaitForSeconds(3);
+        isWaitingRoom = false;
         isGameStart = true; //게임 시작
 
         MyPlayer.SetPos(spawnPoint.position);
-        //MyPlayer.SetNickColor();         //플레이어 닉네임 색깔 조정
+
+        MyPlayer.SetNickColor(); //스파이 닉네임 색깔 조정
 
         ShowPanel(gamePanel); //게임패널안에 들어있는 모든 HUD를 연다. 
 

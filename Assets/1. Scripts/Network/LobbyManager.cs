@@ -115,7 +115,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         // 접속에 필요한 정보(게임 버전) 설정
         PhotonNetwork.GameVersion = gameVersion;
-        Screen.SetResolution(800, 400, false);
+        Screen.SetResolution(1000, 800, false);
         PV = photonView;
     }
 
