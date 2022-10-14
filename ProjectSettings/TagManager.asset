@@ -8,6 +8,7 @@ TagManager:
   - Box
   - NPC
   - WeaponBox
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: SFX
     uniqueID: 1105387527
+    locked: 0
+  - name: UI
+    uniqueID: 2661100895
     locked: 0
