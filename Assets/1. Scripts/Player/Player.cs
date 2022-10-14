@@ -98,7 +98,7 @@ public class Player : MonoBehaviourPun
 
     private void Start()
     {
-        if (!photonView.IsMine) return;
+        //if (!photonView.IsMine) return;
 
         PV = photonView;
         actor = PV.Owner.ActorNumber;
@@ -107,7 +107,18 @@ public class Player : MonoBehaviourPun
         NM.Players.Add(this);
         NM.SortPlayers();
 
-        playerInvenUI.InitializeInventory(inven);
+
+        StartCoroutine(InvenSetup());
+    }
+
+    //자기것의 인벤을 따로 실행시키는 InvenSetup 코루틴
+    public IEnumerator InvenSetup()
+    {
+        if (photonView.IsMine)
+        {
+            playerInvenUI.InitializeInventory(inven);
+        }
+        yield return null;
     }
 
 
@@ -115,11 +126,10 @@ public class Player : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-
         //playerMover.MovementInput = MovementInput;
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
-        AnimateCharacter();        
+        AnimateCharacter();
     }
 
 
@@ -194,7 +204,7 @@ public class Player : MonoBehaviourPun
     }
 
     public void PerformAttack()
-    {   
+    {
         if (!photonView.IsMine) return;
 
         weaponParent.Attack();
@@ -300,7 +310,7 @@ public class Player : MonoBehaviourPun
         if (!photonView.IsMine) return;
         if (col.gameObject.CompareTag("Box"))
         {
-            if (box != null) return; 
+            if (box != null) return;
             isBox = true;
             box = col.gameObject.GetComponent<Box>();
         }
@@ -337,7 +347,7 @@ public class Player : MonoBehaviourPun
             BoxManager.instance.Boxs[box.boxNum].BoxInvenUI.Close();
             box = null;
         }
-        else if(npc != null)
+        else if (npc != null)
         {
             isNpc = false;
             BoxManager.instance.NPCs[npc.npcNum].NPCInvenUI.Close();
@@ -345,7 +355,7 @@ public class Player : MonoBehaviourPun
             npc = null;
             NPCInteractGameObj = null;
         }
-        else if(weaponBox != null)
+        else if (weaponBox != null)
         {
             isWeapon = false;
             isWeaponOpenStart = false;
