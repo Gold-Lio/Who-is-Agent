@@ -359,6 +359,7 @@ public class Player : MonoBehaviourPun
         {
             isWeapon = false;
             isWeaponOpenStart = false;
+            isWeaponOpen = false;
             BoxManager.instance.Weaponboxs[weaponBox.boxNum].WeaponBoxInvenUI.Close();
             boxLoading.SetClear();
             boxLoadingGameObj.SetActive(false);
