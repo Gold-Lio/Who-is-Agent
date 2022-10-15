@@ -206,7 +206,6 @@ public class Player : MonoBehaviourPun
         transform.position = target;
     }
 
-
     [PunRPC]
     void SetSpy(bool _isSpy)
     {
@@ -229,7 +228,16 @@ public class Player : MonoBehaviourPun
         playerAnim.PlayAnimation(MovementInput);
     }
 
+    //추가한것 ㅡㅡ
+    public PhotonView GetView()
+    {
+        return this.photonView;
+    }
 
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 
     #region 인벤토리 관련 함수
 

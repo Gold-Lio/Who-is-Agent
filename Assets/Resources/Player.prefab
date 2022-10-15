@@ -53,7 +53,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 4
-  MaxDistance: 5
+  MaxDistance: 4.04
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1128,8 +1128,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 4
+  MaxDistance: 4.04
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1220,10 +1220,10 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Attack
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 1
     LayerIndex: 0
 --- !u!1 &5083540986500791835
 GameObject:
@@ -1381,8 +1381,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 4
+  MaxDistance: 4.04
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

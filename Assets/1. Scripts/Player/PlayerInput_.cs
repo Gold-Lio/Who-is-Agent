@@ -28,6 +28,12 @@ public class PlayerInput_ : MonoBehaviourPun
             return;
         }
 
+        // 게임오버 상태에서는 사용자 입력을 감지하지 않는다.
+        if (GameManager.instance != null && GameManager.instance.isGameover)
+        {
+            //감지하지 않음. 
+        }
+
         OnMovementInput?.Invoke(movementPos);
         OnPointerInput?.Invoke(GetPointerInput());
     }
@@ -54,49 +60,36 @@ public class PlayerInput_ : MonoBehaviourPun
 
     private void PointerMove(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         pointerPos = obj.ReadValue<Vector2>();
     }
 
     private void Move(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
 
         movementPos = obj.ReadValue<Vector2>().normalized;
     }
 
     private void PerformAttack(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
 
         OnAttack?.Invoke();
     }
 
     private void ItemPickUp(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
 
         OnItemPickUp?.Invoke();
     }
 
     private void ItemUse(InputAction.CallbackContext obj)
     {
-        if(!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         OnItemUse?.Invoke();
     }
 

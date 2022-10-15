@@ -52,8 +52,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public bool isGameStart = false;
     public bool isResiWin;
 
-    public Transform spawnPoint;
-
+    [Header("SpawnPoint")]
+    public Transform mainSpawnPoint;
 
     public float baseTime;
     private float selectCountdown;
@@ -72,26 +72,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //승리 패널
     public GameObject Resi_WinPanel, SPY_WinPanel;
 
-    /// <summary>
-    ////MAP
-    /// </summary>
-    //public GameObject WaitingMap, MainMap;
-
-    //- - 씬초기화ㅡ 
 
     private void Start()
     {
         PV = photonView;
 
-        MyPlayer = PhotonNetwork.Instantiate("Player", new Vector2(Random.Range(-12f, -8f), Random.Range(-38f, -41f)), Quaternion.identity).GetComponent<Player>();
+        MyPlayer = PhotonNetwork.Instantiate("Player", new Vector2(Random.Range(-5f,0f),Random.Range(-37f, -41f)), Quaternion.identity).GetComponent<Player>();
         SetRandColor();
         isWaitingRoom = true;
     }
-
-    //// 생성할 랜덤 위치 지정
-    //Vector3 randomSpawnPos = Random.insideUnitSphere * 5f;
-    //// 위치 y값은 0으로 변경
-    //randomSpawnPos.y = 0f;
 
     public void SetRandColor()
     {
@@ -193,7 +182,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         isWaitingRoom = false;
         isGameStart = true; //게임 시작
 
-        MyPlayer.SetPos(spawnPoint.position);
+        MyPlayer.SetPos(mainSpawnPoint.position);
 
         MyPlayer.SetNickColor(); //스파이 닉네임 색깔 조정
 

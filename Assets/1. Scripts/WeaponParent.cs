@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-
 public class WeaponParent : MonoBehaviourPun
 {
     public SpriteRenderer characterRenderer, weaponRenderer;
@@ -27,7 +26,6 @@ public class WeaponParent : MonoBehaviourPun
 
     private void Update()
     {
-
         if (IsAttacking)
             return;
 
@@ -50,14 +48,11 @@ public class WeaponParent : MonoBehaviourPun
 
         transform.localScale = scale;
 
-
-
         //무기의 Rotaion Z 값 
         if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
         }
-
         else
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
@@ -80,13 +75,11 @@ public class WeaponParent : MonoBehaviourPun
         StartCoroutine(DelayAttack());
     }
 
-
     private IEnumerator DelayAttack()
     {
         yield return new WaitForSeconds(delay);
         attackBlocked = false;
     }
-
 
     private void OnDrawGizmosSelected()
     {
@@ -94,7 +87,6 @@ public class WeaponParent : MonoBehaviourPun
         Vector3 position = circleOrigin == null ? Vector3.zero : circleOrigin.position;
         Gizmos.DrawWireSphere(position, radius);
     }
-
 
     //때림의 판정
     public void DetectColliders()

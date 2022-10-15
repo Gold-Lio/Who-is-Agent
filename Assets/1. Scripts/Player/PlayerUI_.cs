@@ -27,37 +27,29 @@ public class PlayerUI_ : MonoBehaviourPun
 
     private void ItemDestroy(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         OnItemDestroy?.Invoke();        
     }
 
     private void ItemCreate(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         OnItemCreate?.Invoke();
     }
 
     private void Interaction(InputAction.CallbackContext _)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         OnInteraction?.Invoke();
     }
 
     private void InventoryOnOff(InputAction.CallbackContext _)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) { return; }
+
         OnInventory?.Invoke();
     }
 
