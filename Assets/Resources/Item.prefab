@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 463434710945648198}
   - component: {fileID: 463434710945648197}
   - component: {fileID: 463434710945648199}
+  - component: {fileID: 1425503956}
   m_Layer: 7
   m_Name: HitFeedback
   m_TagString: Untagged
@@ -58,6 +59,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceObject: {fileID: 463434711170389144}
+--- !u!114 &1425503956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463434710945648216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &463434711170389144
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,12 +160,12 @@ SpriteRenderer:
   m_SortingLayerID: 888675805
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5389623140010613647, guid: da91193049d4074488591084b7884444, type: 3}
+  m_Sprite: {fileID: 6396941071039807458, guid: 61821dace5596c644b8bc9d6ba7dda0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.75, y: 1.375}
+  m_Size: {x: 1.6, y: 1.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -156,9 +179,9 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463434711170389144}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 219722855
+  m_SortingLayer: 1
+  m_SortingOrder: 1
 --- !u!58 &463434711170389127
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -278,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1698203733}
-  strength: 2
+  strength: 5
   delay: 0.15
   OnBegin:
     m_PersistentCalls:
