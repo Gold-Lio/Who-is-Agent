@@ -4469,6 +4469,7 @@ MonoBehaviour:
   Players: []
   MyPlayer: {fileID: 0}
   playerType: 0
+  isWaitingRoom: 0
   isGameStart: 0
   isResiWin: 0
   spawnPoint: {fileID: 271960720}
@@ -5496,9 +5497,9 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
-  debugEchoMode: 1
+  debugEchoMode: 0
   reliableMode: 0
   encrypt: 0
   transmitEnabled: 1
