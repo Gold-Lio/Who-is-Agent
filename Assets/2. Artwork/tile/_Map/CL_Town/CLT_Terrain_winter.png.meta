@@ -1,0 +1,1332 @@
+fileFormatVersion: 2
+guid: ab684c75b8da7f04595657109a8d5104
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8504861357162341798
+    second: CLT_Terrain_winter_0
+  - first:
+      213: -1640396652698464871
+    second: CLT_Terrain_winter_1
+  - first:
+      213: 8059519861402848754
+    second: CLT_Terrain_winter_2
+  - first:
+      213: -6423738788912835212
+    second: CLT_Terrain_winter_3
+  - first:
+      213: -8289233135754334135
+    second: CLT_Terrain_winter_4
+  - first:
+      213: -8678569407088919736
+    second: CLT_Terrain_winter_5
+  - first:
+      213: -6270110512942261251
+    second: CLT_Terrain_winter_6
+  - first:
+      213: -6840666409128544228
+    second: CLT_Terrain_winter_7
+  - first:
+      213: -8822709572910996206
+    second: CLT_Terrain_winter_8
+  - first:
+      213: -2220808721292700355
+    second: CLT_Terrain_winter_9
+  - first:
+      213: -87104926507762222
+    second: CLT_Terrain_winter_10
+  - first:
+      213: -6234023993153616711
+    second: CLT_Terrain_winter_11
+  - first:
+      213: 6631505772627959880
+    second: CLT_Terrain_winter_12
+  - first:
+      213: 331729930700379172
+    second: CLT_Terrain_winter_13
+  - first:
+      213: -116940606648599717
+    second: CLT_Terrain_winter_14
+  - first:
+      213: 7086840392602451396
+    second: CLT_Terrain_winter_15
+  - first:
+      213: 6971706042406949684
+    second: CLT_Terrain_winter_16
+  - first:
+      213: 7497058657054179040
+    second: CLT_Terrain_winter_17
+  - first:
+      213: 6957141615594880720
+    second: CLT_Terrain_winter_18
+  - first:
+      213: -4427206563775559646
+    second: CLT_Terrain_winter_19
+  - first:
+      213: 1236569448179476453
+    second: CLT_Terrain_winter_20
+  - first:
+      213: -3415927104449174549
+    second: CLT_Terrain_winter_21
+  - first:
+      213: 7135479798849271865
+    second: CLT_Terrain_winter_22
+  - first:
+      213: -6103012686320417732
+    second: CLT_Terrain_winter_23
+  - first:
+      213: -2199425546913080948
+    second: CLT_Terrain_winter_24
+  - first:
+      213: 2245371811166979710
+    second: CLT_Terrain_winter_25
+  - first:
+      213: -8129516976284779256
+    second: CLT_Terrain_winter_26
+  - first:
+      213: -6784781605789366431
+    second: CLT_Terrain_winter_27
+  - first:
+      213: 8515164070871847747
+    second: CLT_Terrain_winter_28
+  - first:
+      213: 1975157185037114301
+    second: CLT_Terrain_winter_29
+  - first:
+      213: 3192972534345492466
+    second: CLT_Terrain_winter_30
+  - first:
+      213: -5788473191871760879
+    second: CLT_Terrain_winter_31
+  - first:
+      213: 5393853925889492323
+    second: CLT_Terrain_winter_32
+  - first:
+      213: -3446260981325799493
+    second: CLT_Terrain_winter_33
+  - first:
+      213: -5588912816405374828
+    second: CLT_Terrain_winter_34
+  - first:
+      213: -3269169286949350129
+    second: CLT_Terrain_winter_35
+  - first:
+      213: 6016365205001083317
+    second: CLT_Terrain_winter_36
+  - first:
+      213: 7011449537205715273
+    second: CLT_Terrain_winter_37
+  - first:
+      213: 4278860430012858493
+    second: CLT_Terrain_winter_38
+  - first:
+      213: -4044176934591454678
+    second: CLT_Terrain_winter_39
+  - first:
+      213: -8055569397039041244
+    second: CLT_Terrain_winter_40
+  - first:
+      213: 8713963963903162542
+    second: CLT_Terrain_winter_41
+  - first:
+      213: 4403341268228212188
+    second: CLT_Terrain_winter_42
+  - first:
+      213: -5951615176727639865
+    second: CLT_Terrain_winter_43
+  - first:
+      213: 5605831010911587552
+    second: CLT_Terrain_winter_44
+  - first:
+      213: -581773738190742920
+    second: CLT_Terrain_winter_45
+  - first:
+      213: 5463115402795553074
+    second: CLT_Terrain_winter_46
+  - first:
+      213: -4127250364158427159
+    second: CLT_Terrain_winter_47
+  - first:
+      213: 2494345766809183695
+    second: CLT_Terrain_winter_48
+  - first:
+      213: 8696434536264707756
+    second: CLT_Terrain_winter_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_0
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 119
+        width: 152
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a546608a9a8f980800000000000000
+      internalID: -8504861357162341798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d0b218fe32c39e0800000000000000
+      internalID: -1640396652698464871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 300
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd4f1fdc9a29df60800000000000000
+      internalID: 8059519861402848754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_3
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 300
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475d3fc1b9b4ad6a0800000000000000
+      internalID: -6423738788912835212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94037fa916ab6fc80800000000000000
+      internalID: -8289233135754334135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 128
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b74e3fa178f8780800000000000000
+      internalID: -8678569407088919736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 183
+        width: 152
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb52ad75b71cf8a0800000000000000
+      internalID: -6270110512942261251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 284
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1832f0f4221111a0800000000000000
+      internalID: -6840666409128544228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 272
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215a33e53607f8580800000000000000
+      internalID: -8822709572910996206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_9
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 272
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35524dfb3a1e21e0800000000000000
+      internalID: -2220808721292700355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 188
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd7155e78a8acef0800000000000000
+      internalID: -87104926507762222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b401de153c4c79a0800000000000000
+      internalID: -6234023993153616711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 122
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840217f6d57d70c50800000000000000
+      internalID: 6631505772627959880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 122
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424d2c84d9a8a9400800000000000000
+      internalID: 331729930700379172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_14
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b34e8432b806ef0800000000000000
+      internalID: -116940606648599717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_15
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 172
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd75f41ac3895260800000000000000
+      internalID: 7086840392602451396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_16
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 172
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4335c1835b970c060800000000000000
+      internalID: 6971706042406949684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 128
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee3bf1a027ea0860800000000000000
+      internalID: 7497058657054179040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 80
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0debe99507bbc8060800000000000000
+      internalID: 6957141615594880720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22841ea26176f82c0800000000000000
+      internalID: -4427206563775559646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_20
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 144
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7a6da8c5d292110800000000000000
+      internalID: 1236569448179476453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_21
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 144
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3ada895603890d0800000000000000
+      internalID: -3415927104449174549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 144
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938f2685211560360800000000000000
+      internalID: 7135479798849271865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c344b240c4ebd4ba0800000000000000
+      internalID: -6103012686320417732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 82
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89935e3e121a71e0800000000000000
+      internalID: -2199425546913080948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_25
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 84
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76884904c9292f10800000000000000
+      internalID: 2245371811166979710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_26
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 50
+        width: 14
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80db901d1672e2f80800000000000000
+      internalID: -8129516976284779256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_27
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 50
+        width: 14
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167025ca31d97d1a0800000000000000
+      internalID: -6784781605789366431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 52
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3435c707b90fb2670800000000000000
+      internalID: 8515164070871847747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 70
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb92b5befa296b10800000000000000
+      internalID: 1975157185037114301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_30
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 52
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7ed375a97bf4c20800000000000000
+      internalID: 3192972534345492466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_31
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 60
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116bc96fc463bafa0800000000000000
+      internalID: -5788473191871760879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_32
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 61
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3654df65191dada40800000000000000
+      internalID: 5393853925889492323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_33
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 39
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf59c485eb6c20d0800000000000000
+      internalID: -3446260981325799493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 39
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4989781a7613072b0800000000000000
+      internalID: -5588912816405374828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_35
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 39
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0554c4bad391a2d0800000000000000
+      internalID: -3269169286949350129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 39
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b91c13274c6e7350800000000000000
+      internalID: 6016365205001083317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 39
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94149b1b43cad4160800000000000000
+      internalID: 7011449537205715273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_38
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 39
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70446604e0916b30800000000000000
+      internalID: 4278860430012858493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_39
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 18
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2229d4418230e7c0800000000000000
+      internalID: -4044176934591454678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_40
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 25
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425faf9405ed43090800000000000000
+      internalID: -8055569397039041244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_41
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 33
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8b00e7e083ee870800000000000000
+      internalID: 8713963963903162542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_42
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 36
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd58f85bd8fcb1d30800000000000000
+      internalID: 4403341268228212188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 35
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8435f978d976da0800000000000000
+      internalID: -5951615176727639865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_44
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec014c7a99ebcd40800000000000000
+      internalID: 5605831010911587552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a5d731edf1de7f0800000000000000
+      internalID: -581773738190742920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_46
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23118969382e0db40800000000000000
+      internalID: 5463115402795553074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 19
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef3c3139af09b6c0800000000000000
+      internalID: -4127250364158427159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_48
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 20
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc529a16242bd9220800000000000000
+      internalID: 2494345766809183695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_winter_49
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 17
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae2f729221ffa870800000000000000
+      internalID: 8696434536264707756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 13bd487c822d74d4b841f25956f530c9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
