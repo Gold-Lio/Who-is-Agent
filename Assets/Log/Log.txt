@@ -1295,3 +1295,43 @@
 10-17 12:56:49 -- IDCard_NPC3아이템 생성
 10-17 12:56:49 -- IDCard_NPC5아이템 생성
 10-17 12:56:49 -- Bag아이템 생성
+10-17 01:43:57 -- Connected to Master - Online
+10-17 01:43:57 -- Lobby Join Success - Online
+10-17 01:44:41 -- Connected to Master - Online
+10-17 01:44:41 -- Lobby Join Success - Online
+10-17 01:45:43 -- Connected to Master - Online
+10-17 01:45:43 -- Lobby Join Success - Online
+10-17 01:45:44 -- Room Joined
+10-17 01:45:44 -- 5 에이전트가 되었다...
+10-17 01:45:44 -- IDCard_NPC4아이템 생성
+10-17 01:45:44 -- Bag아이템 생성
+10-17 01:45:44 -- IDCard_NPC1아이템 생성
+10-17 01:45:44 -- IDCard_NPC0아이템 생성
+10-17 01:45:44 -- IDCard_NPC2아이템 생성
+10-17 01:45:44 -- Package아이템 생성
+10-17 01:45:44 -- Knife아이템 생성
+10-17 01:45:44 -- IDCard_NPC3아이템 생성
+10-17 02:27:16 -- Connected to Master - Online
+10-17 02:27:16 -- Lobby Join Success - Online
+10-17 02:27:16 -- Room Joined
+10-17 02:27:17 -- 1 에이전트가 되었다...
+10-17 02:27:17 -- IDCard_NPC0아이템 생성
+10-17 02:27:17 -- IDCard_NPC3아이템 생성
+10-17 02:27:17 -- Package아이템 생성
+10-17 02:27:17 -- Knife아이템 생성
+10-17 02:27:17 -- IDCard_NPC2아이템 생성
+10-17 02:27:17 -- IDCard_NPC5아이템 생성
+10-17 02:27:17 -- IDCard_NPC4아이템 생성
+10-17 02:27:17 -- Bag아이템 생성
+10-17 02:31:45 -- Connected to Master - Online
+10-17 02:31:45 -- Lobby Join Success - Online
+10-17 02:31:46 -- Room Joined
+10-17 02:31:46 -- 2 에이전트가 되었다...
+10-17 02:31:46 -- Knife아이템 생성
+10-17 02:31:46 -- IDCard_NPC1아이템 생성
+10-17 02:31:46 -- IDCard_NPC3아이템 생성
+10-17 02:31:46 -- Package아이템 생성
+10-17 02:31:46 -- Bag아이템 생성
+10-17 02:31:46 -- IDCard_NPC0아이템 생성
+10-17 02:31:46 -- IDCard_NPC4아이템 생성
+10-17 02:31:46 -- IDCard_NPC5아이템 생성
