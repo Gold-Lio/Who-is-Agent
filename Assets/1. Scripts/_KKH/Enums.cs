@@ -1,3 +1,11 @@
+
+public enum CanvasType : byte
+{
+    Nick = 0,
+    Lobby,
+    Create
+}
+
 public enum ItemIDCode
 {
     Package = 0,

@@ -30,7 +30,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public Transform scrollContent;
 
     public CanvasGroup NickNameCanvas;
-    public CanvasGroup RoomCanvas;
+    public CanvasGroup LobbyCanvas;
+    public CanvasGroup CreateCanvas;
 
     // 게임 실행과 동시에 마스터 서버 접속 시도
     private void Start()
@@ -38,6 +39,43 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         // 접속에 필요한 정보(게임 버전) 설정
         PhotonNetwork.GameVersion = gameVersion;
         PV = photonView;
+        SwitchCanvas(CanvasType.Nick);
+    }
+
+    private void SwitchCanvas(CanvasType type)
+    {
+        if(type == CanvasType.Nick)
+        {
+            CanvasOpen(NickNameCanvas);
+            CanvasClose(LobbyCanvas);
+            CanvasClose(CreateCanvas);
+        }
+        else if (type == CanvasType.Lobby)
+        {
+            CanvasOpen(LobbyCanvas);
+            CanvasClose(NickNameCanvas);
+            CanvasClose(CreateCanvas);
+        }
+        else if (type == CanvasType.Create)
+        {
+            CanvasOpen(CreateCanvas);
+            CanvasClose(LobbyCanvas);
+            CanvasClose(NickNameCanvas);
+        }
+    }
+
+    private void CanvasOpen(CanvasGroup group)
+    {
+        group.alpha = 1;
+        group.blocksRaycasts = true;
+        group.interactable = true;
+    }
+
+    private void CanvasClose(CanvasGroup group)
+    {
+        group.alpha = 0;
+        group.blocksRaycasts = false;
+        group.interactable = false;
     }
 
     public void JoinLobby()
@@ -46,13 +84,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LocalPlayer.NickName = userIdText.text;
         PhotonNetwork.ConnectUsingSettings();
 
-        NickNameCanvas.alpha = 0;
-        NickNameCanvas.blocksRaycasts = false;
-        NickNameCanvas.interactable = false;
-
-        RoomCanvas.alpha = 1;
-        RoomCanvas.blocksRaycasts = true;
-        RoomCanvas.interactable = true;
+        SwitchCanvas(CanvasType.Lobby);
     }
 
     public void Connect()
@@ -135,5 +167,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 }
             }
         }
+    }
+
+    public void OnRoomCreateBtnClick()
+    {
+        SwitchCanvas(CanvasType.Create);
+    }
+
+    public void OnRandomJoinBtnClick()
+    {
+        PhotonNetwork.NickName = userIdText.text;
+        PhotonNetwork.JoinRandomRoom();
     }
 }
