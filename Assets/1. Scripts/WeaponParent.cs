@@ -37,7 +37,6 @@ public class WeaponParent : MonoBehaviourPun
 
         //무기의 Sclae Y 값 
         Vector2 scale = transform.localScale;
-
         if (direction.x < 0)
         {
             scale.y = -1;
