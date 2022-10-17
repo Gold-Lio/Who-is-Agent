@@ -51,7 +51,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public Transform spawnPoint;
 
-    public float baseTime;
+    [SerializeField]
+    private float baseTime = 600.0f;
     private float selectCountdown;
 
     public Text timeText;
@@ -234,7 +235,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         else
         {
             selectCountdown -= Time.deltaTime;
-            timeText.text = Mathf.Floor(selectCountdown).ToString();
+            timeText.text = selectCountdown.ToString("F2");
         }
     }
 

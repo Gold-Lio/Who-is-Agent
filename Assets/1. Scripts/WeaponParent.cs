@@ -53,10 +53,6 @@ public class WeaponParent : MonoBehaviourPun
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
         }
-        //else
-        //{
-        //    weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
-        //}
     }
 
 

@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     public void InitializeHealth(int healthValue)
     {
         currentHealth = healthValue;
-        maxHealth = healthValue;
+        maxHealth = healthValue;    
         isDead = false;
     }
 
