@@ -26,7 +26,6 @@ public class WeaponParent : MonoBehaviourPun
 
     private void Update()
     {
-
         if (IsAttacking)
             return;
 
@@ -49,17 +48,15 @@ public class WeaponParent : MonoBehaviourPun
         transform.localScale = scale;
 
 
-
-        //무기의 Rotaion Z 값 
+        //무기의 Rotaion Z 값의 실시간 SettingOrder
         if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
         }
-
-        else
-        {
-            weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
-        }
+        //else
+        //{
+        //    weaponRenderer.sortingOrder = characterRenderer.sortingOrder + 1;
+        //}
     }
 
 
@@ -85,7 +82,7 @@ public class WeaponParent : MonoBehaviourPun
         attackBlocked = false;
     }
 
-
+    //파란 기즈모를 그린다.
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
@@ -97,9 +94,11 @@ public class WeaponParent : MonoBehaviourPun
     //때림의 판정
     public void DetectColliders()
     {
+        if (!photonView.IsMine) { return; }
+
         foreach (Collider2D collider in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
         {
-            //Debug.Log(collider.name);
+            Debug.Log(collider.name);
             Health health;
             if (health = collider.GetComponent<Health>())
             {

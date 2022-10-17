@@ -10,6 +10,7 @@ TagManager:
   - WeaponBox
   - Bullet
   - Bell
+  - CanHit_Obj
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Box
   - WeaponBox
   - Bell
-  - 
+  - CanHit_Obj
   - 
   - 
   - 
