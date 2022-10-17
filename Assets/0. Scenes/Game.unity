@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Players: []
   MyPlayer: {fileID: 0}
-  playerType: 2
+  playerType: 1
   isWaitingRoom: 0
   isGameStart: 0
   isResiWin: 0
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 1
   reliableMode: 0
