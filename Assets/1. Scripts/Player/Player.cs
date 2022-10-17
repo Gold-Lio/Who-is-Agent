@@ -64,7 +64,7 @@ public class Player : MonoBehaviourPun
     private Vector2 oldMovementInput;
 
     public int actor, colorIndex;
-    public SpriteRenderer SR;
+    public SpriteRenderer[] SR;
     private Rigidbody2D RB;
 
     public bool isSpy, isDie;
@@ -188,13 +188,16 @@ public class Player : MonoBehaviourPun
     }
 
 
+    //플레이어의 다양한 색깔 적용 + 손색깔까지
     [PunRPC]
     public void SetColor(int _colorIndex)
     {
-        SR.color = UM.colors[_colorIndex];
+        SR[0].color = UM.colors[_colorIndex];
+        SR[1].color = UM.colors[_colorIndex];
         colorIndex = _colorIndex;
     }
 
+    //스파이 닉네임 빨간색으로 변경.
     public void SetNickColor()
     {
         if (!isSpy) return;
