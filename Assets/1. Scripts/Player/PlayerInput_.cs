@@ -23,10 +23,7 @@ public class PlayerInput_ : MonoBehaviourPun
 
     private void Update()
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
 
         OnMovementInput?.Invoke(movementPos);
         OnPointerInput?.Invoke(GetPointerInput());

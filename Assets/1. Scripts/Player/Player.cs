@@ -133,6 +133,7 @@ public class Player : MonoBehaviourPun
         //playerMover.MovementInput = MovementInput;
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
+
         AnimateCharacter();
     }
 
@@ -177,7 +178,7 @@ public class Player : MonoBehaviourPun
             oldMovementInput = MovementInput;
             currentSpeed += acceleration * maxSpeed * Time.deltaTime;
         }
-
+        
         else
         {
             currentSpeed -= deacceleration * maxSpeed * Time.deltaTime;
@@ -185,6 +186,17 @@ public class Player : MonoBehaviourPun
 
         currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
         RB.velocity = oldMovementInput * currentSpeed;
+    }
+
+
+    private void AnimateCharacter()
+    {
+        if (!photonView.IsMine) return;
+
+        Vector2 lookDirection = pointerInput - (Vector2)transform.position;
+        
+        playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
+        playerAnim.PlayAnimation(MovementInput); // 움직애님 
     }
 
 
@@ -224,25 +236,6 @@ public class Player : MonoBehaviourPun
         if (!photonView.IsMine) return;
 
         weaponParent.Attack();
-    }
-
-    private void AnimateCharacter()
-    {
-        if (!photonView.IsMine) return;
-
-        Vector2 lookDirection = pointerInput - (Vector2)transform.position;
-        playerAnim.RotateToPointer(lookDirection);
-        playerAnim.PlayAnimation(MovementInput);
-    }
-
-    public PhotonView GetView()
-    {
-        return this.photonView;
-    }
-
-    public Vector3 GetPosition()
-    {
-        return transform.position;
     }
 
 

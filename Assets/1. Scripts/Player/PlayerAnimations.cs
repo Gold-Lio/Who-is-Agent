@@ -29,6 +29,5 @@ public class PlayerAnimations : MonoBehaviour
     public void PlayAnimation(Vector2 movementInput)
     {
         animator.SetBool("Running", movementInput.magnitude > 0);
-
     }
 }
