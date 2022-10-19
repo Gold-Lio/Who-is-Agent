@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     DetailInfoUI detail;
     public DetailInfoUI Detail => detail;
     #endregion ---------------------------------------------------------------------------------
-    
+
     public bool isGameDone, isSpyWin, isResiWin;
 
     public Text pingText;

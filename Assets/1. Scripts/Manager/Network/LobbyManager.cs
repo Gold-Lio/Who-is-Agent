@@ -78,7 +78,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        RoomManager.instance.CreateRoom();
+        RoomManager.instance.CreateRoom(false);
     }
 
     public override void OnConnectedToMaster()
@@ -98,7 +98,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         connectionInfoText.text = "Room Join Failed";
         LogManager.Log("Room Join Failed");
-        RoomManager.instance.CreateRoom();
+        RoomManager.instance.CreateRoom(true);
     }
 
     public override void OnCreatedRoom()

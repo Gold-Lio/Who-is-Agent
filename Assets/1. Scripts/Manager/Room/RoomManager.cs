@@ -1,9 +1,11 @@
 using Photon.Pun;
 using Photon.Realtime;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviourPunCallbacks
@@ -20,7 +22,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     private Dictionary<string, GameObject> roomDict = new Dictionary<string, GameObject>();
 
 
-    private static RoomManager m_instance; // ½Ì±ÛÅæÀÌ ÇÒ´çµÉ static º¯¼ö
+    private static RoomManager m_instance = null; // ½Ì±ÛÅæÀÌ ÇÒ´çµÉ static º¯¼ö
     public static RoomManager instance
     {
         get
@@ -51,18 +53,46 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
 
     private string roomName = string.Empty;
+    private byte pNum = 0;
+    public byte PNum => pNum;
 
-    public void CreateRoom()
+    private void Awake()
+    {
+        if (m_instance == null)
+        {
+            // »õ·Ó°Ô ¸¸µé¾îÁø ½Ì±ÛÅæ
+            m_instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            if (m_instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+    public void CreateRoom(bool israndom)
     {
         roomName = roomNameText.text;
-        int rand = Random.Range(0, int.MaxValue);
+        int roomrand = UnityEngine.Random.Range(0, int.MaxValue);
 
         if (roomName == string.Empty)
         {
-            roomName = "RandRoom_" + rand.ToString();
+            roomName = "RandRoom_" + roomrand.ToString();
         }
 
-        PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = byte.Parse(dropdown.captionText.text) }, null);
+        if (israndom)
+        {
+            int pnumrand = UnityEngine.Random.Range(4, 7);
+            pNum = Convert.ToByte(pnumrand);
+        }
+        else
+        {
+            pNum = byte.Parse(dropdown.captionText.text);
+        }
+        PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = pNum }, null);
     }
 
     public void JoinRoom()

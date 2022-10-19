@@ -151,7 +151,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void SetPlayerType()
     {
-        int maxplayer = RoomManager.instance.RoomInfo.MaxPlayers;
+        int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
         if(maxplayer <= 5)
         {
             playerType = PlayerType.Random_1;
