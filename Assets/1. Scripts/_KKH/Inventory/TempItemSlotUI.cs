@@ -125,9 +125,6 @@ public class TempItemSlotUI : ItemSlotUI
     [PunRPC]
     private void PunOnDrop(Vector3 pos)
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            PhotonNetwork.Instantiate(ItemSlot.SlotItemData.prefab.name, pos, Quaternion.identity);
-        }
+        PhotonNetwork.Instantiate(ItemSlot.SlotItemData.prefab.name, pos, Quaternion.identity);
     }
 }

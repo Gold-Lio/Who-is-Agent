@@ -92,7 +92,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         {
             pNum = byte.Parse(dropdown.captionText.text);
         }
-        PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = pNum }, null);
+        PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = pNum, CleanupCacheOnLeave = false}, null);
     }
 
     public void JoinRoom()

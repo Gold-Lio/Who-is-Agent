@@ -8,7 +8,6 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
 {
     /// 이 인벤토리가 가지고 있는 슬롯UI들
     private WeaponBoxItemSlotUI[] weaponSlotUIs;
-    private TextMeshProUGUI messageText;
 
     // 박스 구분을 위한 ID
     private int weaponBoxId = 0;
@@ -21,7 +20,6 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
     protected override void Awake()
     {
         base.Awake();
-        messageText = GameObject.Find("All_Message").GetComponent<TextMeshProUGUI>();
     }
 
     protected override void Start()
@@ -205,23 +203,5 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
     {
         Debug.Log($"WeaponBox.PunRemoveItem : {num}, {slotIndex}, {type}");
         BoxManager.instance.Weaponboxs[int.Parse(num)].WeaponBoxInvenUI.inven.RemoveItem(uint.Parse(slotIndex));
-    }
-
-    [PunRPC]
-    private void PunWeaponStill()
-    {
-        WeaponStill = true;
-        if(messageText != null)
-        {
-            StartCoroutine(WeaponStillMessage());
-        }
-    }
-
-    private IEnumerator WeaponStillMessage()
-    {
-        messageText.text = "병원에서 주사기가 탈취되었습니다.";
-        yield return new WaitForSeconds(3.0f);
-
-        messageText.text = "";
     }
 }

@@ -6,6 +6,7 @@ using Photon.Realtime;
 using static UIManager;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
+using UnityEngine.PlayerLoop;
 
 public enum PlayerType
 {
@@ -47,6 +48,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public bool isWaitingRoom = false;
     public bool isGameStart = false;
+    public bool isWinner = false;
     public bool isResiWin;
 
     public Transform spawnPoint;
@@ -91,6 +93,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //Vector3 randomSpawnPos = Random.insideUnitSphere * 5f;
     //// 위치 y값은 0으로 변경
     //randomSpawnPos.y = 0f;
+
 
     public void SetRandColor()
     {
@@ -235,6 +238,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private void Update()
     {
         PlayTime();
+
+        if(!isWinner)
+            photonView.RPC("WinCheck", RpcTarget.AllBuffered);
     }
 
     //총 플레이 타임은 600sec = 10min 이다. 
@@ -277,9 +283,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
                 ++crewCount;
         }
 
-        if (impoCount == 0 && crewCount > 0) // 모든 임포가 죽음
+        int BagCount = 0;
+
+        for (int i = 0; i < BoxManager.instance.Agent.NPCInvenUI.inven.SlotCount; i++)
+        {
+            if (BoxManager.instance.Agent.NPCInvenUI.NPCSlotUIs[i].ItemSlot.SlotItemData == null) continue;
+            if (BoxManager.instance.Agent.NPCInvenUI.NPCSlotUIs[i].ItemSlot.SlotItemData.id == (uint)ItemIDCode.Bag)
+            {
+                BagCount++;
+            }
+        }
+
+        if ((impoCount == 0 && crewCount > 0) || BagCount == 3) // 모든 임포가 죽음
             Winner(true);
-        else if (impoCount != 0 && impoCount > crewCount) // 임포가 크루보다 많음
+        else if ((impoCount != 0 && impoCount > crewCount)|| BoxManager.instance.Agent.IsDead == true) // 임포가 크루보다 많음
             Winner(false);
     }
 
@@ -289,16 +306,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         if (isCrewWin)
         {
+            LogManager.Log("레지스탕스 승리");
             print("레지스탕스 승리");
             ShowPanel(Resi_WinPanel);
             Invoke("WinnerDelay", 3);
         }
         else
         {
+            LogManager.Log("스파이 승리");
             print("스파이 승리");
             ShowPanel(SPY_WinPanel);
             Invoke("WinnerDelay", 3);
         }
+
+        isWinner = true;
     }
 
 

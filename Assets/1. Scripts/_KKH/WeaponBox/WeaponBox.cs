@@ -53,6 +53,12 @@ public class WeaponBox : MonoBehaviour
 
     public void OnOpen()
     {
+        pv.RPC("PunOnOpen", RpcTarget.AllBuffered);
+    }
+
+    [PunRPC]
+    private void PunOnOpen()
+    {
         isOpen = true;
         weaponBoxRenderer.sprite = sprites[0];
     }

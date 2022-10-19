@@ -12,6 +12,7 @@ public class NPCUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDragHandl
 {
     /// 이 인벤토리가 가지고 있는 슬롯UI들
     private NPCItemSlotUI[] npcSlotUIs;
+    public NPCItemSlotUI[] NPCSlotUIs => npcSlotUIs;
 
     // 박스 구분을 위한 ID
     private int npcId = 0;

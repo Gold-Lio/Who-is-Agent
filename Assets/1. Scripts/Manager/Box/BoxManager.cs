@@ -11,6 +11,9 @@ public class BoxManager : MonoBehaviour
     public NPC[] npcs;
     public NPC[] NPCs => npcs;
 
+    private NPC agent;
+    public NPC Agent => agent;
+
     public WeaponBox[] weaponboxs;
     public WeaponBox[] Weaponboxs => weaponboxs;
 
@@ -50,6 +53,7 @@ public class BoxManager : MonoBehaviour
             int rand = Random.Range(0, NPCs.Length);
             LogManager.Log($"{rand}번째 NPC가 에이전트다");
             npcs[rand].SetAgent();
+            agent = npcs[rand];
 
             for (int i = 0; i < itemCount; i++)
             {

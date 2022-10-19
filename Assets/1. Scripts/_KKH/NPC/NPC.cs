@@ -19,10 +19,6 @@ public class NPC : MonoBehaviourPun
 
     private bool isAgent = false;
 
-    private bool isBag = false;
-    private bool isPackage = false;
-    private bool isKnife = false;
-
     private ItemIDCode[] invenItemCode;
 
     private TextMeshProUGUI messageText;
@@ -44,56 +40,6 @@ public class NPC : MonoBehaviourPun
            // 아이템 생성 코드 넣자..
         }
     }
-
-    private void Update()
-    {
-        NPCInvenCheck();
-
-        isPackage = false;
-        isBag = false;
-        isKnife = false;
-
-        for (int i=0; i<invenItemCode.Length; i++)
-        {
-            if(invenItemCode[i] == ItemIDCode.Package)
-            {
-                isPackage = true;
-            }
-            else if(invenItemCode[i] == ItemIDCode.Bag)
-            {
-                isBag = true;
-            }
-            else if(invenItemCode[i] == ItemIDCode.Knife)
-            {
-                isKnife = true;
-            }                
-        }
-
-        if(isPackage && isBag && isKnife)
-        {
-            Time.timeScale = 0.0f;
-        }
-    }
-
-    private void NPCInvenCheck()
-    {
-        for (int i = 0; i < inven.SlotCount; i++)
-        {
-            if (inven[i].SlotItemData == null) return;
-
-            if (inven[i].SlotItemData.itemIDCode == ItemIDCode.Package ||
-                inven[i].SlotItemData.itemIDCode == ItemIDCode.Bag ||
-                inven[i].SlotItemData.itemIDCode == ItemIDCode.Knife)
-            {
-                invenItemCode[i] = inven[i].SlotItemData.itemIDCode;
-            }
-            else
-            {
-                invenItemCode[i] = (ItemIDCode)999999;
-            }
-        }
-    }
-
 
     public void SetAgent()
     {

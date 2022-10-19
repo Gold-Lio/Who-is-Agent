@@ -63,9 +63,9 @@ public class PlayerUI_ : MonoBehaviourPun
 
     private void OnDisable()
     {
-        inputAction.Item.Destroy.performed -= ItemDestroy;
-        inputAction.Item.Create.performed -= ItemCreate;
-        inputAction.Item.Disable();
+        //inputAction.Item.Destroy.performed -= ItemDestroy;
+        //inputAction.Item.Create.performed -= ItemCreate;
+        //inputAction.Item.Disable();
         inputAction.PlayerUI.Interaction.performed -= Interaction;
         inputAction.PlayerUI.InventoryOnOff.performed -= InventoryOnOff;
         inputAction.PlayerUI.Disable();

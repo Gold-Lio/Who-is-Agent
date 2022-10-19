@@ -216,9 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDatas:
-  - {fileID: 11400000, guid: 68b7a66821e0ebb408e12d5c3c2cd06b, type: 2}
   - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
+  - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -82088,7 +82088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e309c1056bdf5f542bcbcccf8d05f209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxtime: 10
+  maxtime: 5
 --- !u!224 &7109008044263541816
 RectTransform:
   m_ObjectHideFlags: 0
