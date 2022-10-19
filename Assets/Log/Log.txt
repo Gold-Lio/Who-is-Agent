@@ -2837,3 +2837,102 @@
 10-19 06:40:55 -- 2아이템 생성
 10-19 06:40:55 -- Box에 0 입력
 10-19 06:40:55 -- Package아이템 생성
+10-19 08:38:15 -- Connected to Master - Online
+10-19 08:38:15 -- Lobby Join Success - Online
+10-19 08:38:15 -- Room Joined
+10-19 08:38:16 -- 0 에이전트가 되었다...
+10-19 08:44:47 -- Connected to Master - Online
+10-19 08:44:47 -- Lobby Join Success - Online
+10-19 08:44:48 -- Room Joined
+10-19 08:44:49 -- 0 에이전트가 되었다...
+10-19 08:44:49 -- NPC(이)가 에이전트다
+10-19 08:44:49 -- 0 에이전트가 되었다...
+10-19 08:46:40 -- Connected to Master - Online
+10-19 08:46:40 -- Lobby Join Success - Online
+10-19 08:46:41 -- Room Joined
+10-19 08:46:41 -- 0 에이전트가 되었다...
+10-19 08:46:41 -- NPC(이)가 에이전트다
+10-19 08:46:41 -- 0 에이전트가 되었다...
+10-19 08:47:53 -- Connected to Master - Online
+10-19 08:47:53 -- Lobby Join Success - Online
+10-19 08:47:56 -- Room Joined
+10-19 08:47:57 -- Monkey(이)가 에이전트다
+10-19 08:51:54 -- Connected to Master - Online
+10-19 08:51:55 -- Lobby Join Success - Online
+10-19 08:51:55 -- Room Joined
+10-19 08:52:00 -- Monkey(이)가 에이전트다
+10-19 08:52:00 -- IDCard_NPC1아이템 생성
+10-19 08:52:00 -- IDCard_NPC0아이템 생성
+10-19 08:52:00 -- IDCard_NPC2아이템 생성
+10-19 08:52:00 -- IDCard_NPC5아이템 생성
+10-19 08:52:00 -- Knife아이템 생성
+10-19 08:52:00 -- Package아이템 생성
+10-19 08:52:00 -- 2아이템 생성
+10-19 08:52:00 -- IDCard_NPC3아이템 생성
+10-19 08:52:00 -- Bag아이템 생성
+10-19 08:53:07 -- 레지스탕스 승리
+10-19 08:56:57 -- Connected to Master - Online
+10-19 08:56:57 -- Lobby Join Success - Online
+10-19 08:56:57 -- Room Joined
+10-19 08:56:58 -- NPC(이)가 에이전트다
+10-19 08:56:58 -- IDCard_NPC5아이템 생성
+10-19 08:56:58 -- Knife아이템 생성
+10-19 08:56:58 -- IDCard_NPC4아이템 생성
+10-19 08:56:58 -- Package아이템 생성
+10-19 08:56:58 -- 2아이템 생성
+10-19 08:56:58 -- IDCard_NPC3아이템 생성
+10-19 08:56:58 -- IDCard_NPC1아이템 생성
+10-19 08:56:58 -- IDCard_NPC2아이템 생성
+10-19 08:56:58 -- Bag아이템 생성
+10-19 08:58:59 -- Connected to Master - Online
+10-19 08:58:59 -- Lobby Join Success - Online
+10-19 08:59:01 -- Room Joined
+10-19 08:59:01 -- NPC(이)가 에이전트다
+10-19 08:59:01 -- IDCard_NPC1아이템 생성
+10-19 08:59:01 -- IDCard_NPC5아이템 생성
+10-19 08:59:01 -- IDCard_NPC3아이템 생성
+10-19 08:59:01 -- Bag아이템 생성
+10-19 08:59:01 -- IDCard_NPC2아이템 생성
+10-19 08:59:01 -- Package아이템 생성
+10-19 08:59:01 -- 2아이템 생성
+10-19 08:59:01 -- IDCard_NPC4아이템 생성
+10-19 08:59:01 -- Knife아이템 생성
+10-19 09:01:55 -- Connected to Master - Online
+10-19 09:01:55 -- Lobby Join Success - Online
+10-19 09:01:56 -- Room Joined
+10-19 09:01:56 -- Rabbit(이)가 에이전트다
+10-19 09:01:56 -- 2아이템 생성
+10-19 09:01:56 -- IDCard_NPC1아이템 생성
+10-19 09:01:56 -- IDCard_NPC3아이템 생성
+10-19 09:01:56 -- Knife아이템 생성
+10-19 09:01:56 -- Bag아이템 생성
+10-19 09:01:56 -- IDCard_NPC2아이템 생성
+10-19 09:01:56 -- IDCard_NPC0아이템 생성
+10-19 09:01:56 -- Package아이템 생성
+10-19 09:01:56 -- IDCard_NPC4아이템 생성
+10-19 09:03:03 -- Connected to Master - Online
+10-19 09:03:03 -- Lobby Join Success - Online
+10-19 09:03:03 -- Room Joined
+10-19 09:03:04 -- Raccoon(이)가 에이전트다
+10-19 09:03:04 -- IDCard_NPC2아이템 생성
+10-19 09:03:04 -- 2아이템 생성
+10-19 09:03:04 -- IDCard_NPC4아이템 생성
+10-19 09:03:04 -- Knife아이템 생성
+10-19 09:03:04 -- IDCard_NPC3아이템 생성
+10-19 09:03:04 -- IDCard_NPC5아이템 생성
+10-19 09:03:04 -- Package아이템 생성
+10-19 09:03:04 -- IDCard_NPC0아이템 생성
+10-19 09:03:04 -- Bag아이템 생성
+10-19 09:08:04 -- Connected to Master - Online
+10-19 09:08:04 -- Lobby Join Success - Online
+10-19 09:08:05 -- Room Joined
+10-19 09:08:05 -- Monkey(이)가 에이전트다
+10-19 09:08:05 -- Knife아이템 생성
+10-19 09:08:05 -- IDCard_NPC1아이템 생성
+10-19 09:08:05 -- Bag아이템 생성
+10-19 09:08:05 -- IDCard_NPC2아이템 생성
+10-19 09:08:05 -- 2아이템 생성
+10-19 09:08:05 -- IDCard_NPC5아이템 생성
+10-19 09:08:05 -- IDCard_NPC3아이템 생성
+10-19 09:08:05 -- IDCard_NPC0아이템 생성
+10-19 09:08:05 -- Package아이템 생성

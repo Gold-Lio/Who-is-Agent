@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.XR;
 
-public class BoxManager : MonoBehaviour
+public class BoxManager : MonoBehaviourPunCallbacks
 {
-    public Box[] boxs;
+    public GameObject boxParent;
+    private Box[] boxs;
     public Box[] Boxs => boxs;
 
-    public NPC[] npcs;
+    public GameObject npcParent;
+    private NPC[] npcs;
     public NPC[] NPCs => npcs;
 
     private NPC agent;
     public NPC Agent => agent;
 
-    public WeaponBox[] weaponboxs;
+    public GameObject weaponboxParent;
+    private WeaponBox[] weaponboxs;
     public WeaponBox[] Weaponboxs => weaponboxs;
 
     private bool[] isItemArrangement;
@@ -44,6 +48,10 @@ public class BoxManager : MonoBehaviour
     {
         itemCount = GameManager.instance.ItemData.Length;
         isItemArrangement = new bool[itemCount];
+
+        boxs = boxParent.GetComponentsInChildren<Box>();
+        npcs = npcParent.GetComponentsInChildren<NPC>();
+        weaponboxs = weaponboxParent.GetComponentsInChildren<WeaponBox>();
     }
 
     private void Start()
@@ -51,9 +59,7 @@ public class BoxManager : MonoBehaviour
         if (PhotonNetwork.IsMasterClient)
         {
             int rand = Random.Range(0, NPCs.Length);
-            LogManager.Log($"{rand}번째 NPC가 에이전트다");
-            npcs[rand].SetAgent();
-            agent = npcs[rand];
+            photonView.RPC("PunSetAgent", RpcTarget.AllBuffered, rand);
 
             for (int i = 0; i < itemCount; i++)
             {
@@ -105,5 +111,13 @@ public class BoxManager : MonoBehaviour
         }
 
         return itemCheck;
+    }
+
+    [PunRPC]
+    private void PunSetAgent(int num)
+    {
+        npcs[num].SetAgent();
+        agent = npcs[num];
+        LogManager.Log($"{agent.name}(이)가 에이전트다");
     }
 }

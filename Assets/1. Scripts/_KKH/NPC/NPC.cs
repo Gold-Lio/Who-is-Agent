@@ -50,7 +50,6 @@ public class NPC : MonoBehaviourPun
     private void PunSetAgent()
     {
         isAgent = true;
-        LogManager.Log($"{npcNum} 에이전트가 되었다...");
     }
 
     public void NPCDead()

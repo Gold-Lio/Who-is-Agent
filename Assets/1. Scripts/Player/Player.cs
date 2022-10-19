@@ -252,6 +252,7 @@ public class Player : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
         if (playerInventoryUI.GetSlot().ItemSlot.SlotItemData != null) return;
+        if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData != null) return;
 
         Collider2D col = Physics2D.OverlapCircle((Vector2)transform.position, itemPickupRange, LayerMask.GetMask("Item"));
         photonView.RPC("GetDropItem", RpcTarget.AllBuffered, col.gameObject.name);
@@ -405,25 +406,25 @@ public class Player : MonoBehaviourPun
 
     #region Test 소스
     // 테스트 소스----------------------------------------------------------------
-    public void Test_ItemCreate()
-    {
-        GameObject obj = PhotonNetwork.Instantiate(GameManager.instance.ItemData[ItemIDCode.Bag].name, transform.position, Quaternion.identity);
-    }
+    //public void Test_ItemCreate()
+    //{
+    //    GameObject obj = PhotonNetwork.Instantiate(GameManager.instance.ItemData[ItemIDCode.Bag].name, transform.position, Quaternion.identity);
+    //}
 
-    public void Test_ItemDestroy()
-    {
-        photonView.RPC("GetDropItem", RpcTarget.AllBuffered);
+    //public void Test_ItemDestroy()
+    //{
+    //    photonView.RPC("GetDropItem", RpcTarget.AllBuffered);
 
-        if (destroyObj != null)
-        {
-            Item item = destroyObj.GetComponent<Item>();
-            GameManager.instance.Detail.IsPause = false;
-            if (destroyObj.GetPhotonView())
-            {
-                photonView.RPC("ItemDestory", RpcTarget.AllBuffered);
-            }
-        }
-    }
+    //    if (destroyObj != null)
+    //    {
+    //        Item item = destroyObj.GetComponent<Item>();
+    //        GameManager.instance.Detail.IsPause = false;
+    //        if (destroyObj.GetPhotonView())
+    //        {
+    //            photonView.RPC("ItemDestory", RpcTarget.AllBuffered);
+    //        }
+    //    }
+    //}
     // --------------------------------------------------------------------------
     #endregion
 

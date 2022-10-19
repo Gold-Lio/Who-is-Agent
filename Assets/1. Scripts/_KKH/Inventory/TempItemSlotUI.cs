@@ -116,7 +116,8 @@ public class TempItemSlotUI : ItemSlotUI
         {
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
             Vector3 pos = NetworkManager.instance.MyPlayer.OnItemDropPosition(NetworkManager.instance.MyPlayer.transform.position);
-            photonView.RPC("PunOnDrop", RpcTarget.AllBuffered, pos);
+            PhotonNetwork.Instantiate(ItemSlot.SlotItemData.prefab.name, pos, Quaternion.identity);
+            //photonView.RPC("PunOnDrop", RpcTarget.AllBuffered, pos);
 
             Close();    // 임시슬롯UI 닫고 클리어하기
         }
@@ -125,6 +126,5 @@ public class TempItemSlotUI : ItemSlotUI
     [PunRPC]
     private void PunOnDrop(Vector3 pos)
     {
-        PhotonNetwork.Instantiate(ItemSlot.SlotItemData.prefab.name, pos, Quaternion.identity);
     }
 }

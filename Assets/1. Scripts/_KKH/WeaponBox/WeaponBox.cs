@@ -2,6 +2,7 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponBox : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class WeaponBox : MonoBehaviour
     public WeaponBoxUI WeaponBoxInvenUI => weaponBoxInvenUI;
 
     private SpriteRenderer weaponBoxRenderer;
+
+    public Image useImage;
 
     private PhotonView pv = null;
     
@@ -61,5 +64,9 @@ public class WeaponBox : MonoBehaviour
     {
         isOpen = true;
         weaponBoxRenderer.sprite = sprites[0];
+
+        Color color = useImage.color;
+        color.a = 1;
+        useImage.color = color;
     }
 }

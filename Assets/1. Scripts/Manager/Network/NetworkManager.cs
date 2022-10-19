@@ -239,7 +239,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PlayTime();
 
-        if(!isWinner)
+        if(isGameStart && !isWinner)
             photonView.RPC("WinCheck", RpcTarget.AllBuffered);
     }
 
