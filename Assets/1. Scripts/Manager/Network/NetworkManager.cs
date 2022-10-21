@@ -57,6 +57,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private float baseTime = 600.0f;
     private float selectCountdown;
 
+    [Header("About-Time")]
+    public GameObject timeObj;
     public Text timeText;
 
     [Header("Job-Information")]
@@ -67,6 +69,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject gamePanel;
     //직업정보 제공 Text
     public GameObject Resi_InfoText, Spy_InfoText;
+
+    [Header("Game_Mission")]
+    public GameObject Resi_Mission, Spy_Mission;
+
     [Header("Win Panel")]
     //승리 패널
     public GameObject Resi_WinPanel, SPY_WinPanel;
@@ -131,19 +137,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         curPanel.SetActive(true);
     }
 
-    //맵을 관리하는 ShowMap
-    public void ShowMap(GameObject curMap)
-    {
-        //WaitingMap.SetActive(false);
-        //MainMap.SetActive(false);
-
-        curMap.SetActive(true);
-    }
-
+  
     public void GameStart()
     {
         // 방장이 게임시작
-        SetPlayerType();
+        
+
+        //잠시 테스트를 위해 주석처리
+        //SetPlayerType();
+
+
         SetSPY();
         PhotonNetwork.CurrentRoom.IsOpen = false;
         PhotonNetwork.CurrentRoom.IsVisible = false;
@@ -152,18 +155,21 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PV.RPC("GameStartRPC", RpcTarget.AllViaServer);
     }
 
-    void SetPlayerType()
-    {
-        int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
-        if(maxplayer <= 5)
-        {
-            playerType = PlayerType.Random_1;
-        }
-        else if(maxplayer >= 6)
-        {
-            playerType = PlayerType.Random_2;
-        }
-    }
+
+    //잠시 테스트를 위해 주석처리
+    //void SetPlayerType()
+    //{
+    //    int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
+    //    if(maxplayer <= 5)
+    //    {
+    //        playerType = PlayerType.Random_1;
+    //    }
+    //    else if(maxplayer >= 6)
+    //    {
+    //        playerType = PlayerType.Random_2;
+    //    }
+    //}
+
 
     void SetSPY()
     {
@@ -213,11 +219,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         if (MyPlayer.isSpy)
         {
             Spy_InfoText.SetActive(true);
+            Spy_Mission.SetActive(true);
         }
         else
         {
             Resi_InfoText.SetActive(true);
+            Resi_Mission.SetActive(true);
         }
+
 
         yield return new WaitForSeconds(3);
         isWaitingRoom = false;
@@ -231,7 +240,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //여기 안에 나의 인벤토리나   해당 직업에 맞게 미션 목적의 프리팹또한 이곳에 들어가야한다. 
         //StartCoroutine(LightCheckCo());  //빛 조절
-
+        timeObj.SetActive(true);
         selectCountdown = baseTime;
     }
 
@@ -239,8 +248,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PlayTime();
 
-        if(isGameStart && !isWinner)
-            photonView.RPC("WinCheck", RpcTarget.AllBuffered);
+        //잠시 테스트를 위해 주석처리
+        //if(isGameStart && !isWinner)
+        //    photonView.RPC("WinCheck", RpcTarget.AllBuffered);
+
     }
 
     //총 플레이 타임은 600sec = 10min 이다. 

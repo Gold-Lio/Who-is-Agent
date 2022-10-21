@@ -91,6 +91,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         connectionInfoText.text = "Lobby Join Success - Online";
+
+
         LogManager.Log("Lobby Join Success - Online");
     }
 
@@ -136,5 +138,14 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             SwitchCanvas(CanvasType.Lobby);
         }
+    }
+
+
+
+
+    //프로그램을 종료시킵니다.
+    public void ProgramQuit()
+    {
+        Application.Quit();
     }
 }
