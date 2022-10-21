@@ -153,7 +153,6 @@ public class Player : MonoBehaviourPun
                         boxLoading.SetClear();
                         boxLoadingGameObj.SetActive(false);
                         BoxManager.instance.Weaponboxs[weaponBox.boxNum].WeaponBoxInvenUI.InventoryOnOffSwitch();
-                        BoxManager.instance.Weaponboxs[weaponBox.boxNum].OnOpen();
                         isWeaponOpen = true;
                     }
                 }

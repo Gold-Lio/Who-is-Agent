@@ -129,7 +129,7 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                                     ((WeaponBoxItemSlotUI)toslotUI).BoxID.ToString(),
                                     TempItemSlotUI.TempSlotUI.TempSlot.SlotItemData.id.ToString(),
                                     toslotUI.ID.ToString(),
-                                    toslotUI.slotType.ToString());
+                                    toslotUI.slotType.ToString()); 
                         }
                         else
                         {
@@ -142,6 +142,12 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                                     {
                                         IDCardManager.instance.npcIDCard[(int)idcard.NPCID].Open();
                                     }
+
+                                    if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
+                                    {
+                                        BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
+                                    }
+
                                     inven.MoveItem(TempItemSlotUI.TempSlotUI, toslotUI);
                                 }
                                 else
@@ -154,20 +160,23 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                         TempItemSlotUI.TempSlotUI.ItemSlot.ClearSlotItem();
                         toslotUI.Refresh();
                         fromslotUI.Refresh();
-
-                        if (!WeaponStill)
-                        {
-                            photonView.RPC("PunWeaponStill", RpcTarget.AllBuffered);
-                        }
                     }
                     else if (toslotUI != null && fromslotUI != null && toslotUI == fromslotUI)
                     {
+                        if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
+                        {
+                            BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
+                        }
                         TempItemSlotUI.TempSlotUI.Drop();
                     }
                     GameManager.instance.Detail.Open(toslotUI.ItemSlot.SlotItemData);      // 상세정보창 열기                        
                 }
                 else if (fromslotUI.slotType == SlotType.WeaponBox)
                 {
+                    if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
+                    {
+                        BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
+                    }
                     TempItemSlotUI.TempSlotUI.Drop();
                 }
                 dragStartID = InvalideID;                       // 드래그 시작 id를 될 수 없는 값으로 설정(드래그가 끝났음을 표시)

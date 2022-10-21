@@ -54,13 +54,13 @@ public class WeaponBox : MonoBehaviour
         inven.AddItem(itemIDCode);
     }
 
-    public void OnOpen()
+    public void OnSteal()
     {
-        pv.RPC("PunOnOpen", RpcTarget.AllBuffered);
+        pv.RPC("PunOnSteal", RpcTarget.AllBuffered);
     }
 
     [PunRPC]
-    private void PunOnOpen()
+    private void PunOnSteal()
     {
         isOpen = true;
         weaponBoxRenderer.sprite = sprites[0];
