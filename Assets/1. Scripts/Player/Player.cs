@@ -87,6 +87,8 @@ public class Player : MonoBehaviourPun
     private WeaponBox weaponBox;
     public WeaponBox WeaponBox => weaponBox;
 
+    public bool isConnect = true;
+
     private void Awake()
     {
         if (!photonView.IsMine) return;
@@ -106,6 +108,7 @@ public class Player : MonoBehaviourPun
         //if (!photonView.IsMine) return;
 
         PV = photonView;
+
         actor = PV.Owner.ActorNumber;
         nick = PV.Owner.NickName;
         SetNick();
@@ -131,12 +134,12 @@ public class Player : MonoBehaviourPun
         if (!photonView.IsMine) return;
 
         //playerMover.MovementInput = MovementInput;
+
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
 
         AnimateCharacter();
     }
-
 
     private void FixedUpdate()
     {
@@ -158,6 +161,15 @@ public class Player : MonoBehaviourPun
                 }
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        if (!photonView.IsMine) return;
+        //PhotonNetwork.Disconnect();
+
+        Debug.Log($"{actor}, {photonView.ViewID}, {PhotonNetwork.IsConnected}");
+        LogManager.Log("OnDisable");
     }
 
     //플레이어에게 닉네임을 부여

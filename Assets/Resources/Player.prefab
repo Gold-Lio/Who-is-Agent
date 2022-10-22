@@ -774,6 +774,7 @@ MonoBehaviour:
   - {fileID: 3748667555646819852}
   isSpy: 0
   isDie: 0
+  isConnect: 1
 --- !u!114 &5083540985876174046
 MonoBehaviour:
   m_ObjectHideFlags: 0

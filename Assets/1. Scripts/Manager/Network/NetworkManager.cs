@@ -247,6 +247,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private void Update()
     {
         PlayTime();
+        OnPlayerCheck();
+        //if (!IsMasterClientCheck())
+        //{
+        //    OnRandomSetMasterClient();
+        //}
 
         //잠시 테스트를 위해 주석처리
         //if(isGameStart && !isWinner)
@@ -333,10 +338,58 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         isWinner = true;
     }
 
-
     void WinnerDelay()
     {
         Application.Quit();
+    }
+
+    public void OnRandomSetMasterClient()
+    {
+        bool isEnd = false;
+        while (!isEnd)
+        {
+            int rand = Random.Range(0, PhotonNetwork.PlayerList.Length + 1);
+
+            Photon.Realtime.Player player = PhotonNetwork.PlayerList[rand];
+            if (!player.IsMasterClient)
+            {
+                PhotonNetwork.SetMasterClient(player);
+                isEnd = true;
+            }
+        }
+    }
+
+    private bool IsMasterClientCheck()
+    {
+        foreach (var player in PhotonNetwork.PlayerList)
+        {
+            if (player.IsMasterClient)
+                return true;
+        }
+
+        return false;
+    }
+
+    private void OnPlayerCheck()
+    {
+        foreach (var player in Players)
+        {
+            bool isCheck = false;
+            foreach (var punplayer in PhotonNetwork.PlayerList)
+            {
+                if(player.actor == punplayer.ActorNumber)
+                {
+                    isCheck = true;
+                    continue;
+                }
+            }
+
+            if (!isCheck)
+            {
+                Players.Remove(player);
+                Destroy(player.gameObject);
+            }
+        }
     }
 }
 
