@@ -8,7 +8,7 @@ using UnityEditor;
 using static NetworkManager;
 using static UIManager;
 
-public class Player : MonoBehaviourPun
+public class Player : MonoBehaviourPun, IDamageable
 {
     private PhotonView PV;
 
@@ -68,6 +68,11 @@ public class Player : MonoBehaviourPun
     private Rigidbody2D RB;
 
     public bool isSpy, isDie;
+
+    [Header("PlayerHP")]
+    public const float MAX_HP = 100;
+    public float curHP = MAX_HP;
+    public Image hpBar;
 
 
     /////변수의 프로퍼티화 
@@ -248,6 +253,42 @@ public class Player : MonoBehaviourPun
 
         weaponParent.Attack();
     }
+
+
+    public void TakeDamage(float damage)
+    {
+        PV.RPC(nameof(RPC_TakeDamage), PV.Owner, damage);
+    }
+
+    [PunRPC]
+    void RPC_TakeDamage(float damage, PhotonMessageInfo info)
+    {
+        curHP -= damage;
+
+        hpBar.fillAmount = curHP / MAX_HP;
+
+        if (curHP <= 0)
+        {
+            Die();
+            //PlayerManager.Find(info.Sender).GetKill(); //플레이어매니저에게 일르러 간다.
+        }
+    }
+
+    public void Die()
+    {
+        //플레이어 애니메이션 + 한뒤 플레이어 사라지는 
+        //StartCoroutine(PlayerDieAnim());
+        //플레이어 죽음. 
+        //이제ㅡ체크. 
+
+    }
+
+    //public IEnumerator PlayerDieAnim()
+    //{
+    //    anim.SetBool("PlayerDie");
+    //    yield return new WaitForSeconds(7f);
+    //    NM.
+    //}
 
 
     #region 인벤토리 관련 함수
