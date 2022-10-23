@@ -142,9 +142,9 @@ public class Player : MonoBehaviourPun, IDamageable
 
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
-
         AnimateCharacter();
     }
+
 
     private void FixedUpdate()
     {
@@ -210,7 +210,7 @@ public class Player : MonoBehaviourPun, IDamageable
 
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         
-        //playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
+        playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
 
         playerAnim.PlayRunning(MovementInput); // 움직애님 
     }
