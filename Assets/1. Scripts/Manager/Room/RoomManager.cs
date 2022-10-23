@@ -23,21 +23,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
 
     private static RoomManager m_instance = null; // 싱글톤이 할당될 static 변수
-    public static RoomManager instance
-    {
-        get
-        {
-            // 만약 싱글톤 변수에 아직 오브젝트가 할당되지 않았다면
-            if (m_instance == null)
-            {
-                // 씬에서 GameManager 오브젝트를 찾아 할당
-                m_instance = FindObjectOfType<RoomManager>();
-            }
-
-            // 싱글톤 오브젝트를 반환
-            return m_instance;
-        }
-    }
+    public static RoomManager instance => m_instance;
 
     private RoomInfo roomInfo;
     public RoomInfo RoomInfo
@@ -62,6 +48,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         {
             // 새롭게 만들어진 싱글톤
             m_instance = this;
+            //m_instance = FindObjectOfType<RoomManager>();
             DontDestroyOnLoad(this.gameObject);
         }
         else

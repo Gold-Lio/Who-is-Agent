@@ -142,7 +142,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         
 
         //잠시 테스트를 위해 주석처리
-        //SetPlayerType();
+        SetPlayerType();
 
 
         SetSPY();
@@ -155,18 +155,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 
     //잠시 테스트를 위해 주석처리
-    //void SetPlayerType()
-    //{
-    //    int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
-    //    if(maxplayer <= 5)
-    //    {
-    //        playerType = PlayerType.Random_1;
-    //    }
-    //    else if(maxplayer >= 6)
-    //    {
-    //        playerType = PlayerType.Random_2;
-    //    }
-    //}
+    void SetPlayerType()
+    {
+        int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
+        if (maxplayer <= 5)
+        {
+            playerType = PlayerType.Random_1;
+        }
+        else if (maxplayer >= 6)
+        {
+            playerType = PlayerType.Random_2;
+        }
+    }
 
 
     void SetSPY()
@@ -252,8 +252,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         //}
 
         //잠시 테스트를 위해 주석처리
-        //if(isGameStart && !isWinner)
-        //    photonView.RPC("WinCheck", RpcTarget.AllBuffered);
+        if (isGameStart && !isWinner)
+            photonView.RPC("WinCheck", RpcTarget.AllBuffered);
 
     }
 
