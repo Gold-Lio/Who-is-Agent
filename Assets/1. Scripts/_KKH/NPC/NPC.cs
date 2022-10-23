@@ -23,10 +23,13 @@ public class NPC : MonoBehaviourPun
 
     private TextMeshProUGUI messageText;
 
+    private Animator ani;
+
     private void Awake()
     {
         messageText = GameObject.Find("All_Message").GetComponent<TextMeshProUGUI>();
         npcInvenUI = transform.GetComponentInChildren<NPCUI>();
+        ani = GetComponent<Animator>();
     }
 
     void Start()
@@ -65,12 +68,12 @@ public class NPC : MonoBehaviourPun
         {
             StartCoroutine(NPCDeadMessage());
         }
-        Destroy(this.gameObject, 0.1f);
     }
 
     private IEnumerator NPCDeadMessage()
     {
-        messageText.text = $"¹Î°£ÀÎ{npcNum}°¡ Á×¾ú½À´Ï´Ù.....";
+        messageText.text = $"{gameObject.name}°¡ Á×¾ú½À´Ï´Ù.....";
+        ani.SetBool("Die", true);
         yield return new WaitForSeconds(3.0f);
 
         messageText.text = "";

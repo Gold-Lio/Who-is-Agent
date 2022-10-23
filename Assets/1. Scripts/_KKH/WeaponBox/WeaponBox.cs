@@ -15,10 +15,10 @@ public class WeaponBox : MonoBehaviour
 
     private SpriteRenderer weaponBoxRenderer;
 
-    public Image useImage;
+    public GameObject useImageGameObj;
 
     private PhotonView pv = null;
-    
+
     public ItemIDCode ItemID;
 
     public Sprite[] sprites;
@@ -65,8 +65,13 @@ public class WeaponBox : MonoBehaviour
         isOpen = true;
         weaponBoxRenderer.sprite = sprites[0];
 
-        Color color = useImage.color;
-        color.a = 1;
-        useImage.color = color;
+        SpriteRenderer[] images = useImageGameObj.GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (SpriteRenderer image in images)
+        {
+            Color color = image.color;
+            color.a = 1;
+            image.color = color;
+        }
     }
 }
