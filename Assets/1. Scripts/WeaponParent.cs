@@ -6,6 +6,9 @@ using Photon.Pun;
 
 public class WeaponParent : MonoBehaviourPun
 {
+    PhotonView PV;
+
+    private Player player;
     public SpriteRenderer characterRenderer, weaponRenderer;
     public Vector2 PointerPosition { get; set; }
 
@@ -18,6 +21,10 @@ public class WeaponParent : MonoBehaviourPun
     public Transform circleOrigin;
     public float radius;
 
+    private void Start()
+    {
+        PV = photonView;
+    }
 
     public void ResetIsAttacking()
     {
@@ -47,14 +54,12 @@ public class WeaponParent : MonoBehaviourPun
 
         transform.localScale = scale;
 
-
         //무기의 Rotaion Z 값의 실시간 SettingOrder
         if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
         {
             weaponRenderer.sortingOrder = characterRenderer.sortingOrder - 1;
         }
     }
-
 
 
     //어택에서 RPC로  ㅡ 그리고 player에서 RPC 실행. 
@@ -71,7 +76,6 @@ public class WeaponParent : MonoBehaviourPun
         StartCoroutine(DelayAttack());
     }
 
-
     private IEnumerator DelayAttack()
     {
         yield return new WaitForSeconds(delay);
@@ -86,18 +90,17 @@ public class WeaponParent : MonoBehaviourPun
         Gizmos.DrawWireSphere(position, radius);
     }
 
-
     //때림의 판정
     public void DetectColliders()
     {
         if (!photonView.IsMine) { return; }
 
-        foreach (Collider2D collider in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
+        foreach (Collider2D col in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
         {
-            //Debug.Log(collider.name);
+            Debug.Log(col.name);
 
             Health health;
-            if (health = collider.GetComponent<Health>())
+            if (health = col.GetComponent<Health>())
             {
                 health.GetHit(1, transform.parent.gameObject);
             }

@@ -59,6 +59,9 @@ MonoBehaviour:
   - PlayerSRRotate
   - PunOnOpen
   - PunOnSteal
+  - RotateToPointer
+  - RPC_TakeDamage
+  - DetectColliders
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

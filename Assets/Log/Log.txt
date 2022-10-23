@@ -4798,3 +4798,60 @@
 10-23 06:22:50 -- IDCard_NPC2아이템 생성
 10-23 06:25:14 -- OnDisable
 10-23 06:25:15 -- OnDisable
+10-23 09:12:35 -- Connected to Master - Online
+10-23 09:12:35 -- Lobby Join Success - Online
+10-23 09:12:36 -- Room Joined
+10-23 09:12:38 -- Raccoon(이)가 에이전트다
+10-23 09:12:38 -- IDCard_NPC4아이템 생성
+10-23 09:12:38 -- IDCard_NPC2아이템 생성
+10-23 09:12:38 -- 2아이템 생성
+10-23 09:12:38 -- Knife아이템 생성
+10-23 09:12:38 -- IDCard_NPC3아이템 생성
+10-23 09:12:38 -- IDCard_NPC0아이템 생성
+10-23 09:12:38 -- Bag아이템 생성
+10-23 09:12:38 -- IDCard_NPC5아이템 생성
+10-23 09:12:38 -- Package아이템 생성
+10-23 09:13:42 -- OnDisable
+10-23 09:13:45 -- OnDisable
+10-23 09:37:20 -- Connected to Master - Online
+10-23 09:37:20 -- Lobby Join Success - Online
+10-23 09:37:21 -- Room Joined
+10-23 09:37:22 -- Rabbit(이)가 에이전트다
+10-23 09:37:22 -- IDCard_NPC1아이템 생성
+10-23 09:37:22 -- Knife아이템 생성
+10-23 09:37:22 -- Package아이템 생성
+10-23 09:37:22 -- IDCard_NPC4아이템 생성
+10-23 09:37:22 -- Bag아이템 생성
+10-23 09:37:22 -- IDCard_NPC0아이템 생성
+10-23 09:37:22 -- IDCard_NPC3아이템 생성
+10-23 09:37:22 -- IDCard_NPC2아이템 생성
+10-23 09:37:22 -- 2아이템 생성
+10-23 09:38:15 -- OnDisable
+10-23 09:52:40 -- Connected to Master - Online
+10-23 09:52:40 -- Lobby Join Success - Online
+10-23 09:52:45 -- Room Joined
+10-23 09:52:46 -- Goat(이)가 에이전트다
+10-23 09:52:46 -- IDCard_NPC5아이템 생성
+10-23 09:52:46 -- 2아이템 생성
+10-23 09:52:46 -- IDCard_NPC4아이템 생성
+10-23 09:52:46 -- IDCard_NPC2아이템 생성
+10-23 09:52:46 -- Knife아이템 생성
+10-23 09:52:46 -- IDCard_NPC3아이템 생성
+10-23 09:52:46 -- Package아이템 생성
+10-23 09:52:46 -- Bag아이템 생성
+10-23 09:52:46 -- IDCard_NPC1아이템 생성
+10-23 09:53:13 -- OnDisable
+10-23 09:55:41 -- Connected to Master - Online
+10-23 09:55:42 -- Lobby Join Success - Online
+10-23 09:55:46 -- Room Joined
+10-23 09:55:47 -- Sloth(이)가 에이전트다
+10-23 09:55:47 -- Package아이템 생성
+10-23 09:55:47 -- IDCard_NPC3아이템 생성
+10-23 09:55:47 -- Bag아이템 생성
+10-23 09:55:47 -- IDCard_NPC1아이템 생성
+10-23 09:55:47 -- 2아이템 생성
+10-23 09:55:47 -- IDCard_NPC4아이템 생성
+10-23 09:55:47 -- Knife아이템 생성
+10-23 09:55:47 -- IDCard_NPC0아이템 생성
+10-23 09:55:47 -- IDCard_NPC5아이템 생성
+10-23 09:56:27 -- OnDisable

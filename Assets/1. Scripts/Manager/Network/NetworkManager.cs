@@ -77,10 +77,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //Ω¬∏Æ ∆–≥Œ
     public GameObject Resi_WinPanel, SPY_WinPanel;
 
-    /// <summary>
-    ////MAP
-    /// </summary>
-    //public GameObject WaitingMap, MainMap;
+    [Header("Did Panel")]
+    public GameObject YouDie;
 
     //- - æ¿√ ±‚»≠§— 
 

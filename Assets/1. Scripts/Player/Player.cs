@@ -171,7 +171,6 @@ public class Player : MonoBehaviourPun, IDamageable
     private void OnDisable()
     {
         if (!photonView.IsMine) return;
-        //PhotonNetwork.Disconnect();
 
         Debug.Log($"{actor}, {photonView.ViewID}, {PhotonNetwork.IsConnected}");
         LogManager.Log("OnDisable");
@@ -211,11 +210,13 @@ public class Player : MonoBehaviourPun, IDamageable
 
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         
-        playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
-        playerAnim.PlayAnimation(MovementInput); // 움직애님 
+        //playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
+
+        playerAnim.PlayRunning(MovementInput); // 움직애님 
     }
 
 
+    #region 플레이어 Color
     //플레이어의 다양한 색깔 적용 + 손색깔까지
     [PunRPC]
     public void SetColor(int _colorIndex)
@@ -235,6 +236,7 @@ public class Player : MonoBehaviourPun, IDamageable
             if (NM.Players[i].isSpy) NM.Players[i].nickNameText.color = Color.red;
         }
     }
+    #endregion
 
     public void SetPos(Vector3 target)
     {
@@ -269,26 +271,20 @@ public class Player : MonoBehaviourPun, IDamageable
 
         if (curHP <= 0)
         {
-            Die();
+            playerAnim.Die();
             //PlayerManager.Find(info.Sender).GetKill(); //플레이어매니저에게 일르러 간다.
+            StartCoroutine(DieAfter());
         }
     }
 
-    public void Die()
+
+    public IEnumerator DieAfter()
     {
-        //플레이어 애니메이션 + 한뒤 플레이어 사라지는 
-        //StartCoroutine(PlayerDieAnim());
-        //플레이어 죽음. 
-        //이제ㅡ체크. 
+        yield return new WaitForSeconds(7f);
+        
+        NM.GetCrewCount(); //사람을 세서 WinCheck
 
     }
-
-    //public IEnumerator PlayerDieAnim()
-    //{
-    //    anim.SetBool("PlayerDie");
-    //    yield return new WaitForSeconds(7f);
-    //    NM.
-    //}
 
 
     #region 인벤토리 관련 함수
