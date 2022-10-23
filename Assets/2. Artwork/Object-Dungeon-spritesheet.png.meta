@@ -1,0 +1,2520 @@
+fileFormatVersion: 2
+guid: b6f1855978c3e814a84bc3dedcb21a18
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1867881995004961632
+    second: Object-Dungeon-spritesheet_0
+  - first:
+      213: -457100829695902948
+    second: Object-Dungeon-spritesheet_1
+  - first:
+      213: -6415769463413603917
+    second: Object-Dungeon-spritesheet_2
+  - first:
+      213: -6440355805180838328
+    second: Object-Dungeon-spritesheet_3
+  - first:
+      213: 7504727597564177335
+    second: Object-Dungeon-spritesheet_4
+  - first:
+      213: -8451332439184309856
+    second: Object-Dungeon-spritesheet_5
+  - first:
+      213: -6064658640536470094
+    second: Object-Dungeon-spritesheet_6
+  - first:
+      213: -1959078584818985432
+    second: Object-Dungeon-spritesheet_7
+  - first:
+      213: -5297648641093544366
+    second: Object-Dungeon-spritesheet_8
+  - first:
+      213: -4231187246405562832
+    second: Object-Dungeon-spritesheet_9
+  - first:
+      213: 5611022800021090396
+    second: Object-Dungeon-spritesheet_10
+  - first:
+      213: -598864192597377783
+    second: Object-Dungeon-spritesheet_11
+  - first:
+      213: 4954664927006715061
+    second: Object-Dungeon-spritesheet_12
+  - first:
+      213: 5867766014021118005
+    second: Object-Dungeon-spritesheet_13
+  - first:
+      213: 6318183520058329292
+    second: Object-Dungeon-spritesheet_14
+  - first:
+      213: 915861724048678307
+    second: Object-Dungeon-spritesheet_15
+  - first:
+      213: 3738643287217038668
+    second: Object-Dungeon-spritesheet_16
+  - first:
+      213: 9185616385644250428
+    second: Object-Dungeon-spritesheet_17
+  - first:
+      213: 7047092546285144737
+    second: Object-Dungeon-spritesheet_18
+  - first:
+      213: -4626307297130919822
+    second: Object-Dungeon-spritesheet_19
+  - first:
+      213: 3343007846018018763
+    second: Object-Dungeon-spritesheet_20
+  - first:
+      213: -7367373259630526179
+    second: Object-Dungeon-spritesheet_21
+  - first:
+      213: -5615838557432046724
+    second: Object-Dungeon-spritesheet_22
+  - first:
+      213: -4248393169167896866
+    second: Object-Dungeon-spritesheet_23
+  - first:
+      213: 6917192479566060598
+    second: Object-Dungeon-spritesheet_24
+  - first:
+      213: 3888881378051660088
+    second: Object-Dungeon-spritesheet_25
+  - first:
+      213: -956824013056150716
+    second: Object-Dungeon-spritesheet_26
+  - first:
+      213: -6923047588608290582
+    second: Object-Dungeon-spritesheet_27
+  - first:
+      213: 6555397430265275268
+    second: Object-Dungeon-spritesheet_28
+  - first:
+      213: 7489995246811667741
+    second: Object-Dungeon-spritesheet_29
+  - first:
+      213: -8111616949385295846
+    second: Object-Dungeon-spritesheet_30
+  - first:
+      213: -2700880588985775131
+    second: Object-Dungeon-spritesheet_31
+  - first:
+      213: 2414158420091049678
+    second: Object-Dungeon-spritesheet_32
+  - first:
+      213: -1993122254779276700
+    second: Object-Dungeon-spritesheet_33
+  - first:
+      213: 6482109856434350539
+    second: Object-Dungeon-spritesheet_34
+  - first:
+      213: -1979109224203338643
+    second: Object-Dungeon-spritesheet_35
+  - first:
+      213: 6893450940210159391
+    second: Object-Dungeon-spritesheet_36
+  - first:
+      213: -8256854426935827440
+    second: Object-Dungeon-spritesheet_37
+  - first:
+      213: 3846295676205811461
+    second: Object-Dungeon-spritesheet_38
+  - first:
+      213: 3029533356743049888
+    second: Object-Dungeon-spritesheet_39
+  - first:
+      213: -985498535090584341
+    second: Object-Dungeon-spritesheet_40
+  - first:
+      213: 4611861386934619464
+    second: Object-Dungeon-spritesheet_41
+  - first:
+      213: 6469372440658894084
+    second: Object-Dungeon-spritesheet_42
+  - first:
+      213: 4503701694960536494
+    second: Object-Dungeon-spritesheet_43
+  - first:
+      213: 3637188687225531573
+    second: Object-Dungeon-spritesheet_44
+  - first:
+      213: -4037094494557190213
+    second: Object-Dungeon-spritesheet_45
+  - first:
+      213: 8345178252192313899
+    second: Object-Dungeon-spritesheet_46
+  - first:
+      213: 3892531272436616221
+    second: Object-Dungeon-spritesheet_47
+  - first:
+      213: 8269699186965686257
+    second: Object-Dungeon-spritesheet_48
+  - first:
+      213: 204986818681662360
+    second: Object-Dungeon-spritesheet_49
+  - first:
+      213: -6673493784731409993
+    second: Object-Dungeon-spritesheet_50
+  - first:
+      213: 4738673551103617836
+    second: Object-Dungeon-spritesheet_51
+  - first:
+      213: 5373019538943013569
+    second: Object-Dungeon-spritesheet_52
+  - first:
+      213: -4447549949006734567
+    second: Object-Dungeon-spritesheet_53
+  - first:
+      213: 8491847263484853223
+    second: Object-Dungeon-spritesheet_54
+  - first:
+      213: -6035360560245313480
+    second: Object-Dungeon-spritesheet_55
+  - first:
+      213: -4491804191968053422
+    second: Object-Dungeon-spritesheet_56
+  - first:
+      213: 3082061275625269654
+    second: Object-Dungeon-spritesheet_57
+  - first:
+      213: 5218788266564030985
+    second: Object-Dungeon-spritesheet_58
+  - first:
+      213: 4328543275993534527
+    second: Object-Dungeon-spritesheet_59
+  - first:
+      213: 1953726984164462372
+    second: Object-Dungeon-spritesheet_60
+  - first:
+      213: -6360406801288773991
+    second: Object-Dungeon-spritesheet_61
+  - first:
+      213: -802491339221145901
+    second: Object-Dungeon-spritesheet_62
+  - first:
+      213: -764928007307455686
+    second: Object-Dungeon-spritesheet_63
+  - first:
+      213: 4071570561449256418
+    second: Object-Dungeon-spritesheet_64
+  - first:
+      213: 8297818402275690170
+    second: Object-Dungeon-spritesheet_65
+  - first:
+      213: -3417158709075176417
+    second: Object-Dungeon-spritesheet_66
+  - first:
+      213: -3783936699353934879
+    second: Object-Dungeon-spritesheet_67
+  - first:
+      213: 7294537864995654214
+    second: Object-Dungeon-spritesheet_68
+  - first:
+      213: 1204736223271668545
+    second: Object-Dungeon-spritesheet_69
+  - first:
+      213: -1291777272613663084
+    second: Object-Dungeon-spritesheet_70
+  - first:
+      213: -8382348512133437427
+    second: Object-Dungeon-spritesheet_71
+  - first:
+      213: 6266233776601536804
+    second: Object-Dungeon-spritesheet_72
+  - first:
+      213: -6870393531980047135
+    second: Object-Dungeon-spritesheet_73
+  - first:
+      213: -7580544817232987258
+    second: Object-Dungeon-spritesheet_74
+  - first:
+      213: 6427970492980152991
+    second: Object-Dungeon-spritesheet_75
+  - first:
+      213: -7035197014948737469
+    second: Object-Dungeon-spritesheet_76
+  - first:
+      213: -7305019557745202545
+    second: Object-Dungeon-spritesheet_77
+  - first:
+      213: -1303522783961441837
+    second: Object-Dungeon-spritesheet_78
+  - first:
+      213: -819323220337395614
+    second: Object-Dungeon-spritesheet_79
+  - first:
+      213: 3650223385297045820
+    second: Object-Dungeon-spritesheet_80
+  - first:
+      213: 7814207833570058753
+    second: Object-Dungeon-spritesheet_81
+  - first:
+      213: -742808360967595765
+    second: Object-Dungeon-spritesheet_82
+  - first:
+      213: 2736132133362174635
+    second: Object-Dungeon-spritesheet_83
+  - first:
+      213: -8951360694485127437
+    second: Object-Dungeon-spritesheet_84
+  - first:
+      213: 6069741110882966831
+    second: Object-Dungeon-spritesheet_85
+  - first:
+      213: -741853741778383556
+    second: Object-Dungeon-spritesheet_86
+  - first:
+      213: 8400557620906134613
+    second: Object-Dungeon-spritesheet_87
+  - first:
+      213: 7928123108522783473
+    second: Object-Dungeon-spritesheet_88
+  - first:
+      213: 6888421104524249941
+    second: Object-Dungeon-spritesheet_89
+  - first:
+      213: -5389330707078650268
+    second: Object-Dungeon-spritesheet_90
+  - first:
+      213: -930866613455192608
+    second: Object-Dungeon-spritesheet_91
+  - first:
+      213: -1190637801771468904
+    second: Object-Dungeon-spritesheet_92
+  - first:
+      213: 9107173729698268273
+    second: Object-Dungeon-spritesheet_93
+  - first:
+      213: 5027087144796553027
+    second: Object-Dungeon-spritesheet_94
+  - first:
+      213: -7158453042102964458
+    second: Object-Dungeon-spritesheet_95
+  - first:
+      213: -8797601200268815374
+    second: Object-Dungeon-spritesheet_96
+  - first:
+      213: 1950856333382872863
+    second: Object-Dungeon-spritesheet_97
+  - first:
+      213: -7212319665898921392
+    second: Object-Dungeon-spritesheet_98
+  - first:
+      213: 9221908680936315468
+    second: Object-Dungeon-spritesheet_99
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 943
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac9165d833f316e0800000000000000
+      internalID: -1867881995004961632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 943
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b707b973d08a9f0800000000000000
+      internalID: -457100829695902948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 914
+        width: 112
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b10f6c4aab96f6a0800000000000000
+      internalID: -6415769463413603917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 935
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e321584824f96a0800000000000000
+      internalID: -6440355805180838328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 936
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb22ecfcf5262860800000000000000
+      internalID: 7504727597564177335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 974
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a10fa37ce5d6ba80800000000000000
+      internalID: -8451332439184309856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 979
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdf1de291106dba0800000000000000
+      internalID: -6064658640536470094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 951
+        width: 61
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8261ac02864ffc4e0800000000000000
+      internalID: -1959078584818985432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 978
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256d9ca01a8fa76b0800000000000000
+      internalID: -5297648641093544366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 992
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e45dffd9dc745c0800000000000000
+      internalID: -4231187246405562832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 991
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50ffd5128b5edd40800000000000000
+      internalID: 5611022800021090396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1001
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d3883903860b7f0800000000000000
+      internalID: -598864192597377783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1007
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc625b008182c440800000000000000
+      internalID: 4954664927006715061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 998
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538a6dad91e7e6150800000000000000
+      internalID: 5867766014021118005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 955
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8cdc2bf62bea750800000000000000
+      internalID: 6318183520058329292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 794
+        width: 61
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad5c45b26bc5bc00800000000000000
+      internalID: 915861724048678307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 772
+        width: 123
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c456874f24452e330800000000000000
+      internalID: 3738643287217038668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 939
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35455d6f6dd97f70800000000000000
+      internalID: 9185616385644250428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 939
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa01a0755d4cc160800000000000000
+      internalID: 7047092546285144737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 955
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278c6b4460e0ccfb0800000000000000
+      internalID: -4626307297130919822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 794
+        width: 65
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6f378cefb46e20800000000000000
+      internalID: 3343007846018018763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 794
+        width: 60
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11c20ced05d1c990800000000000000
+      internalID: -7367373259630526179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 869
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b125406988012b0800000000000000
+      internalID: -5615838557432046724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 937
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede2d8debecaa05c0800000000000000
+      internalID: -4248393169167896866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 896
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd98b49edceff50800000000000000
+      internalID: 6917192479566060598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 869
+        width: 51
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8399668520518f530800000000000000
+      internalID: 3888881378051660088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 794
+        width: 65
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443793d21ada8b2f0800000000000000
+      internalID: -956824013056150716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 794
+        width: 63
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0d0e5e5e46cef90800000000000000
+      internalID: -6923047588608290582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 794
+        width: 81
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48368781b3379fa50800000000000000
+      internalID: 6555397430265275268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 794
+        width: 81
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd2974efec1f760800000000000000
+      internalID: 7489995246811667741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 794
+        width: 81
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a180ad99c5fbd6f80800000000000000
+      internalID: -8111616949385295846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 794
+        width: 81
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb41c80a6b848ad0800000000000000
+      internalID: -2700880588985775131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 794
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec69b05da40d08120800000000000000
+      internalID: 2414158420091049678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 794
+        width: 87
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462a4f98ed10754e0800000000000000
+      internalID: -1993122254779276700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 655
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9e3db129415f950800000000000000
+      internalID: 6482109856434350539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 718
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c39a775aac884e0800000000000000
+      internalID: -1979109224203338643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 664
+        width: 175
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f1fc76b157aaf50800000000000000
+      internalID: 6893450940210159391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 718
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014e06835a2c96d80800000000000000
+      internalID: -8256854426935827440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 664
+        width: 175
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5074e59f989c06530800000000000000
+      internalID: 3846295676205811461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 718
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2cddb69801b0a20800000000000000
+      internalID: 3029533356743049888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 664
+        width: 176
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40241cd4ec252f0800000000000000
+      internalID: -985498535090584341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 718
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d04992f7f900040800000000000000
+      internalID: 4611861386934619464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 664
+        width: 176
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ddc2565f3d7c950800000000000000
+      internalID: 6469372440658894084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 700
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab827674dc508e30800000000000000
+      internalID: 4503701694960536494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 660
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bca52327d3e97230800000000000000
+      internalID: 3637188687225531573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 660
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7cb3752fb59f7c0800000000000000
+      internalID: -4037094494557190213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 660
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22fc3dd76700d370800000000000000
+      internalID: 8345178252192313899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 660
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c0faa919c050630800000000000000
+      internalID: 3892531272436616221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 603
+        width: 114
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f72d66889fd3c270800000000000000
+      internalID: 8269699186965686257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 586
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b682fec6248d200800000000000000
+      internalID: 204986818681662360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 628
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1ae4ea2ccf263a0800000000000000
+      internalID: -6673493784731409993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 586
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be118fc7623c140800000000000000
+      internalID: 4738673551103617836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 585
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c27eed9dccc09a40800000000000000
+      internalID: 5373019538943013569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 502
+        width: 206
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b95a0b2e02742c0800000000000000
+      internalID: -4447549949006734567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 502
+        width: 123
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb33ea281a19d570800000000000000
+      internalID: 8491847263484853223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 470
+        width: 119
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830fc231c871e3ca0800000000000000
+      internalID: -6035360560245313480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 480
+        width: 59
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2573221d2e7e9a1c0800000000000000
+      internalID: -4491804191968053422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 581
+        width: 104
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699a1a5966ea5ca20800000000000000
+      internalID: 3082061275625269654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 586
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9029682374cdc6840800000000000000
+      internalID: 5218788266564030985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 596
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3010880d23121c30800000000000000
+      internalID: 4328543275993534527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 465
+        width: 116
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fc73f37580d1b10800000000000000
+      internalID: 1953726984164462372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 543
+        width: 62
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e343e86bb4bb7a0800000000000000
+      internalID: -6360406801288773991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 543
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d66566f06afcd4f0800000000000000
+      internalID: -802491339221145901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 543
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3311b5b70e6265f0800000000000000
+      internalID: -764928007307455686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 543
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5ee118adf118830800000000000000
+      internalID: 4071570561449256418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 543
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab687568fd5c72370800000000000000
+      internalID: 8297818402275690170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 549
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14117c4240d390d0800000000000000
+      internalID: -3417158709075176417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 478
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3d17ebe91cc7bc0800000000000000
+      internalID: -3783936699353934879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 525
+        width: 75
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ac3b34a876b3560800000000000000
+      internalID: 7294537864995654214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 525
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b472c463518b010800000000000000
+      internalID: 1204736223271668545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 525
+        width: 46
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e80f82a6fa21ee0800000000000000
+      internalID: -1291777272613663084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 510
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0823c6907aebab80800000000000000
+      internalID: -8382348512133437427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 510
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42993ed7b6226f650800000000000000
+      internalID: 6266233776601536804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 492
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec103bcb7577a0a0800000000000000
+      internalID: -6870393531980047135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b36e4f6ae7cc690800000000000000
+      internalID: -7580544817232987258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 399
+        width: 89
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a46c44b1db43950800000000000000
+      internalID: 6427970492980152991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 363
+        width: 115
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e8717c695fd5e90800000000000000
+      internalID: -7035197014948737469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 362
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ae0577a6b5f9a90800000000000000
+      internalID: -7305019557745202545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 363
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d999513fe4f8ede0800000000000000
+      internalID: -1303522783961441837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 363
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2687f8f3fdd21a4f0800000000000000
+      internalID: -819323220337395614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 363
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39447744d238a230800000000000000
+      internalID: 3650223385297045820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 363
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102a4098f94a17c60800000000000000
+      internalID: 7814207833570058753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 361
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0916543bb301b5f0800000000000000
+      internalID: -742808360967595765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 354
+        width: 89
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa859bbda1b8f520800000000000000
+      internalID: 2736132133362174635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 213
+        width: 115
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fee1dcefd066c380800000000000000
+      internalID: -8951360694485127437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 214
+        width: 146
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d93c8a16d0c3450800000000000000
+      internalID: 6069741110882966831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 235
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d410ec3f764b5f0800000000000000
+      internalID: -741853741778383556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 235
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c8f4de5a6c49470800000000000000
+      internalID: 8400557620906134613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 309
+        width: 89
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2f01356f9560e60800000000000000
+      internalID: 7928123108522783473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 213
+        width: 111
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bc8768f76989f50800000000000000
+      internalID: 6888421104524249941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 238
+        width: 88
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466e87b96404535b0800000000000000
+      internalID: -5389330707078650268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 263
+        width: 89
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed7bbb3fb5e413f0800000000000000
+      internalID: -930866613455192608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 219
+        width: 89
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89772414a310a7fe0800000000000000
+      internalID: -1190637801771468904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 150
+        width: 126
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1744f6a514e236e70800000000000000
+      internalID: 9107173729698268273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 72
+        width: 60
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ff780af1dc3c540800000000000000
+      internalID: 5027087144796553027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 72
+        width: 60
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6324a2e018ac90800000000000000
+      internalID: -7158453042102964458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 59
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f35d6ee154a8e580800000000000000
+      internalID: -8797601200268815374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 59
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f6b17cf75d21b10800000000000000
+      internalID: 1950856333382872863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 59
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052e783f971b8eb90800000000000000
+      internalID: -7212319665898921392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object-Dungeon-spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 58
+        width: 126
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4adc46e51dcaff70800000000000000
+      internalID: 9221908680936315468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

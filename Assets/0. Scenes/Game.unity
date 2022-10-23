@@ -560,14 +560,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1828159633}
     m_Modifications:
-    - target: {fileID: 463434710945648197, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 6789932926883324989, guid: faf527ecb07e7c143860b76b55dcc0c3, type: 3}
-    - target: {fileID: 463434710945648216, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 463434711170389123, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -612,33 +604,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 463434711170389124, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_Size.x
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 463434711170389124, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_Size.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 463434711170389124, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6396941071039807458, guid: 61821dace5596c644b8bc9d6ba7dda0a, type: 3}
-    - target: {fileID: 463434711170389124, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 463434711170389144, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
       propertyPath: m_Name
       value: Item
-      objectReference: {fileID: 0}
-    - target: {fileID: 463434711170389144, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 463434711170389144, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
-      propertyPath: m_TagString
-      value: CanHit_Obj
       objectReference: {fileID: 0}
     - target: {fileID: 9100733924944678693, guid: 095aba2982e8cbe41bf58fc1b0ad817d, type: 3}
       propertyPath: sceneViewId
