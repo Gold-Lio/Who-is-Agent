@@ -219,7 +219,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
   - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
   - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: c3ad2b83477a55448a03bf16ca75d3d3, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -10810,7 +10810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IDCardCount: 6
   npcImage:
-  - {fileID: -5849908878965074226, guid: 61821dace5596c644b8bc9d6ba7dda0a, type: 3}
+  - {fileID: 21300000, guid: c96eb27462db491428ae23c05b394d8e, type: 3}
   - {fileID: 21300000, guid: 8263af0308b5282488d6df34b98eb47f, type: 3}
   - {fileID: 21300000, guid: 075c2ab640cb3af49b178f3092fdcd0b, type: 3}
   - {fileID: 21300000, guid: 259d57e56c42b4f4ea1bf1467fcc21a8, type: 3}

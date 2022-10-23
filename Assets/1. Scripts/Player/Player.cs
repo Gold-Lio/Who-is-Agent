@@ -328,6 +328,8 @@ public class Player : MonoBehaviourPun, IDamageable
     public void ItemUse()
     {
         if (!photonView.IsMine) return;
+        if (!isSpy) return;
+
         Collider2D col = Physics2D.OverlapCircle((Vector2)transform.position, itemPickupRange, LayerMask.GetMask("NPC"));
         if (col == null) return;
         playerInvenUI.GetSlot().ItemSlot.UseSlotItem(col.gameObject);
