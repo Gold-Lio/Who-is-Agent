@@ -5788,3 +5788,248 @@
 10-25 12:42:08 -- Room Joined
 10-25 12:42:09 -- Buffalo(이)가 에이전트다
 10-25 12:42:37 -- OnDisable
+10-25 01:05:24 -- Connected to Master - Online
+10-25 01:05:25 -- Lobby Join Success - Online
+10-25 01:05:26 -- Room Joined
+10-25 01:05:27 -- Buffalo(이)가 에이전트다
+10-25 01:06:04 -- OnDisable
+10-25 01:31:52 -- Connected to Master - Online
+10-25 01:31:52 -- Lobby Join Success - Online
+10-25 01:31:53 -- Room Joined
+10-25 01:31:54 -- Raccoon(이)가 에이전트다
+10-25 01:31:54 -- Knife아이템 생성
+10-25 01:31:54 -- Package아이템 생성
+10-25 01:31:54 -- IDCard_NPC4아이템 생성
+10-25 01:31:54 -- IDCard_NPC5아이템 생성
+10-25 01:31:54 -- 2아이템 생성
+10-25 01:31:54 -- IDCard_NPC2아이템 생성
+10-25 01:31:54 -- IDCard_NPC0아이템 생성
+10-25 01:31:54 -- IDCard_NPC3아이템 생성
+10-25 01:31:54 -- 3아이템 생성
+10-25 01:31:54 -- Bag아이템 생성
+10-25 01:32:08 -- OnDisable
+10-25 01:43:59 -- Connected to Master - Online
+10-25 01:43:59 -- Lobby Join Success - Online
+10-25 01:44:02 -- Room Joined
+10-25 01:44:03 -- Sloth(이)가 에이전트다
+10-25 01:44:03 -- IDCard_NPC0아이템 생성
+10-25 01:44:03 -- IDCard_NPC5아이템 생성
+10-25 01:44:03 -- IDCard_NPC3아이템 생성
+10-25 01:44:03 -- 2아이템 생성
+10-25 01:44:03 -- Bag아이템 생성
+10-25 01:44:03 -- 3아이템 생성
+10-25 01:44:03 -- Knife아이템 생성
+10-25 01:44:03 -- Package아이템 생성
+10-25 01:44:03 -- IDCard_NPC1아이템 생성
+10-25 01:44:03 -- IDCard_NPC4아이템 생성
+10-25 01:44:39 -- OnDisable
+10-25 01:44:55 -- OnDisable
+10-25 02:01:27 -- Connected to Master - Online
+10-25 02:01:27 -- Lobby Join Success - Online
+10-25 02:01:29 -- Room Joined
+10-25 02:01:31 -- Rabbit(이)가 에이전트다
+10-25 02:01:59 -- OnDisable
+10-25 02:03:46 -- Connected to Master - Online
+10-25 02:03:46 -- Lobby Join Success - Online
+10-25 02:03:47 -- Room Join Failed
+10-25 02:03:47 -- Room Create Success
+10-25 02:03:47 -- Room Joined
+10-25 02:03:48 -- Monkey(이)가 에이전트다
+10-25 02:03:48 -- Box에 12 입력
+10-25 02:03:51 -- OnDisable
+10-25 02:03:59 -- Connected to Master - Online
+10-25 02:03:59 -- Lobby Join Success - Online
+10-25 02:04:12 -- Room Join Failed
+10-25 02:04:12 -- Room Create Success
+10-25 02:04:12 -- Room Joined
+10-25 02:04:13 -- Goat(이)가 에이전트다
+10-25 02:04:13 -- Box에 13 입력
+10-25 02:05:35 -- OnDisable
+10-25 02:22:23 -- Connected to Master - Online
+10-25 02:22:24 -- Lobby Join Success - Online
+10-25 02:22:25 -- Room Join Failed
+10-25 02:22:26 -- Room Create Success
+10-25 02:22:26 -- Room Joined
+10-25 02:22:28 -- Raccoon(이)가 에이전트다
+10-25 02:22:28 -- Box에 11 입력
+10-25 02:22:32 -- OnDisable
+10-25 02:22:47 -- Connected to Master - Online
+10-25 02:22:47 -- Lobby Join Success - Online
+10-25 02:26:37 -- Connected to Master - Online
+10-25 02:26:37 -- Lobby Join Success - Online
+10-25 02:26:41 -- Room Join Failed
+10-25 02:26:41 -- Room Create Success
+10-25 02:26:41 -- Room Joined
+10-25 02:26:42 -- Monkey(이)가 에이전트다
+10-25 02:26:42 -- Box에 1 입력
+10-25 02:26:46 -- OnDisable
+10-25 02:32:37 -- Connected to Master - Online
+10-25 02:32:37 -- Lobby Join Success - Online
+10-25 02:36:35 -- Connected to Master - Online
+10-25 02:36:36 -- Lobby Join Success - Online
+10-25 02:36:41 -- Room Join Failed
+10-25 02:36:41 -- Room Create Success
+10-25 02:36:41 -- Room Joined
+10-25 02:36:42 -- Raccoon(이)가 에이전트다
+10-25 02:36:42 -- Box에 3 입력
+10-25 02:37:48 -- OnDisable
+10-25 02:39:07 -- Connected to Master - Online
+10-25 02:39:07 -- Lobby Join Success - Online
+10-25 02:39:10 -- Room Join Failed
+10-25 02:39:10 -- Room Create Success
+10-25 02:39:10 -- Room Joined
+10-25 02:39:11 -- Rabbit(이)가 에이전트다
+10-25 02:39:11 -- Box에 3 입력
+10-25 02:39:26 -- OnDisable
+10-25 02:41:17 -- Connected to Master - Online
+10-25 02:41:17 -- Lobby Join Success - Online
+10-25 02:41:23 -- Room Joined
+10-25 02:41:24 -- Goat(이)가 에이전트다
+10-25 02:44:25 -- OnDisable
+10-25 02:44:32 -- OnDisable
+10-25 02:44:32 -- 스파이 승리
+10-25 02:44:35 -- OnDisable
+10-25 03:12:20 -- Connected to Master - Online
+10-25 03:12:20 -- Lobby Join Success - Online
+10-25 03:12:24 -- Room Joined
+10-25 03:12:25 -- Buffalo(이)가 에이전트다
+10-25 03:12:25 -- Package아이템 생성
+10-25 03:12:25 -- Bag아이템 생성
+10-25 03:12:25 -- IDCard_NPC1아이템 생성
+10-25 03:12:25 -- Knife아이템 생성
+10-25 03:12:25 -- IDCard_NPC2아이템 생성
+10-25 03:12:25 -- 2아이템 생성
+10-25 03:12:25 -- IDCard_NPC4아이템 생성
+10-25 03:12:25 -- IDCard_NPC5아이템 생성
+10-25 03:12:25 -- 3아이템 생성
+10-25 03:12:25 -- IDCard_NPC0아이템 생성
+10-25 03:17:42 -- OnDisable
+10-25 03:19:45 -- Connected to Master - Online
+10-25 03:19:46 -- Lobby Join Success - Online
+10-25 03:19:50 -- Room Joined
+10-25 03:19:51 -- Rabbit(이)가 에이전트다
+10-25 03:19:51 -- 2아이템 생성
+10-25 03:19:51 -- Knife아이템 생성
+10-25 03:19:51 -- IDCard_NPC1아이템 생성
+10-25 03:19:51 -- IDCard_NPC3아이템 생성
+10-25 03:19:51 -- IDCard_NPC2아이템 생성
+10-25 03:19:51 -- IDCard_NPC4아이템 생성
+10-25 03:19:51 -- Bag아이템 생성
+10-25 03:19:51 -- 3아이템 생성
+10-25 03:19:51 -- IDCard_NPC0아이템 생성
+10-25 03:19:51 -- Package아이템 생성
+10-25 03:21:16 -- OnDisable
+10-25 03:21:17 -- 레지스탕스 승리
+10-25 03:21:18 -- OnDisable
+10-25 03:21:20 -- OnDisable
+10-25 03:25:09 -- Connected to Master - Online
+10-25 03:25:09 -- Lobby Join Success - Online
+10-25 03:25:11 -- Room Joined
+10-25 03:25:12 -- Monkey(이)가 에이전트다
+10-25 03:25:12 -- IDCard_NPC0아이템 생성
+10-25 03:25:12 -- 2아이템 생성
+10-25 03:25:12 -- IDCard_NPC3아이템 생성
+10-25 03:25:12 -- Knife아이템 생성
+10-25 03:25:12 -- IDCard_NPC5아이템 생성
+10-25 03:25:12 -- Bag아이템 생성
+10-25 03:25:12 -- IDCard_NPC1아이템 생성
+10-25 03:25:12 -- IDCard_NPC2아이템 생성
+10-25 03:25:12 -- 3아이템 생성
+10-25 03:25:12 -- Package아이템 생성
+10-25 03:31:11 -- OnDisable
+10-25 03:31:15 -- OnDisable
+10-25 03:34:52 -- Connected to Master - Online
+10-25 03:34:52 -- Lobby Join Success - Online
+10-25 03:34:58 -- Room Join Failed
+10-25 03:35:12 -- Room Create Success
+10-25 03:35:12 -- Room Joined
+10-25 03:35:13 -- Sloth(이)가 에이전트다
+10-25 03:35:13 -- Box에 16 입력
+10-25 03:35:13 -- IDCard_NPC5아이템 생성
+10-25 03:35:13 -- Box에 1 입력
+10-25 03:35:13 -- Bag아이템 생성
+10-25 03:35:13 -- Box에 2 입력
+10-25 03:35:13 -- 2아이템 생성
+10-25 03:35:13 -- Box에 15 입력
+10-25 03:35:13 -- IDCard_NPC4아이템 생성
+10-25 03:35:13 -- Box에 22 입력
+10-25 03:35:13 -- Knife아이템 생성
+10-25 03:35:13 -- Box에 12 입력
+10-25 03:35:13 -- IDCard_NPC1아이템 생성
+10-25 03:35:13 -- Box에 11 입력
+10-25 03:35:13 -- IDCard_NPC0아이템 생성
+10-25 03:35:13 -- Box에 0 입력
+10-25 03:35:13 -- Package아이템 생성
+10-25 03:35:13 -- Box에 14 입력
+10-25 03:35:13 -- IDCard_NPC3아이템 생성
+10-25 03:35:13 -- Box에 3 입력
+10-25 03:35:13 -- 3아이템 생성
+10-25 03:35:30 -- OnDisable
+10-25 03:35:41 -- OnDisable
+10-25 03:37:18 -- Connected to Master - Online
+10-25 03:37:18 -- Lobby Join Success - Online
+10-25 03:37:22 -- Room Join Failed
+10-25 03:37:23 -- Room Create Success
+10-25 03:37:23 -- Room Joined
+10-25 03:37:24 -- Rabbit(이)가 에이전트다
+10-25 03:37:24 -- Box에 11 입력
+10-25 03:37:24 -- IDCard_NPC0아이템 생성
+10-25 03:37:24 -- Box에 15 입력
+10-25 03:37:24 -- IDCard_NPC4아이템 생성
+10-25 03:37:24 -- Box에 0 입력
+10-25 03:37:24 -- Package아이템 생성
+10-25 03:37:24 -- Box에 22 입력
+10-25 03:37:24 -- Knife아이템 생성
+10-25 03:37:24 -- Box에 13 입력
+10-25 03:37:24 -- IDCard_NPC2아이템 생성
+10-25 03:37:24 -- Box에 12 입력
+10-25 03:37:24 -- IDCard_NPC1아이템 생성
+10-25 03:37:24 -- Box에 1 입력
+10-25 03:37:24 -- Bag아이템 생성
+10-25 03:37:24 -- Box에 3 입력
+10-25 03:37:24 -- 3아이템 생성
+10-25 03:37:24 -- Box에 2 입력
+10-25 03:37:24 -- 2아이템 생성
+10-25 03:37:24 -- Box에 14 입력
+10-25 03:37:24 -- IDCard_NPC3아이템 생성
+10-25 03:39:16 -- OnDisable
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:16 -- 레지스탕스 승리
+10-25 03:39:19 -- OnDisable
+10-25 03:39:20 -- OnDisable
+10-25 03:39:22 -- OnDisable
+10-25 03:45:03 -- Connected to Master - Online
+10-25 03:45:03 -- Lobby Join Success - Online
+10-25 03:45:05 -- Room Joined
+10-25 03:45:06 -- Monkey(이)가 에이전트다
+10-25 03:45:06 -- IDCard_NPC5아이템 생성
+10-25 03:45:06 -- Knife아이템 생성
+10-25 03:45:06 -- 3아이템 생성
+10-25 03:45:06 -- Package아이템 생성
+10-25 03:45:06 -- IDCard_NPC1아이템 생성
+10-25 03:45:06 -- IDCard_NPC0아이템 생성
+10-25 03:45:06 -- Bag아이템 생성
+10-25 03:45:06 -- IDCard_NPC3아이템 생성
+10-25 03:45:06 -- IDCard_NPC2아이템 생성
+10-25 03:45:06 -- 2아이템 생성
+10-25 03:47:52 -- OnDisable
+10-25 03:51:11 -- Connected to Master - Online
+10-25 03:51:11 -- Lobby Join Success - Online
+10-25 03:51:12 -- Room Joined
+10-25 03:51:14 -- Sloth(이)가 에이전트다
+10-25 03:51:14 -- IDCard_NPC4아이템 생성
+10-25 03:51:14 -- 2아이템 생성
+10-25 03:51:14 -- IDCard_NPC5아이템 생성
+10-25 03:51:14 -- IDCard_NPC1아이템 생성
+10-25 03:51:14 -- Bag아이템 생성
+10-25 03:51:14 -- Knife아이템 생성
+10-25 03:51:14 -- Package아이템 생성
+10-25 03:51:14 -- IDCard_NPC3아이템 생성
+10-25 03:51:14 -- 3아이템 생성
+10-25 03:51:14 -- IDCard_NPC0아이템 생성
+10-25 03:51:20 -- OnDisable
+10-25 03:51:23 -- OnDisable
