@@ -385,6 +385,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             if (!isCheck)
             {
                 Players.Remove(player);
+                PhotonNetwork.Destroy(player.gameObject);
                 Destroy(player.gameObject);
             }
         }

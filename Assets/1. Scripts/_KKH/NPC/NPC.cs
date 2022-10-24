@@ -57,18 +57,24 @@ public class NPC : MonoBehaviourPun
 
     public void NPCDead()
     {
-        photonView.RPC("PunNPCDead", RpcTarget.AllBuffered, true);
-    }
-
-    [PunRPC]
-    private void PunNPCDead(bool isdead)
-    {
-        isDead = isdead;
-        if(!isAgent)
+        //photonView.RPC("PunNPCDead", RpcTarget.AllBuffered, true);
+        isDead = true;
+        if (!isAgent)
         {
             StartCoroutine(NPCDeadMessage());
         }
     }
+
+    // 공유 안하니 지우자
+    //[PunRPC]
+    //private void PunNPCDead(bool isdead)
+    //{
+    //    isDead = isdead;
+    //    if(!isAgent)
+    //    {
+    //        StartCoroutine(NPCDeadMessage());
+    //    }
+    //}
 
     private IEnumerator NPCDeadMessage()
     {
