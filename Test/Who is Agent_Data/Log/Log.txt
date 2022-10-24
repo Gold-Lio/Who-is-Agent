@@ -1,9 +1,9 @@
-10-24 10:09:33 -- Connected to Master - Online
-10-24 10:09:34 -- Lobby Join Success - Online
-10-24 10:09:34 -- Room Join Failed
-10-24 10:09:36 -- Room Create Success
-10-24 10:09:36 -- Room Joined
-10-24 10:09:36 -- Goat(이)가 에이전트다
-10-24 10:09:36 -- Box에 2 입력
-10-24 10:10:53 -- OnDisable
-10-24 10:10:55 -- OnDisable
+10-25 12:41:57 -- Connected to Master - Online
+10-25 12:41:57 -- Lobby Join Success - Online
+10-25 12:41:58 -- Room Join Failed
+10-25 12:41:58 -- Room Create Success
+10-25 12:41:58 -- Room Joined
+10-25 12:41:59 -- Buffalo(이)가 에이전트다
+10-25 12:41:59 -- Box에 15 입력
+10-25 12:42:37 -- OnDisable
+10-25 12:42:53 -- OnDisable

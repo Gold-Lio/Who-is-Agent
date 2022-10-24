@@ -501,7 +501,6 @@ GameObject:
   - component: {fileID: 5083540984710736536}
   - component: {fileID: 5083540984710736539}
   - component: {fileID: 7046261295946705435}
-  - component: {fileID: 771234755973389109}
   m_Layer: 0
   m_Name: WeaponParent
   m_TagString: Untagged
@@ -562,27 +561,10 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 771234755973389109}
   - {fileID: 467572426301352374}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &771234755973389109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5083540984710736537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!1 &5083540984755179255
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +617,7 @@ GameObject:
   - component: {fileID: -1883145735309314740}
   - component: {fileID: -1215980619142594956}
   - component: {fileID: 99872035819140084}
+  - component: {fileID: 4967769371636567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1068,6 +1051,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -1883145735309314740}
+  - {fileID: 4967769371636567}
   - {fileID: 7415438134823422208}
   sceneViewId: 0
   InstantiationId: 0
@@ -1091,6 +1075,19 @@ MonoBehaviour:
   AutoCreateRecorderIfNotFound: 0
   UsePrimaryRecorder: 1
   SetupDebugSpeaker: 1
+--- !u!114 &4967769371636567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083540985876174040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmoothingDelay: 5
 --- !u!1 &5083540986069830483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,8 +2033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 2100000, guid: e574d22efc4b94444b6383c069b17e85, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

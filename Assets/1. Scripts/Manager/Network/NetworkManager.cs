@@ -7,6 +7,7 @@ using static UIManager;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public enum PlayerType
 {
@@ -80,6 +81,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("Did Panel")]
     public GameObject YouDie;
 
+    public Light2D light2D;
     //- - 씬초기화ㅡ 
 
     private void Start()
@@ -123,6 +125,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         return UM.colors[colorIndex];
     }
 
+
     //패널을 관리하는 ShowPanel
     public void ShowPanel(GameObject curPanel)
     {
@@ -140,12 +143,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         // 방장이 게임시작
 
+        //잠시 테스트를 위해 주석처리
         // 지정 인원수 아래이면 게임 시작 불가능하도록 설정
-        if (PhotonNetwork.PlayerList.Length < RoomManager.instance.PNum) return;
+        //if (PhotonNetwork.PlayerList.Length < RoomManager.instance.PNum) return;
 
         //잠시 테스트를 위해 주석처리
         SetPlayerType();
-
 
         SetSPY();
         PhotonNetwork.CurrentRoom.IsOpen = false;
@@ -169,7 +172,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             playerType = PlayerType.Random_2;
         }
     }
-
 
     void SetSPY()
     {
@@ -210,8 +212,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         StartCoroutine(GameStartCo());
     }
-
-
     IEnumerator GameStartCo()
     {
         ShowPanel(infoPanel);
@@ -248,14 +248,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PlayTime();
         OnPlayerCheck();
-        //if (!IsMasterClientCheck())
-        //{
-        //    OnRandomSetMasterClient();
-        //}
 
         //잠시 테스트를 위해 주석처리
-        if (isGameStart && !isWinner)
-            photonView.RPC("WinCheck", RpcTarget.AllBuffered);
+        //if (isGameStart && !isWinner)
+        //    photonView.RPC("WinCheck", RpcTarget.AllBuffered);
 
     }
 

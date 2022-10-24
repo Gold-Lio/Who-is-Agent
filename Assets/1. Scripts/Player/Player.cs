@@ -143,6 +143,11 @@ public class Player : MonoBehaviourPun, IDamageable
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
         AnimateCharacter();
+
+        if (NM.isGameStart)
+        {
+            NM.light2D.transform.position = transform.position + new Vector3(0, 0, 10); // ºû Àû¿ë
+        }
     }
 
 
