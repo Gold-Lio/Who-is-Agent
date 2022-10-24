@@ -497,6 +497,7 @@ public class Player : MonoBehaviourPun, IDamageable
     [PunRPC]
     public void ItemDestory()
     {
+        PhotonNetwork.Destroy(destroyObj);
         Destroy(destroyObj);
         destroyObj = null;
     }

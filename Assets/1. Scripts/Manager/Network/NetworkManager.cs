@@ -139,7 +139,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void GameStart()
     {
         // 방장이 게임시작
-        
+
+        // 지정 인원수 아래이면 게임 시작 불가능하도록 설정
+        if (PhotonNetwork.PlayerList.Length < RoomManager.instance.PNum) return;
 
         //잠시 테스트를 위해 주석처리
         SetPlayerType();

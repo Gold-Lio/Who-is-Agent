@@ -1,11 +1,9 @@
 using Photon.Pun;
 using Photon.Realtime;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviourPunCallbacks
@@ -25,20 +23,14 @@ public class RoomManager : MonoBehaviourPunCallbacks
     private static RoomManager m_instance = null; // ½Ì±ÛÅæÀÌ ÇÒ´çµÉ static º¯¼ö
     public static RoomManager instance => m_instance;
 
-    private RoomInfo roomInfo;
-    public RoomInfo RoomInfo
-    {
-        get 
-        { 
-            return roomInfo; 
-        }
-        set 
-        { 
-            roomInfo = value; 
-        }
-    }
+    private RoomOptions roomOptions = new RoomOptions();
 
     private string roomName = string.Empty;
+    public string RoomName
+    {
+        get => roomName;
+        set => roomName = value;
+    }
     private byte pNum = 0;
     public byte PNum => pNum;
 
@@ -79,14 +71,15 @@ public class RoomManager : MonoBehaviourPunCallbacks
         {
             pNum = byte.Parse(dropdown.captionText.text);
         }
-        //PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = pNum}, null);
-        PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = pNum, CleanupCacheOnLeave = false}, null);
+
+        roomOptions.MaxPlayers = pNum;
+        roomOptions.CleanupCacheOnLeave = false;
+        PhotonNetwork.CreateRoom(roomName, roomOptions, null);
     }
 
     public void JoinRoom()
     {
-        if (roomInfo == null) return;
-        PhotonNetwork.JoinRoom(roomInfo.Name);
+        PhotonNetwork.JoinRoom(roomName);
     }
 
     public void RandomJoinRoom()

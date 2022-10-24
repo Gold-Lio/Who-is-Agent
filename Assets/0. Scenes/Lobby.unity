@@ -4126,53 +4126,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761524972}
   m_CullTransparentMesh: 1
---- !u!1 &1774349627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1774349628}
-  - component: {fileID: 1774349629}
-  m_Layer: 0
-  m_Name: RoomManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1774349628
+--- !u!4 &1774349628 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+  m_PrefabInstance: {fileID: 4913666835720672516}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774349627}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1128819398}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1774349629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774349627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1058027562e40cd4a880476541acf170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomNameText: {fileID: 414500335}
-  dropdown: {fileID: 1073274341}
-  roomPrefab: {fileID: 2885577148371616587, guid: 7fa604f36d7d42145978bfc05e71c15d, type: 3}
-  scrollContent: {fileID: 391421690}
 --- !u!1 &1893090172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,6 +5508,75 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &4913666835720672516
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1128819398}
+    m_Modifications:
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990328, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913666837175990329, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: dropdown
+      value: 
+      objectReference: {fileID: 1073274341}
+    - target: {fileID: 4913666837175990329, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: roomNameText
+      value: 
+      objectReference: {fileID: 414500335}
+    - target: {fileID: 4913666837175990329, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: scrollContent
+      value: 
+      objectReference: {fileID: 391421690}
+    - target: {fileID: 4913666837175990335, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
+      propertyPath: m_Name
+      value: RoomManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0d6b1e00093906458281b8e1b861fc1, type: 3}
 --- !u!114 &8941766931518144580
 MonoBehaviour:
   m_ObjectHideFlags: 0

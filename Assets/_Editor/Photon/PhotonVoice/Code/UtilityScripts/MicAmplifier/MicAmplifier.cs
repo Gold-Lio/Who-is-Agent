@@ -6,10 +6,10 @@ namespace Photon.Voice.Unity.UtilityScripts
     public class MicAmplifier : VoiceComponent
     {
         //[SerializeField]
-        private float boostValue = 40;
+        private float boostValue = 100.0f;
 
         //[SerializeField]
-        private float amplificationFactor = 30f;
+        private float amplificationFactor = 100.0f;
 
         public float AmplificationFactor
         {

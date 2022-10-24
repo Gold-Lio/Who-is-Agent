@@ -5683,3 +5683,47 @@
 10-24 01:23:22 -- IDCard_NPC3아이템 생성
 10-24 01:23:22 -- Knife아이템 생성
 10-24 01:23:55 -- OnDisable
+10-24 06:02:56 -- Connected to Master - Online
+10-24 06:02:56 -- Lobby Join Success - Online
+10-24 06:02:57 -- Room Joined
+10-24 06:02:58 -- Raccoon(이)가 에이전트다
+10-24 06:02:58 -- Package아이템 생성
+10-24 06:02:58 -- IDCard_NPC3아이템 생성
+10-24 06:02:58 -- IDCard_NPC5아이템 생성
+10-24 06:02:58 -- 3아이템 생성
+10-24 06:02:58 -- Bag아이템 생성
+10-24 06:02:58 -- IDCard_NPC0아이템 생성
+10-24 06:02:58 -- Knife아이템 생성
+10-24 06:02:58 -- 2아이템 생성
+10-24 06:02:58 -- IDCard_NPC4아이템 생성
+10-24 06:02:58 -- IDCard_NPC2아이템 생성
+10-24 06:03:29 -- 스파이 승리
+10-24 06:03:29 -- OnDisable
+10-24 06:03:46 -- Connected to Master - Online
+10-24 06:03:46 -- Lobby Join Success - Online
+10-24 06:03:47 -- Room Joined
+10-24 06:03:48 -- Raccoon(이)가 에이전트다
+10-24 06:03:48 -- IDCard_NPC5아이템 생성
+10-24 06:03:48 -- 2아이템 생성
+10-24 06:03:48 -- IDCard_NPC4아이템 생성
+10-24 06:03:48 -- Knife아이템 생성
+10-24 06:03:48 -- Package아이템 생성
+10-24 06:03:48 -- Bag아이템 생성
+10-24 06:03:48 -- 3아이템 생성
+10-24 06:03:48 -- IDCard_NPC2아이템 생성
+10-24 06:03:48 -- IDCard_NPC0아이템 생성
+10-24 06:03:48 -- IDCard_NPC3아이템 생성
+10-24 06:05:12 -- OnDisable
+10-24 07:04:20 -- Connected to Master - Online
+10-24 07:04:20 -- Lobby Join Success - Online
+10-24 07:04:20 -- Room Joined
+10-24 07:04:21 -- Goat(이)가 에이전트다
+10-24 07:04:57 -- OnDisable
+10-24 07:04:58 -- OnDisable
+10-24 07:04:59 -- OnDisable
+10-24 07:05:00 -- OnDisable
+10-24 07:09:16 -- Connected to Master - Online
+10-24 07:09:16 -- Lobby Join Success - Online
+10-24 07:09:22 -- Room Joined
+10-24 07:09:22 -- Monkey(이)가 에이전트다
+10-24 07:11:07 -- OnDisable

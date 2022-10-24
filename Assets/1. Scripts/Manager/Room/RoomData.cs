@@ -24,7 +24,6 @@ public class RoomData : MonoBehaviour
             RoomInfoText.text = $"{roomInfo.Name} ({roomInfo.PlayerCount}/{roomInfo.MaxPlayers})";
             Button button = GetComponent<Button>();
             button.onClick.AddListener(() => OnEnterRoom(roomInfo.Name));
-            RoomManager.instance.RoomInfo = roomInfo;
         }
     }
 
@@ -36,12 +35,8 @@ public class RoomData : MonoBehaviour
 
     private void OnEnterRoom(string roomName)
     {
-        RoomOptions ro = new RoomOptions();
-        ro.IsOpen = true;
-        ro.IsVisible = true;
-        ro.MaxPlayers = MaxPlayers;
-
         PhotonNetwork.NickName = userIdText.text;
+        RoomManager.instance.RoomName = roomName;
         RoomManager.instance.JoinRoom();
     }
 }
