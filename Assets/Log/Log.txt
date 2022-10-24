@@ -5727,3 +5727,18 @@
 10-24 07:09:22 -- Room Joined
 10-24 07:09:22 -- Monkey(이)가 에이전트다
 10-24 07:11:07 -- OnDisable
+10-24 10:02:10 -- Connected to Master - Online
+10-24 10:02:10 -- Lobby Join Success - Online
+10-24 10:02:12 -- Room Joined
+10-24 10:02:13 -- Monkey(이)가 에이전트다
+10-24 10:03:05 -- OnDisable
+10-24 10:04:31 -- Connected to Master - Online
+10-24 10:04:31 -- Lobby Join Success - Online
+10-24 10:04:35 -- Room Joined
+10-24 10:04:36 -- Raccoon(이)가 에이전트다
+10-24 10:06:35 -- OnDisable
+10-24 10:09:34 -- Connected to Master - Online
+10-24 10:09:34 -- Lobby Join Success - Online
+10-24 10:09:39 -- Room Joined
+10-24 10:09:40 -- Goat(이)가 에이전트다
+10-24 10:10:53 -- OnDisable
