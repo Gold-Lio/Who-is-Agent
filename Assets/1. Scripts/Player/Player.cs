@@ -75,9 +75,6 @@ public class Player : MonoBehaviourPun
     public float curHP = MAX_HP;
     public Image hpBar;
 
-    [Header("PlayerHud")]
-    public Text showText; 
-
     /////변수의 프로퍼티화 
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
@@ -261,20 +258,16 @@ public class Player : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-        else if (NM.isWaitingRoom)
+        if(!NM.isWaitingRoom)
         {
-            StartCoroutine(showText.text);    
+            if(!NM.isAzit)
+            {
+                if(NM.isGameStart)
+                {
+                    weaponParent.Attack();
+                }
+            }
         }
-        else
-        {
-            weaponParent.Attack();
-        }
-    }
-
-    public IEnumerator PlayerShowText()
-    {
-        showText.text = "교회안에서는 공격할 수 없습니다.";
-        yield return new WaitForSeconds(2f);
     }
 
     #region 인벤토리 관련 함수
@@ -366,7 +359,7 @@ public class Player : MonoBehaviourPun
     }
 
     #endregion
-
+    
     #region OnCollision Enter/Exit 이벤트 함수
 
     private void OnCollisionEnter2D(Collision2D col)

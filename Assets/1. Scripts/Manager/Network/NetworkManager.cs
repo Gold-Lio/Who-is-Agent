@@ -49,6 +49,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public bool isWaitingRoom = false;
     public bool isGameStart = false;
+    public bool isAzit = false;
     public bool isWinner = false;
     public bool isResiWin;
 
@@ -65,6 +66,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("Job-Information")]
     //직업 정보 패널
     public GameObject infoPanel;
+
+    [Header("ShowText")]
+    public GameObject showText;
 
     [Header("InGamePanel")]
     public GameObject gamePanel;
@@ -94,6 +98,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         SetRandColor();
         isWaitingRoom = true;
         selectCountdown = baseTime;
+
+        if(isWaitingRoom)
+        {
+            showText.SetActive(true);
+        }
     }
 
     //// 생성할 랜덤 위치 지정
@@ -236,9 +245,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         MyPlayer.SetNickColor(); //스파이 닉네임 색깔 조정
 
-        ShowPanel(gamePanel); //게임패널안에 들어있는 모든 HUD를 연다. 
-
-        //여기 안에 나의 인벤토리나   해당 직업에 맞게 미션 목적의 프리팹또한 이곳에 들어가야한다. 
+        ShowPanel(gamePanel); //게임패널안에 들어있는 모든 HUD를 연다
+        
+        showText.SetActive(false);
         timeObj.SetActive(true);
     }
 

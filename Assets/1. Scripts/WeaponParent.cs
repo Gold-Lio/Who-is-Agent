@@ -8,15 +8,35 @@ public class WeaponParent : MonoBehaviourPun
 {
     PhotonView PV;
 
+    public static WeaponParent WP;
+
+    public static WeaponParent instance
+    {
+        get
+        {
+            // 만약 싱글톤 변수에 아직 오브젝트가 할당되지 않았다면
+            if (m_instance == null)
+            {
+                // 씬에서 GameManager 오브젝트를 찾아 할당
+                m_instance = FindObjectOfType<WeaponParent>();
+                //m_instance.Initialize();
+            }
+            // 싱글톤 오브젝트를 반환
+            return m_instance;
+        }
+    }
+
+    private static WeaponParent m_instance; // 싱글톤이 할당될 static 변수
+
     private Player player;
     public SpriteRenderer characterRenderer, weaponRenderer;
     public Vector2 PointerPosition { get; set; }
 
     public Animator animator;
     public float delay = 0.3f;
-    private bool attackBlocked;
+    public bool attackBlocked;
 
-    public bool IsAttacking { get; private set; }
+    public bool IsAttacking { get;  set; }
 
     public Transform circleOrigin;
     public float radius;
