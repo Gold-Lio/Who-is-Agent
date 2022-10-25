@@ -109,7 +109,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         while (true)
         {
-            int rand = Random.Range(0, 5);
+            int rand = Random.Range(0, 8);
             if (!PlayerColors.Contains(rand))
             {
                 MyPlayer.GetComponent<PhotonView>().RPC("SetColor", RpcTarget.AllBuffered, rand);
