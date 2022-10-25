@@ -26,9 +26,7 @@ public class Health : MonoBehaviourPun
     {
         if (isDead)
             return;
-        //if (sender.layer == gameObject.layer)
-        //    return;
-
+       
         currentHealth -= amount;
 
         if (currentHealth > 0)

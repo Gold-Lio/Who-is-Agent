@@ -101,7 +101,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //// 위치 y값은 0으로 변경
     //randomSpawnPos.y = 0f;
 
-
     public void SetRandColor()
     {
         List<int> PlayerColors = new List<int>();
