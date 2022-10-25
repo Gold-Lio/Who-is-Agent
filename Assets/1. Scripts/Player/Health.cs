@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class Health : MonoBehaviour
+public class Health : MonoBehaviourPun
 {
     [SerializeField]
     private int currentHealth, maxHealth;
@@ -24,8 +26,8 @@ public class Health : MonoBehaviour
     {
         if (isDead)
             return;
-        if (sender.layer == gameObject.layer)
-            return;
+        //if (sender.layer == gameObject.layer)
+        //    return;
 
         currentHealth -= amount;
 
@@ -37,7 +39,8 @@ public class Health : MonoBehaviour
         {
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
-            Destroy(gameObject);
+            //PhotonNetwork.Destroy(gameObject);
+            //NetworkManager.instance.YouDie.SetActive(true);
         }
     }
 }

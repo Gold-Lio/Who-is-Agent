@@ -8,7 +8,7 @@ using UnityEditor;
 using static NetworkManager;
 using static UIManager;
 
-public class Player : MonoBehaviourPun, IDamageable
+public class Player : MonoBehaviourPun
 {
     private PhotonView PV;
 
@@ -74,7 +74,6 @@ public class Player : MonoBehaviourPun, IDamageable
     public const float MAX_HP = 100;
     public float curHP = MAX_HP;
     public Image hpBar;
-
 
     /////변수의 프로퍼티화 
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
@@ -258,36 +257,6 @@ public class Player : MonoBehaviourPun, IDamageable
         if (!photonView.IsMine) return;
 
         weaponParent.Attack();
-    }
-
-
-    public void TakeDamage(float damage)
-    {
-        PV.RPC(nameof(RPC_TakeDamage), PV.Owner, damage);
-    }
-
-    [PunRPC]
-    void RPC_TakeDamage(float damage, PhotonMessageInfo info)
-    {
-        curHP -= damage;
-
-        hpBar.fillAmount = curHP / MAX_HP;
-
-        if (curHP <= 0)
-        {
-            playerAnim.Die();
-            //PlayerManager.Find(info.Sender).GetKill(); //플레이어매니저에게 일르러 간다.
-            StartCoroutine(DieAfter());
-        }
-    }
-
-
-    public IEnumerator DieAfter()
-    {
-        yield return new WaitForSeconds(7f);
-        
-        NM.GetCrewCount(); //사람을 세서 WinCheck
-
     }
 
 

@@ -74,9 +74,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("Game_Mission")]
     public GameObject Resi_Mission, Spy_Mission;
 
-    [Header("Win Panel")]
-    //승리 패널
-    public GameObject Resi_WinPanel, SPY_WinPanel;
+    [Header("Result Panel")]
+    //결과 패널
+    public GameObject SPY_WinPanel, Resi_WinPanel;
 
     [Header("Did Panel")]
     public GameObject YouDie;
