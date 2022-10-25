@@ -228,8 +228,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             Resi_Mission.SetActive(true);
         }
 
-
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(7);
         isWaitingRoom = false;
         isGameStart = true; //게임 시작
 

@@ -75,6 +75,9 @@ public class Player : MonoBehaviourPun
     public float curHP = MAX_HP;
     public Image hpBar;
 
+    [Header("PlayerHud")]
+    public Text showText; 
+
     /////변수의 프로퍼티화 
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
@@ -93,6 +96,8 @@ public class Player : MonoBehaviourPun
     public WeaponBox WeaponBox => weaponBox;
 
     public bool isConnect = true;
+
+    
 
     private void Awake()
     {
@@ -256,9 +261,21 @@ public class Player : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
-        weaponParent.Attack();
+        else if (NM.isWaitingRoom)
+        {
+            StartCoroutine(showText.text);    
+        }
+        else
+        {
+            weaponParent.Attack();
+        }
     }
 
+    public IEnumerator PlayerShowText()
+    {
+        showText.text = "교회안에서는 공격할 수 없습니다.";
+        yield return new WaitForSeconds(2f);
+    }
 
     #region 인벤토리 관련 함수
 
