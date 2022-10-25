@@ -93,6 +93,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         SetRandColor();
         isWaitingRoom = true;
+        selectCountdown = baseTime;
     }
 
     //// 생성할 랜덤 위치 지정
@@ -145,7 +146,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //잠시 테스트를 위해 주석처리
         // 지정 인원수 아래이면 게임 시작 불가능하도록 설정
-        if (PhotonNetwork.PlayerList.Length < RoomManager.instance.PNum) return;
+        //if (PhotonNetwork.PlayerList.Length < RoomManager.instance.PNum) return;
 
         //잠시 테스트를 위해 주석처리
         SetPlayerType();
@@ -156,6 +157,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //왜 런타임 NULL?? 스타트가 안되는것....
         PV.RPC("GameStartRPC", RpcTarget.AllViaServer);
+        selectCountdown = baseTime;
     }
 
 
@@ -240,7 +242,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //여기 안에 나의 인벤토리나   해당 직업에 맞게 미션 목적의 프리팹또한 이곳에 들어가야한다. 
         timeObj.SetActive(true);
-        selectCountdown = baseTime;
     }
 
     private void Update()
@@ -250,7 +251,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //잠시 테스트를 위해 주석처리
         if (isGameStart && !isWinner)
-            photonView.RPC("WinCheck", RpcTarget.AllBuffered);
+            WinCheck();
 
     }
 
@@ -259,7 +260,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         if (Mathf.Floor(selectCountdown) <= 0)
         {
-            Winner(false);
+            Debug.Log("TimeOut???");
+            photonView.RPC("Winner", RpcTarget.AllBuffered, false);
+            //Winner(false);
             // Count 0일때 동작할 함수 삽입
         }
         else
@@ -278,11 +281,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         return crewCount;
     }
 
-    [PunRPC]
     public void WinCheck()
     {
         int crewCount = 0;
         int impoCount = 0;
+        bool Vetory = false;
 
         for (int i = 0; i < Players.Count; i++)
         {
@@ -305,32 +308,45 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             }
         }
 
-        if ((impoCount == 0 && crewCount > 0) || BagCount == 3) // 모든 임포가 죽음
-            Winner(true);
-        else if ((impoCount != 0 && impoCount > crewCount)|| BoxManager.instance.Agent.IsDead == true) // 임포가 크루보다 많음
-            Winner(false);
+        if (/*(impoCount == 0 && crewCount > 0) || */BagCount == 3) // 모든 임포가 죽음
+        {
+            Vetory = true;
+            photonView.RPC("Winner", RpcTarget.AllBuffered, true);
+        }
+        else if ((impoCount != 0 && impoCount > crewCount) || BoxManager.instance.Agent.IsDead == true) // 임포가 크루보다 많음
+        {
+            Vetory = false;
+            photonView.RPC("Winner", RpcTarget.AllBuffered, false);
+            //Winner(Vetory);
+        }
+
     }
 
+    [PunRPC]
     public void Winner(bool isCrewWin)
     {
         if (!isGameStart) return;
 
-        if (isCrewWin)
+        if (!isWinner)
         {
-            LogManager.Log("레지스탕스 승리");
-            print("레지스탕스 승리");
-            ShowPanel(Resi_WinPanel);
-            Invoke("WinnerDelay", 3);
-        }
-        else
-        {
-            LogManager.Log("스파이 승리");
-            print("스파이 승리");
-            ShowPanel(SPY_WinPanel);
-            Invoke("WinnerDelay", 3);
-        }
+            Debug.Log($"isCrewWin : {isCrewWin}");
+            if (isCrewWin)
+            {
+                LogManager.Log("조직원 승리");
+                print("조직원 승리");
+                ShowPanel(Resi_WinPanel);
+                Invoke("WinnerDelay", 3);
+            }
+            else
+            {
+                LogManager.Log("스파이 승리");
+                print("스파이 승리");
+                ShowPanel(SPY_WinPanel);
+                Invoke("WinnerDelay", 3);
+            }
 
-        isWinner = true;
+            isWinner = true;
+        }
     }
 
     void WinnerDelay()
