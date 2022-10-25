@@ -25,11 +25,14 @@ public class NPC : MonoBehaviourPun
 
     private Animator ani;
 
+    private GameObject NPCInteractGameObj;
+
     private void Awake()
     {
         messageText = GameObject.Find("All_Message").GetComponent<TextMeshProUGUI>();
         npcInvenUI = transform.GetComponentInChildren<NPCUI>();
         ani = GetComponent<Animator>();
+        NPCInteractGameObj = transform.Find("NPCInteract").gameObject;
     }
 
     void Start()
@@ -80,8 +83,23 @@ public class NPC : MonoBehaviourPun
     {
         messageText.text = $"{gameObject.name}가 죽었습니다.....";
         ani.SetBool("Die", true);
+        OnInteractionUI(false, true);
         yield return new WaitForSeconds(3.0f);
 
         messageText.text = "";
+    }
+
+    public void OnInteractionUI(bool onoff, bool kill = false)
+    {
+        GameObject interactionUI = null;
+        if(!kill)
+        {
+            interactionUI = NPCInteractGameObj.transform.GetChild(0).gameObject;
+        }
+        else
+        {
+            interactionUI = NPCInteractGameObj.transform.GetChild(1).gameObject;
+        }
+        interactionUI.SetActive(onoff);
     }
 }

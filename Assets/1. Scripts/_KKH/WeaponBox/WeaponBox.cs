@@ -26,11 +26,14 @@ public class WeaponBox : MonoBehaviour
     private bool isOpen = false;
     public bool IsOpen => isOpen;
 
+    private GameObject WeaponboxInteractGameObj;
+
     private void Awake()
     {
         weaponBoxInvenUI = transform.GetComponentInChildren<WeaponBoxUI>();
         weaponBoxRenderer = GetComponent<SpriteRenderer>();
         pv = GetComponent<PhotonView>();
+        WeaponboxInteractGameObj = transform.Find("WeaponboxInteract").gameObject;
     }
 
     private void Start()
@@ -73,5 +76,12 @@ public class WeaponBox : MonoBehaviour
             color.a = 1;
             image.color = color;
         }
+    }
+
+    public void OnInteractionUI(bool onoff)
+    {
+        GameObject interactionUI = null;
+        interactionUI = WeaponboxInteractGameObj.transform.GetChild(0).gameObject;
+        interactionUI.SetActive(onoff);
     }
 }

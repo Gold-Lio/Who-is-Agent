@@ -30,7 +30,8 @@ public class Player : MonoBehaviourPun, IDamageable
     private bool isWeapon = false;
     public bool IsWeapon => isWeapon;
 
-    private GameObject NPCInteractGameObj;
+    private GameObject BoxInteractGameObj;
+    private GameObject WeaponboxInteractGameObj;
 
     private bool isWeaponOpenStart = false;
     private bool isWeaponOpen = false;
@@ -390,14 +391,32 @@ public class Player : MonoBehaviourPun, IDamageable
             if (box != null) return;
             isBox = true;
             box = col.gameObject.GetComponent<Box>();
+
+            box.OnInteractionUI(true);
         }
         else if (col.gameObject.CompareTag("NPC"))
         {
             if (npc != null) return;
             isNpc = true;
-            NPCInteractGameObj = col.transform.GetChild(1).gameObject;
             npc = col.gameObject.GetComponent<NPC>();
-            NPCInteractGameObj.SetActive(true);
+
+            if (playerInventoryUI.GetSlot().ItemSlot.SlotItemData != null)
+            {
+                if (isSpy &&
+                (playerInventoryUI.GetSlot().ItemSlot.SlotItemData.id == (uint)ItemIDCode.Knife ||
+                playerInventoryUI.GetSlot().ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe))
+                {
+                    npc.OnInteractionUI(true, true);
+                }
+                else
+                {
+                    npc.OnInteractionUI(true, false);
+                }
+            }
+            else
+            {
+                npc.OnInteractionUI(true, false);
+            }
         }
         else if (col.gameObject.CompareTag("WeaponBox"))
         {
@@ -407,6 +426,8 @@ public class Player : MonoBehaviourPun, IDamageable
             weaponBox = col.gameObject.GetComponent<WeaponBox>();
             boxLoadingGameObj = col.transform.GetChild(1).gameObject;
             boxLoading = boxLoadingGameObj.GetComponent<BoxLoading>();
+
+            weaponBox.OnInteractionUI(true);
         }
         else if (col.gameObject.CompareTag("Bell"))
         {
@@ -426,20 +447,38 @@ public class Player : MonoBehaviourPun, IDamageable
         if (box != null)
         {
             isBox = false;
+            box.OnInteractionUI(false);
             BoxManager.instance.Boxs[box.boxNum].BoxInvenUI.Close();
             box = null;
         }
         else if (npc != null)
         {
+
             isNpc = false;
+            if (playerInventoryUI.GetSlot().ItemSlot.SlotItemData != null)
+            {
+                if (isSpy &&
+                (playerInventoryUI.GetSlot().ItemSlot.SlotItemData.id == (uint)ItemIDCode.Knife ||
+                playerInventoryUI.GetSlot().ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe))
+                {
+                    npc.OnInteractionUI(false, true);
+                }
+                else
+                {
+                    npc.OnInteractionUI(false, false);
+                }
+            }
+            else
+            {
+                npc.OnInteractionUI(false, false);
+            }
             BoxManager.instance.NPCs[npc.npcNum].NPCInvenUI.Close();
-            NPCInteractGameObj.SetActive(false);
             npc = null;
-            NPCInteractGameObj = null;
         }
         else if (weaponBox != null)
         {
             isWeapon = false;
+            weaponBox.OnInteractionUI(false);
             isWeaponOpenStart = false;
             isWeaponOpen = false;
             BoxManager.instance.Weaponboxs[weaponBox.boxNum].WeaponBoxInvenUI.Close();

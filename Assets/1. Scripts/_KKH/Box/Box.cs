@@ -18,10 +18,13 @@ public class Box : MonoBehaviour
 
     private const int boxSize = 3;
 
+    private GameObject BoxInteractGameObj;
+
     private void Awake()
     {
         boxInvenUI = transform.GetComponentInChildren<BoxUI>();
         pv = GetComponent<PhotonView>();
+        BoxInteractGameObj = transform.Find("BoxInteract").gameObject;
     }
 
     void Start()
@@ -49,5 +52,12 @@ public class Box : MonoBehaviour
         {
             LogManager.Log($"{itemIDCode}아이템 생성");
         }
+    }
+
+    public void OnInteractionUI(bool onoff)
+    {
+        GameObject interactionUI = null;
+        interactionUI = BoxInteractGameObj.transform.GetChild(0).gameObject;
+        interactionUI.SetActive(onoff);
     }
 }
