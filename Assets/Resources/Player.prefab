@@ -927,8 +927,7 @@ MonoBehaviour:
   - {fileID: 3748667555646819852}
   isSpy: 0
   isDie: 0
-  curHP: 100
-  hpBar: {fileID: 8955832365751385691}
+  isMove: 0
   isConnect: 1
 --- !u!114 &5083540985876174046
 MonoBehaviour:
@@ -986,16 +985,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DestroyHelper, Assembly-CSharp
-        m_MethodName: DestoryObject
+      - m_Target: {fileID: 5083540986500791839}
+        m_TargetAssemblyTypeName: PlayerAnimations, Assembly-CSharp
+        m_MethodName: Die
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Die
           m_BoolArgument: 0
         m_CallState: 2
   isDead: 0
@@ -1012,8 +1011,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 5083540985876174045}
-  strength: 9
-  delay: 0.3
+  strength: 50
+  delay: 0.1
   OnBegin:
     m_PersistentCalls:
       m_Calls: []

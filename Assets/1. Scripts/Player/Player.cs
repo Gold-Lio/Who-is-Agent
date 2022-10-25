@@ -12,6 +12,8 @@ public class Player : MonoBehaviourPun
 {
     private PhotonView PV;
 
+    public static Player instance;
+
     private Inventory inven;
     private InventoryUI playerInventoryUI;
     public InventoryUI playerInvenUI => playerInventoryUI;
@@ -59,7 +61,7 @@ public class Player : MonoBehaviourPun
 
     //플레이어 스피드
     [SerializeField]
-    private float maxSpeed = 5, acceleration = 50, deacceleration = 100;
+    public float maxSpeed = 5, acceleration = 50, deacceleration = 100;
     [SerializeField]
     private float currentSpeed = 0;
     private Vector2 oldMovementInput;
@@ -68,12 +70,7 @@ public class Player : MonoBehaviourPun
     public SpriteRenderer[] SR;
     private Rigidbody2D RB;
 
-    public bool isSpy, isDie;
-
-    [Header("PlayerHP")]
-    public const float MAX_HP = 100;
-    public float curHP = MAX_HP;
-    public Image hpBar;
+    public bool isSpy, isDie, isMove;
 
     /////변수의 프로퍼티화 
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
@@ -135,7 +132,6 @@ public class Player : MonoBehaviourPun
         yield return null;
     }
 
-
     private void Update()
     {
         if (!photonView.IsMine) return;
@@ -187,25 +183,27 @@ public class Player : MonoBehaviourPun
         nickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
     }
 
-
     //플레이어의 기본적인 움직임
     public void PlayerMove()
     {
         if (!photonView.IsMine) { return; }
-
-        if (MovementInput.magnitude > 0 && currentSpeed >= 0)
+       
+        isMove = true;
+        if(isMove)
         {
-            oldMovementInput = MovementInput;
-            currentSpeed += acceleration * maxSpeed * Time.deltaTime;
-        }
-        
-        else
-        {
-            currentSpeed -= deacceleration * maxSpeed * Time.deltaTime;
-        }
+            if (MovementInput.magnitude > 0 && currentSpeed >= 0)
+            {
+                oldMovementInput = MovementInput;
+                currentSpeed += acceleration * maxSpeed * Time.deltaTime;
+            }
+            else
+            {
+                currentSpeed -= deacceleration * maxSpeed * Time.deltaTime;
+            }
 
-        currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
-        RB.velocity = oldMovementInput * currentSpeed;
+            currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
+            RB.velocity = oldMovementInput * currentSpeed;
+        }
     }
 
 
@@ -216,7 +214,6 @@ public class Player : MonoBehaviourPun
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         
         playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
-
         playerAnim.PlayRunning(MovementInput); // 움직애님 
     }
 

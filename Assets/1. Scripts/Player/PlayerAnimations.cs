@@ -6,11 +6,16 @@ using Photon.Realtime;
 
 public class PlayerAnimations : MonoBehaviourPun
 {
+    PhotonView PV;
+
+    public static PlayerAnimations instance;
+
     private Animator animator;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        PV = photonView;
     }
 
     //플레이어의 플립 공유.   
@@ -34,8 +39,15 @@ public class PlayerAnimations : MonoBehaviourPun
         animator.SetBool("Running", movementInput.magnitude > 0);
     }
 
+    [PunRPC]
     public void Die()
     {
-        animator.SetBool("Die", true);
+        animator.SetTrigger("Die");
+        Player.instance.isMove = false;
+        Player.instance.maxSpeed = 0;
+        PV.RPC("Die", RpcTarget.Others);
+        //이것 이하 ㅡ 현재 상대방에게서만 죽음 보임 ㅡ 이것을 전체공유하고
+        //
+        //모든 행동 불가 하도록 변경.
     }
 }
