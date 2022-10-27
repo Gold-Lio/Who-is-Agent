@@ -76,7 +76,6 @@ public class Player : MonoBehaviourPun
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
 
-
     private PlayerInput playerInputs;
     public PlayerInput PlayerInputs => playerInputs;
 
@@ -91,6 +90,24 @@ public class Player : MonoBehaviourPun
 
     public bool isConnect = true;
 
+    private const float maxhp = 20.0f;
+    private float hp = 0.0f;
+    public float HP
+    {
+        get => hp;
+        set
+        {
+            hp = value;
+            if(hp <= 0)
+            {
+                hp = 0;
+            }
+            hp_Slider.value = hp;
+
+        }
+    }
+
+    private Slider hp_Slider = null;
     
 
     private void Awake()
@@ -105,6 +122,8 @@ public class Player : MonoBehaviourPun
         //playerMover = GetComponent<PlayerMover>();
         playerInventoryUI = GameObject.Find("InventoryUI").GetComponent<InventoryUI>();
         inven = new Inventory(SlotType.Inventory);
+        hp_Slider = GameObject.Find("HP_Slider").GetComponent<Slider>();
+
     }
 
     private void Start()
@@ -118,9 +137,11 @@ public class Player : MonoBehaviourPun
         SetNick();
         NM.Players.Add(this);
         NM.SortPlayers();
-
+        hp_Slider.value = maxhp;
+        hp = maxhp;
         StartCoroutine(InvenSetup());
     }
+
 
     //자기것의 인벤을 따로 실행시키는 InvenSetup 코루틴
     public IEnumerator InvenSetup()
@@ -213,7 +234,7 @@ public class Player : MonoBehaviourPun
 
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         
-        playerAnim.RotateToPointer(lookDirection); //바라보는 플립. 
+        playerAnim.RotateToPointer(lookDirection.x); //바라보는 플립. 
         playerAnim.PlayRunning(MovementInput); // 움직애님 
     }
 

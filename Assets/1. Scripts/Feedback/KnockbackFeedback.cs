@@ -6,10 +6,9 @@ using Photon.Pun;
 using Photon.Realtime;
 
 
-public class KnockbackFeedback : MonoBehaviourPun, IPunObservable
+public class KnockbackFeedback : MonoBehaviourPun 
 {
     PhotonView PV;
-    Vector3 curPos;
     [SerializeField]
     private Rigidbody2D rb2d;
 
@@ -24,7 +23,7 @@ public class KnockbackFeedback : MonoBehaviourPun, IPunObservable
     }
 
     public void PlayFeedback(GameObject sender)
-    {
+    {   
         if (PV.IsMine)
         {
             StopAllCoroutines();
@@ -44,17 +43,4 @@ public class KnockbackFeedback : MonoBehaviourPun, IPunObservable
         rb2d.velocity = Vector3.zero;
         OnDone?.Invoke();
     }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            stream.SendNext(transform.position);
-        }
-        else
-        {
-            curPos = (Vector3)stream.ReceiveNext();
-        }
-    }
-
 }

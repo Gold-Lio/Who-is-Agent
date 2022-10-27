@@ -36,11 +36,16 @@ public class WeaponParent : MonoBehaviourPun
     public float delay = 0.3f;
     public bool attackBlocked;
 
-    public bool IsAttacking { get;  set; }
+    public bool IsAttacking { get; set; }
 
     public Transform circleOrigin;
     public float radius;
 
+
+
+    private void Awake()
+    {
+    }
     private void Start()
     {
         PV = photonView;
@@ -146,18 +151,17 @@ public class WeaponParent : MonoBehaviourPun
     [PunRPC]
     public void DetectColliders()
     {
-        if(PhotonNetwork.IsMasterClient)
+        foreach (Collider2D col in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
         {
-            foreach (Collider2D col in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
+            Health health;
+            if (health = col.GetComponent<Health>())
             {
-                Health health;
-                if (health = col.GetComponent<Health>())
-                {
-                    health.GetHit(1, transform.parent.gameObject);
-                }
+                //health.GetComponent<PhotonView>().RPC("GetHit", RpcTarget.AllViaServer,1, transform.parent.gameObject);
+                health.GetHit(1, transform.parent.gameObject);
+                Player player = col.GetComponent<Player>();
+                if(player != null)
+                    player.HP -= 1;
             }
-            //방장이 실행하고 ㅡ 호스트를 통해 다른 클라이언트들에서 일괄 실행
-            PV.RPC("DetectColliders", RpcTarget.Others);
         }
     }
 }
