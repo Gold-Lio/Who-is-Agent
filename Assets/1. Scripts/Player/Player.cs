@@ -12,8 +12,6 @@ public class Player : MonoBehaviourPun
 {
     private PhotonView PV;
 
-    public static Player instance;
-
     private Inventory inven;
     private InventoryUI playerInventoryUI;
     public InventoryUI playerInvenUI => playerInventoryUI;
@@ -279,29 +277,39 @@ public class Player : MonoBehaviourPun
     public void ItemPickUp()
     {
         if (!photonView.IsMine) return;
-        if (playerInventoryUI.GetSlot().ItemSlot.SlotItemData != null) return;
         if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData != null) return;
 
-        Collider2D col = Physics2D.OverlapCircle((Vector2)transform.position, itemPickupRange, LayerMask.GetMask("Item"));
-        photonView.RPC("GetDropItem", RpcTarget.AllBuffered, col.gameObject.name);
-
-        if (destroyObj == null) return;
-
-        Item item = destroyObj.GetComponent<Item>();
-
-        if (inven.AddItem(item.data))
+        if (playerInventoryUI.GetSlot().ItemSlot.SlotItemData == null)  // 인벤토리에 아이템이 없다면 줍는다.
         {
-            GameManager.instance.Detail.IsPause = false;
-            if (destroyObj.GetPhotonView())
-            {
-                photonView.RPC("ItemDestory", RpcTarget.AllBuffered);
-            }
+            Collider2D col = Physics2D.OverlapCircle((Vector2)transform.position, itemPickupRange, LayerMask.GetMask("Item"));
 
-            ItemData_IDCard idcard = item.data as ItemData_IDCard;
-            if (idcard != null)
+            if(col == null) return;
+
+            photonView.RPC("GetDropItem", RpcTarget.AllBuffered, col.gameObject.name);
+
+            if (destroyObj == null) return;
+
+            Item item = destroyObj.GetComponent<Item>();
+
+            if (inven.AddItem(item.data))
             {
-                IDCardManager.instance.npcIDCard[(int)idcard.NPCID].Open();
+                GameManager.instance.Detail.IsPause = false;
+                if (destroyObj.GetPhotonView())
+                {
+                    photonView.RPC("ItemDestory", RpcTarget.AllBuffered);
+                }
+
+                ItemData_IDCard idcard = item.data as ItemData_IDCard;
+                if (idcard != null)
+                {
+                    IDCardManager.instance.npcIDCard[(int)idcard.NPCID].Open();
+                }
+
             }
+        }
+        else
+        {
+            playerInvenUI.Drop();   
         }
     }
 
@@ -470,30 +478,6 @@ public class Player : MonoBehaviourPun
             bell = null;
         }
     }
-    #endregion
-
-    #region Test 소스
-    // 테스트 소스----------------------------------------------------------------
-    //public void Test_ItemCreate()
-    //{
-    //    GameObject obj = PhotonNetwork.Instantiate(GameManager.instance.ItemData[ItemIDCode.Bag].name, transform.position, Quaternion.identity);
-    //}
-
-    //public void Test_ItemDestroy()
-    //{
-    //    photonView.RPC("GetDropItem", RpcTarget.AllBuffered);
-
-    //    if (destroyObj != null)
-    //    {
-    //        Item item = destroyObj.GetComponent<Item>();
-    //        GameManager.instance.Detail.IsPause = false;
-    //        if (destroyObj.GetPhotonView())
-    //        {
-    //            photonView.RPC("ItemDestory", RpcTarget.AllBuffered);
-    //        }
-    //    }
-    //}
-    // --------------------------------------------------------------------------
     #endregion
 
     #region RPC 소스

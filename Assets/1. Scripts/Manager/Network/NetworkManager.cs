@@ -226,6 +226,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         StartCoroutine(GameStartCo());
     }
+
     IEnumerator GameStartCo()
     {
         ShowPanel(infoPanel);
@@ -253,6 +254,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         
         showText.SetActive(false);
         timeObj.SetActive(true);
+        MyPlayer.playerInvenUI.Open();
     }
 
     private void Update()

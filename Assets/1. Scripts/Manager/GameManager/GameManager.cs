@@ -15,9 +15,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         get => itemData;
     }
 
-    private Player player;
-    public Player MainPlayer { get => player; }
-
     /// <summary>
     /// 아이템 상세정보 창
     /// </summary>

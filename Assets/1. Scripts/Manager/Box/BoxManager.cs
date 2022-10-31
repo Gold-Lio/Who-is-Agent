@@ -21,6 +21,7 @@ public class BoxManager : MonoBehaviourPunCallbacks
     private WeaponBox[] weaponboxs;
     public WeaponBox[] Weaponboxs => weaponboxs;
 
+    private bool[] isBoxArrangement;
     private bool[] isItemArrangement;
 
     private int itemCount = 0;

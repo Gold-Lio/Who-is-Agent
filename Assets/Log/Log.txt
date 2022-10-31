@@ -18313,3 +18313,64 @@
 10-31 07:32:53 -- OnDisable
 10-31 07:32:54 -- OnDisable
 10-31 07:32:55 -- OnDisable
+10-31 07:35:24 -- Connected to Master - Online
+10-31 07:35:24 -- Lobby Join Success - Online
+10-31 07:35:24 -- Room Joined
+10-31 07:35:25 -- Rabbit(이)가 에이전트다
+10-31 07:35:51 -- OnDisable
+10-31 07:35:52 -- OnDisable
+10-31 07:52:15 -- Connected to Master - Online
+10-31 07:52:15 -- Lobby Join Success - Online
+10-31 07:52:15 -- Room Joined
+10-31 07:52:16 -- Buffalo(이)가 에이전트다
+10-31 07:52:36 -- OnDisable
+10-31 07:56:27 -- Connected to Master - Online
+10-31 07:56:27 -- Lobby Join Success - Online
+10-31 07:56:27 -- Room Joined
+10-31 07:56:28 -- Raccoon(이)가 에이전트다
+10-31 07:58:45 -- OnDisable
+10-31 08:03:27 -- Connected to Master - Online
+10-31 08:03:27 -- Lobby Join Success - Online
+10-31 08:03:28 -- Room Joined
+10-31 08:03:29 -- Goat(이)가 에이전트다
+10-31 08:03:47 -- OnDisable
+10-31 08:17:56 -- Connected to Master - Online
+10-31 08:17:56 -- Lobby Join Success - Online
+10-31 08:17:57 -- Room Create Success
+10-31 08:17:57 -- Room Joined
+10-31 08:17:58 -- Raccoon(이)가 에이전트다
+10-31 08:17:58 -- Box에 13 입력
+10-31 08:17:58 -- Box에 3 입력
+10-31 08:17:58 -- Box에 16 입력
+10-31 08:17:58 -- Box에 22 입력
+10-31 08:17:58 -- Box에 2 입력
+10-31 08:17:58 -- Box에 15 입력
+10-31 08:17:58 -- Box에 1 입력
+10-31 08:17:58 -- Box에 14 입력
+10-31 08:17:58 -- Box에 0 입력
+10-31 08:17:58 -- Box에 11 입력
+10-31 08:21:44 -- 스파이 승리
+10-31 08:21:47 -- OnDisable
+10-31 08:21:47 -- OnDisable
+10-31 08:21:49 -- OnDisable
+10-31 08:30:30 -- Connected to Master - Online
+10-31 08:30:30 -- Lobby Join Success - Online
+10-31 08:30:31 -- Room Joined
+10-31 08:30:31 -- Raccoon(이)가 에이전트다
+10-31 08:31:08 -- OnDisable
+10-31 08:33:29 -- Connected to Master - Online
+10-31 08:33:29 -- Lobby Join Success - Online
+10-31 08:33:33 -- Room Joined
+10-31 08:33:34 -- Goat(이)가 에이전트다
+10-31 08:33:54 -- OnDisable
+10-31 08:33:56 -- OnDisable
+10-31 08:54:09 -- Connected to Master - Online
+10-31 08:54:09 -- Lobby Join Success - Online
+10-31 08:54:10 -- Room Joined
+10-31 08:54:11 -- Goat(이)가 에이전트다
+10-31 08:54:48 -- OnDisable
+10-31 08:55:57 -- Connected to Master - Online
+10-31 08:55:58 -- Lobby Join Success - Online
+10-31 08:55:58 -- Room Joined
+10-31 08:55:59 -- Raccoon(이)가 에이전트다
+10-31 08:56:40 -- OnDisable

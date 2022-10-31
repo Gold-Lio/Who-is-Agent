@@ -122,9 +122,4 @@ public class TempItemSlotUI : ItemSlotUI
             Close();    // 임시슬롯UI 닫고 클리어하기
         }
     }
-
-    [PunRPC]
-    private void PunOnDrop(Vector3 pos)
-    {
-    }
 }

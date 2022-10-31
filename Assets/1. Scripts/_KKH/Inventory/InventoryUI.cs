@@ -39,14 +39,11 @@ public class InventoryUI : MonoBehaviourPun, IDragHandler, IBeginDragHandler, IE
     {
         canvasGroup = GetComponent<CanvasGroup>();
         slotParent = transform.Find("Inventory_Base").Find("Grid Setting");
-
-        Button closeButton = transform.Find("CloseButton").GetComponent<Button>();
-        closeButton.onClick.AddListener(Close);
     }
 
     protected virtual void Start()
     {
-        //Close();    // 시작할 때 무조건 닫기
+        Close();    // 시작할 때 무조건 닫기
     }
 
     /// <summary>
@@ -308,5 +305,17 @@ public class InventoryUI : MonoBehaviourPun, IDragHandler, IBeginDragHandler, IE
     public ItemSlotUI GetSlot()
     {
         return slotUIs[0];
+    }
+
+    public void Drop()
+    {
+        ItemSlotUI slot = GetSlot();
+
+        if (!slot.ItemSlot.IsEmpty())
+        {
+            Vector3 pos = NetworkManager.instance.MyPlayer.OnItemDropPosition(NetworkManager.instance.MyPlayer.transform.position);
+            PhotonNetwork.Instantiate(slot.ItemSlot.SlotItemData.prefab.name, pos, Quaternion.identity);
+            slot.ItemSlot.ClearSlotItem();
+        }
     }
 }
