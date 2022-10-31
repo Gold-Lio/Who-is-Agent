@@ -88,12 +88,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Light2D light2D;
     //- - 씬초기화ㅡ 
 
+    private int count = 0;
+
     private void Start()
     {
         PV = photonView;
 
         MyPlayer = PhotonNetwork.Instantiate("Player", new Vector2(Random.Range(-12f, -8f), Random.Range(-38f, -41f)),
             Quaternion.identity).GetComponent<Player>();
+
+        count++;
 
         SetRandColor();
         isWaitingRoom = true;
@@ -292,7 +296,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         int crewCount = 0;
         int impoCount = 0;
-        bool Vetory = false;
 
         for (int i = 0; i < Players.Count; i++)
         {
@@ -317,14 +320,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         if (/*(impoCount == 0 && crewCount > 0) || */BagCount == 3) // 모든 임포가 죽음
         {
-            Vetory = true;
             photonView.RPC("Winner", RpcTarget.AllBuffered, true);
         }
         else if ((impoCount != 0 && impoCount > crewCount) || BoxManager.instance.Agent.IsDead == true) // 임포가 크루보다 많음
         {
-            Vetory = false;
             photonView.RPC("Winner", RpcTarget.AllBuffered, false);
-            //Winner(Vetory);
         }
 
     }

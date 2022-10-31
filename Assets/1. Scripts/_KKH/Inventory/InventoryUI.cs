@@ -126,7 +126,6 @@ public class InventoryUI : MonoBehaviourPun, IDragHandler, IBeginDragHandler, IE
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
         OnInventoryOpen?.Invoke();
-        Debug.Log("Open");
     }
 
     /// <summary>
@@ -140,7 +139,6 @@ public class InventoryUI : MonoBehaviourPun, IDragHandler, IBeginDragHandler, IE
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         OnInventoryClose?.Invoke();
-        Debug.Log("Close");
     }
 
     // 이벤트 시스템의 인터페이스 함수들 -------------------------------------------------------------

@@ -50,7 +50,6 @@ public class Box : MonoBehaviour
     {
         if (inven.AddItem(itemIDCode))
         {
-            LogManager.Log($"{itemIDCode}아이템 생성");
         }
     }
 

@@ -10,6 +10,10 @@ public class UIManager : MonoBehaviourPun
 {
     PhotonView PV;
 
+    private Slider hp_Slider = null;
+    public Slider HP_Slider => hp_Slider;
+
+
     public static UIManager UM
     {
         get
@@ -34,6 +38,8 @@ public class UIManager : MonoBehaviourPun
         {
             Destroy(gameObject);
         }
+
+        hp_Slider = GameObject.Find("HP_Slider").GetComponent<Slider>();
     }
 
     private void Start()

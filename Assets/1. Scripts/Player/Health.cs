@@ -12,7 +12,7 @@ public class Health : MonoBehaviourPun
     PhotonView PV;
 
     [SerializeField]
-    private int currentHealth, maxHealth;
+    private float currentHealth, maxHealth;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
@@ -31,11 +31,12 @@ public class Health : MonoBehaviourPun
     {
         currentHealth = healthValue;
         maxHealth = healthValue;    
+        UIManager.UM.HP_Slider.value = maxHealth;
         isDead = false;
     }
 
     [PunRPC]
-    public void GetHit(int amount, GameObject sender)
+    public void GetHit(float amount, GameObject sender)
     {
         if (isDead)
             return;
@@ -44,7 +45,7 @@ public class Health : MonoBehaviourPun
 
         if (currentHealth > 0)
         {
-            OnHitWithReference?.Invoke(sender);
+            OnHitWithReference?.Invoke(sender);            
         }
         else
         {

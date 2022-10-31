@@ -153,14 +153,16 @@ public class WeaponParent : MonoBehaviourPun
     {
         foreach (Collider2D col in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
         {
-            Health health;
-            if (health = col.GetComponent<Health>())
+            Health health = col.GetComponent<Health>();
+            if (health != null)
             {
                 //health.GetComponent<PhotonView>().RPC("GetHit", RpcTarget.AllViaServer,1, transform.parent.gameObject);
-                health.GetHit(1, transform.parent.gameObject);
-                Player player = col.GetComponent<Player>();
-                if(player != null)
-                    player.HP -= 1;
+                health.GetHit(1, transform.parent.gameObject);                
+            }
+            Player player = col.GetComponent<Player>();
+            if (player != null)
+            {
+                player.ChaterHit(1);
             }
         }
     }

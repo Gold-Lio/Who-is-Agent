@@ -90,26 +90,6 @@ public class Player : MonoBehaviourPun
 
     public bool isConnect = true;
 
-    private const float maxhp = 20.0f;
-    private float hp = 0.0f;
-    public float HP
-    {
-        get => hp;
-        set
-        {
-            hp = value;
-            if(hp <= 0)
-            {
-                hp = 0;
-            }
-            hp_Slider.value = hp;
-
-        }
-    }
-
-    private Slider hp_Slider = null;
-    
-
     private void Awake()
     {
         if (!photonView.IsMine) return;
@@ -120,9 +100,9 @@ public class Player : MonoBehaviourPun
         RB = GetComponent<Rigidbody2D>();
 
         //playerMover = GetComponent<PlayerMover>();
+        Debug.Log(photonView.ViewID);
         playerInventoryUI = GameObject.Find("InventoryUI").GetComponent<InventoryUI>();
         inven = new Inventory(SlotType.Inventory);
-        hp_Slider = GameObject.Find("HP_Slider").GetComponent<Slider>();
 
     }
 
@@ -131,14 +111,13 @@ public class Player : MonoBehaviourPun
         //if (!photonView.IsMine) return;
 
         PV = photonView;
-
         actor = PV.Owner.ActorNumber;
         nick = PV.Owner.NickName;
         SetNick();
         NM.Players.Add(this);
         NM.SortPlayers();
-        hp_Slider.value = maxhp;
-        hp = maxhp;
+
+        if (!photonView.IsMine) return;
         StartCoroutine(InvenSetup());
     }
 
@@ -547,5 +526,11 @@ public class Player : MonoBehaviourPun
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(transform.position, itemPickupRange);
+    }
+
+    public void ChaterHit(float amount)
+    {
+        if (!photonView.IsMine) return;
+        UIManager.UM.HP_Slider.value -= amount;
     }
 }
