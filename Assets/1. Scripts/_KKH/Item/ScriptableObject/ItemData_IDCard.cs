@@ -9,5 +9,5 @@ using UnityEngine;
 public class ItemData_IDCard : ItemData
 {
     [Header("NPC 정보")]
-    public IDCard NPCID = IDCard.NPC0;
+    public IDCard NPCID = IDCard.Goat;
 }

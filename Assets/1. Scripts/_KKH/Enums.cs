@@ -10,16 +10,12 @@ public enum ItemIDCode
 {
     Package = 0,
     Bag,
-    IDCard_NPC0 = 11,
-    IDCard_NPC1,
-    IDCard_NPC2,
-    IDCard_NPC3,
-    IDCard_NPC4,
-    IDCard_NPC5,
-    IDCard_NPC6,
-    IDCard_NPC7,
-    IDCard_NPC8,
-    IDCard_NPC9,
+    Goat_IDCard = 11,
+    Raccoon_IDCard,
+    Sloth_IDCard,
+    Buffalo_IDCard,
+    Monkey_IDCard,
+    Rabbit_IDCard,
     Syringe = 21,
     Knife,
 }
@@ -33,16 +29,12 @@ public enum ItemType
 
 public enum IDCard
 {
-    NPC0 = 0,
-    NPC1,
-    NPC2,
-    NPC3,
-    NPC4,
-    NPC5,
-    NPC6,
-    NPC7,
-    NPC8,
-    NPC9,
+    Goat = 0,
+    Raccoon,
+    Sloth,
+    Buffalo,
+    Monkey,
+    Rabbit,
 }
 
 public enum SlotType : byte

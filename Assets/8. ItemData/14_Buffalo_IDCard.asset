@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 275562d9033814f41a17465bb680ada6, type: 3}
-  m_Name: 13_NPC2_IDCard
+  m_Name: 14_Buffalo_IDCard
   m_EditorClassIdentifier: 
-  id: 13
-  itemName: "NPC2 \uC2E0\uBD84\uC99D"
+  id: 14
+  itemName: Buffalo
   itemIcon: {fileID: 21300000, guid: 66ab248a9397e7543ad30c30c712bc65, type: 3}
   itemType: 2
-  itemIDCode: 13
-  prefab: {fileID: 3314258523087313166, guid: 32bebb34ef15c4a45810d04062c20df9, type: 3}
-  NPCID: 2
+  itemIDCode: 14
+  prefab: {fileID: 3314258523087313166, guid: f1b32cd2c13fd654f80abb7be615a1a6, type: 3}
+  NPCID: 3

@@ -48,11 +48,13 @@ public class BoxManager : MonoBehaviourPunCallbacks
     private void Awake()
     {
         itemCount = GameManager.instance.ItemData.Length;
-        isItemArrangement = new bool[itemCount];
 
         boxs = boxParent.GetComponentsInChildren<Box>();
         npcs = npcParent.GetComponentsInChildren<NPC>();
         weaponboxs = weaponboxParent.GetComponentsInChildren<WeaponBox>();
+
+        isItemArrangement = new bool[itemCount];
+        isBoxArrangement = new bool[Boxs.Length];
     }
 
     private void Start()
@@ -72,26 +74,30 @@ public class BoxManager : MonoBehaviourPunCallbacks
 
             bool itemCheck = false;
 
-            int boxnum = 0;
             while (!itemCheck)
             {
                 bool isItem = false;
                 while (!isItem)
                 {
-                    if (itemArragementCheck())
+                    int boxnum = Random.Range(0, boxs.Length);
+                    if(BoxArragementCheck())
+                    {
+                        BoxArragementClear();
+                    }
+
+                    if (ItemArragementCheck())
                     {
                         isItem = true;
                         itemCheck = true;
                     }
 
                     rand = Random.Range(0, itemCount);
-                    if (isItemArrangement[rand] == false)
-                    {
-                        LogManager.Log($"Box¿¡ {rand} ÀÔ·Â");
+                    if (isItemArrangement[rand] == false && isBoxArrangement[boxnum] == false)
+                    {                        
                         Boxs[boxnum % Boxs.Length].ItemID = rand;
                         Boxs[boxnum % Boxs.Length].CreateItem();
                         isItem = true;
-                        boxnum++;
+                        isBoxArrangement[boxnum] = true;
                         isItemArrangement[rand] = true;
                     }
                 }
@@ -99,7 +105,7 @@ public class BoxManager : MonoBehaviourPunCallbacks
         }
     }
 
-    private bool itemArragementCheck()
+    private bool ItemArragementCheck()
     {
         bool itemCheck = true;
         foreach (bool check in isItemArrangement)
@@ -112,6 +118,29 @@ public class BoxManager : MonoBehaviourPunCallbacks
         }
 
         return itemCheck;
+    }
+
+    private bool BoxArragementCheck()
+    {
+        bool boxCheck = true;
+        foreach (bool check in isBoxArrangement)
+        {
+            if (!check)
+            {
+                boxCheck = false;
+                break;
+            }
+        }
+
+        return boxCheck;
+    }
+
+    private void BoxArragementClear()
+    {
+        for(int i = 0; i < isBoxArrangement.Length; i++)
+        {
+            isBoxArrangement[i] = false;
+        }
     }
 
     [PunRPC]

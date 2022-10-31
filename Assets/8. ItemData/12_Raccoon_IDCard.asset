@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 275562d9033814f41a17465bb680ada6, type: 3}
-  m_Name: 15_NPC4_IDCard
+  m_Name: 12_Raccoon_IDCard
   m_EditorClassIdentifier: 
-  id: 15
-  itemName: "NPC4 \uC2E0\uBD84\uC99D"
+  id: 12
+  itemName: Raccoon
   itemIcon: {fileID: 21300000, guid: 66ab248a9397e7543ad30c30c712bc65, type: 3}
   itemType: 2
-  itemIDCode: 15
-  prefab: {fileID: 3314258523087313166, guid: 51d1c5fd470515949bc3e58eebd92349, type: 3}
-  NPCID: 4
+  itemIDCode: 12
+  prefab: {fileID: 3314258523087313166, guid: 07a83e9e4bc0490478d1f28039aab6ad, type: 3}
+  NPCID: 1

@@ -159,11 +159,6 @@ public class WeaponParent : MonoBehaviourPun
                 //health.GetComponent<PhotonView>().RPC("GetHit", RpcTarget.AllViaServer,1, transform.parent.gameObject);
                 health.GetHit(1, transform.parent.gameObject);                
             }
-            Player player = col.GetComponent<Player>();
-            if (player != null)
-            {
-                player.ChaterHit(1);
-            }
         }
     }
 }

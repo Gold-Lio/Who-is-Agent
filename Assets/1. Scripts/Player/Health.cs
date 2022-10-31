@@ -14,6 +14,8 @@ public class Health : MonoBehaviourPun
     [SerializeField]
     private float currentHealth, maxHealth;
 
+    public float CurrentHealth => currentHealth;
+
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     [SerializeField]
@@ -53,7 +55,11 @@ public class Health : MonoBehaviourPun
             isDead = true;
             //Destroy(gameObject); // 이것이 전체로 공유되도록 변경
 
-            PhotonNetwork.Destroy(gameObject);// 플레이어를 없애고. 
+            if (PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.Destroy(gameObject);// 플레이어를 없애고. 
+            }
+            Destroy(gameObject);    // 혹시 몰라서 한번더 삭제 해준다.
         }
     }
 

@@ -88,6 +88,7 @@ public class Player : MonoBehaviourPun
 
     public bool isConnect = true;
 
+    private Health health = null;
     private void Awake()
     {
         if (!photonView.IsMine) return;
@@ -101,7 +102,7 @@ public class Player : MonoBehaviourPun
         Debug.Log(photonView.ViewID);
         playerInventoryUI = GameObject.Find("InventoryUI").GetComponent<InventoryUI>();
         inven = new Inventory(SlotType.Inventory);
-
+        health = GetComponent<Health>();
     }
 
     private void Start()
@@ -141,26 +142,30 @@ public class Player : MonoBehaviourPun
         if(NM.isGameStart)
         {
             NM.light2D.transform.position = transform.position + new Vector3(0, 0, 10); // 빛 적용
+            UIManager.UM.HP_Slider.value = health.CurrentHealth;
         }
     }
 
 
     private void FixedUpdate()
     {
-        if (isWeapon)
+        if (NM.isGameStart)
         {
-            if (isWeaponOpen == false && isWeaponOpenStart == true)
+            if (isWeapon)
             {
-                if (boxLoading != null)
+                if (isWeaponOpen == false && isWeaponOpenStart == true)
                 {
-                    weaponLoadingTime += Time.deltaTime;
-                    boxLoading.SetLoadingBar(weaponLoadingTime);
-                    if (boxLoading.GetIsOpen())
+                    if (boxLoading != null)
                     {
-                        boxLoading.SetClear();
-                        boxLoadingGameObj.SetActive(false);
-                        BoxManager.instance.Weaponboxs[weaponBox.boxNum].WeaponBoxInvenUI.InventoryOnOffSwitch();
-                        isWeaponOpen = true;
+                        weaponLoadingTime += Time.deltaTime;
+                        boxLoading.SetLoadingBar(weaponLoadingTime);
+                        if (boxLoading.GetIsOpen())
+                        {
+                            boxLoading.SetClear();
+                            boxLoadingGameObj.SetActive(false);
+                            BoxManager.instance.Weaponboxs[weaponBox.boxNum].WeaponBoxInvenUI.InventoryOnOffSwitch();
+                            isWeaponOpen = true;
+                        }
                     }
                 }
             }
@@ -172,7 +177,6 @@ public class Player : MonoBehaviourPun
         if (!photonView.IsMine) return;
 
         Debug.Log($"{actor}, {photonView.ViewID}, {PhotonNetwork.IsConnected}");
-        LogManager.Log("OnDisable");
     }
 
     //플레이어에게 닉네임을 부여
@@ -499,7 +503,9 @@ public class Player : MonoBehaviourPun
     [PunRPC]
     public void ItemDestory()
     {
-        PhotonNetwork.Destroy(destroyObj);
+        if(PhotonNetwork.IsMasterClient)
+            PhotonNetwork.Destroy(destroyObj);
+
         Destroy(destroyObj);
         destroyObj = null;
     }
@@ -510,11 +516,5 @@ public class Player : MonoBehaviourPun
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(transform.position, itemPickupRange);
-    }
-
-    public void ChaterHit(float amount)
-    {
-        if (!photonView.IsMine) return;
-        UIManager.UM.HP_Slider.value -= amount;
     }
 }
