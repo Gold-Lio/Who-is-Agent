@@ -18417,3 +18417,15 @@
 10-31 09:41:30 -- Lobby Join Success - Online
 10-31 09:41:31 -- Room Joined
 10-31 09:41:32 -- Raccoon(이)가 에이전트다
+11-02 06:45:48 -- Connected to Master - Online
+11-02 06:45:49 -- Lobby Join Success - Online
+11-02 06:45:49 -- Room Join Failed
+11-02 06:45:49 -- Room Create Success
+11-02 06:45:49 -- Room Joined
+11-02 06:45:53 -- Rabbit(이)가 에이전트다
+11-02 06:58:01 -- Connected to Master - Online
+11-02 06:58:01 -- Lobby Join Success - Online
+11-02 06:58:01 -- Room Join Failed
+11-02 06:58:02 -- Room Create Success
+11-02 06:58:02 -- Room Joined
+11-02 06:58:02 -- Rabbit(이)가 에이전트다

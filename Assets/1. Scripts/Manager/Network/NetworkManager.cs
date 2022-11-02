@@ -75,9 +75,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //직업정보 제공 Text
     public GameObject Resi_InfoText, Spy_InfoText;
 
-    [Header("Game_Mission")]
-    public GameObject Resi_Mission, Spy_Mission;
-
     [Header("Result Panel")]
     //결과 패널
     public GameObject SPY_WinPanel, Resi_WinPanel;
@@ -234,15 +231,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         if (MyPlayer.isSpy)
         {
             Spy_InfoText.SetActive(true);
-            Spy_Mission.SetActive(true);
         }
         else
         {
             Resi_InfoText.SetActive(true);
-            Resi_Mission.SetActive(true);
         }
 
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(3.0f);
         isWaitingRoom = false;
         isGameStart = true; //게임 시작
 
@@ -262,9 +257,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PlayTime();
         OnPlayerCheck();
 
-        //잠시 테스트를 위해 주석처리
-        if (isGameStart && !isWinner)
-            WinCheck();
+        //잠시 테스트를 위해 주석처리 --------------------2022.11.02
+        //if (isGameStart && !isWinner)
+        //    WinCheck();
 
     }
 

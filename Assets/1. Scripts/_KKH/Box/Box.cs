@@ -50,6 +50,7 @@ public class Box : MonoBehaviour
     {
         if (inven.AddItem(itemIDCode))
         {
+
         }
     }
 
