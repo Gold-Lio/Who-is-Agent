@@ -18491,3 +18491,11 @@
 11-03 11:18:48 -- Room Create Success
 11-03 11:18:48 -- Room Joined
 11-03 11:18:49 -- Rabbit(이)가 에이전트다
+11-03 11:24:23 -- Connected to Master - Online
+11-03 11:24:23 -- Lobby Join Success - Online
+11-03 11:24:26 -- Room Joined
+11-03 11:24:28 -- Sloth(이)가 에이전트다
+11-03 11:28:18 -- Connected to Master - Online
+11-03 11:28:19 -- Lobby Join Success - Online
+11-03 11:28:20 -- Room Joined
+11-03 11:28:21 -- Monkey(이)가 에이전트다
