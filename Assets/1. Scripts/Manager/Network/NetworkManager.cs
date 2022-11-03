@@ -15,6 +15,12 @@ public enum PlayerType
     Random_1,
     Random_2,
 }
+
+public enum AttackTest
+{ 
+    Can_Attack,
+    Cant_Attack
+}
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
     PhotonView PV;
@@ -46,6 +52,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Player MyPlayer;
 
     public PlayerType playerType;
+    public AttackTest attackTest;
+
 
     public bool isWaitingRoom = false;
     public bool isGameStart = false;
@@ -169,6 +177,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         selectCountdown = baseTime;
     }
 
+    void SetAttackPlayer()
+    {
+
+    }
 
     //잠시 테스트를 위해 주석처리
     void SetPlayerType()
@@ -258,8 +270,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         OnPlayerCheck();
 
         //잠시 테스트를 위해 주석처리 --------------------2022.11.02
-        //if (isGameStart && !isWinner)
-        //    WinCheck();
+        if (isGameStart && !isWinner)
+            WinCheck();
 
     }
 
