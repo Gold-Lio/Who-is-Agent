@@ -25,10 +25,19 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     // 게임 실행과 동시에 마스터 서버 접속 시도
     private void Start()
     {
+        PV = photonView;
+
         // 접속에 필요한 정보(게임 버전) 설정
         PhotonNetwork.GameVersion = gameVersion;
-        PV = photonView;
+
+        Screen.SetResolution(1920, 1080,true); // 항상 FullScreen 입니다.
+        
+        PhotonNetwork.SendRate = 60; // 포톤으로 주고 받는 통신간격
+        PhotonNetwork.SerializationRate = 30; // 데이터를 받아쓰는 빈도
+
         SwitchCanvas(CanvasType.Nick);
+
+
     }
 
     private void SwitchCanvas(CanvasType type)
@@ -140,9 +149,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
     }
 
-
-
-
+    //다시 처음으로 돌아가도록. 
     //프로그램을 종료시킵니다.
     public void ProgramQuit()
     {

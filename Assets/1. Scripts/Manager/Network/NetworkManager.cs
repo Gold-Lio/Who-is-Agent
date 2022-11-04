@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public enum PlayerType
 {
@@ -113,11 +114,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             showText.SetActive(true);
         }
     }
-
-    //// 생성할 랜덤 위치 지정
-    //Vector3 randomSpawnPos = Random.insideUnitSphere * 5f;
-    //// 위치 y값은 0으로 변경
-    //randomSpawnPos.y = 0f;
 
     public void SetRandColor()
     {
@@ -272,10 +268,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         //잠시 테스트를 위해 주석처리 --------------------2022.11.02
         if (isGameStart && !isWinner)
             WinCheck();
-
     }
 
-    //총 플레이 타임은 600sec = 10min 이다. 
     public void PlayTime()
     {
         if (Mathf.Floor(selectCountdown) <= 0)
@@ -365,9 +359,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
+    //결과에 상관없이, 모두 방을 나가게 된다.
     void WinnerDelay()
     {
-        Application.Quit();
+        PhotonNetwork.LeaveRoom();
+    }
+
+    //로비 씬으로 이동한다.
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadScene("Lobby");
     }
 
     public void OnRandomSetMasterClient()
