@@ -18532,3 +18532,11 @@
 11-05 04:33:16 -- Room Joined
 11-05 04:33:17 -- Monkey(이)가 에이전트다
 11-05 04:34:25 -- 스파이 승리
+11-05 10:34:48 -- Connected to Master - Online
+11-05 10:34:48 -- Lobby Join Success - Online
+11-05 10:34:49 -- Room Joined
+11-05 10:34:50 -- Sloth(이)가 에이전트다
+11-05 10:41:10 -- Connected to Master - Online
+11-05 10:41:10 -- Lobby Join Success - Online
+11-05 10:41:14 -- Room Joined
+11-05 10:41:15 -- Sloth(이)가 에이전트다
