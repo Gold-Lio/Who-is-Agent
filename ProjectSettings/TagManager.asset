@@ -48,6 +48,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PlaneTile
+    uniqueID: 3322143733
+    locked: 0
+  - name: BackGround_Object
+    uniqueID: 3309664855
+    locked: 0
   - name: Player
     uniqueID: 219722855
     locked: 0

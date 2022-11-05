@@ -18511,3 +18511,24 @@
 11-05 04:00:26 -- Room Create Success
 11-05 04:00:26 -- Room Joined
 11-05 04:00:42 -- Rabbit(이)가 에이전트다
+11-05 04:21:55 -- Connected to Master - Online
+11-05 04:21:55 -- Lobby Join Success - Online
+11-05 04:23:52 -- Connected to Master - Online
+11-05 04:23:52 -- Lobby Join Success - Online
+11-05 04:23:53 -- Room Create Success
+11-05 04:23:53 -- Room Joined
+11-05 04:23:54 -- Buffalo(이)가 에이전트다
+11-05 04:24:57 -- Connected to Master - Online
+11-05 04:24:57 -- Lobby Join Success - Online
+11-05 04:25:00 -- Room Create Success
+11-05 04:25:00 -- Room Joined
+11-05 04:25:01 -- Buffalo(이)가 에이전트다
+11-05 04:29:08 -- Connected to Master - Online
+11-05 04:29:08 -- Lobby Join Success - Online
+11-05 04:29:14 -- Room Joined
+11-05 04:29:15 -- Raccoon(이)가 에이전트다
+11-05 04:33:15 -- Connected to Master - Online
+11-05 04:33:15 -- Lobby Join Success - Online
+11-05 04:33:16 -- Room Joined
+11-05 04:33:17 -- Monkey(이)가 에이전트다
+11-05 04:34:25 -- 스파이 승리
