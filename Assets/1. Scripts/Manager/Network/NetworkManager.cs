@@ -178,7 +178,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     }
 
-    //잠시 테스트를 위해 주석처리
     void SetPlayerType()
     {
         int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);
@@ -224,7 +223,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             }
         }
     }
-
     //------------------------------------------------------------------------------------------------------------------
     [PunRPC]
     void GameStartRPC()

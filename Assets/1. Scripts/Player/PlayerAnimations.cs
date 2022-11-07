@@ -21,7 +21,7 @@ public class PlayerAnimations : MonoBehaviourPun
     }
 
 
-
+    [PunRPC]
     public void RotateToPointer(float lookDirection)
     {
         if (!PV.IsMine) return;

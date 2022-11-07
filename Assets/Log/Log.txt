@@ -18540,3 +18540,35 @@
 11-05 10:41:10 -- Lobby Join Success - Online
 11-05 10:41:14 -- Room Joined
 11-05 10:41:15 -- Sloth(이)가 에이전트다
+11-07 11:16:38 -- Connected to Master - Online
+11-07 11:16:38 -- Lobby Join Success - Online
+11-07 11:16:54 -- Room Join Failed
+11-07 11:16:55 -- Room Create Success
+11-07 11:16:55 -- Room Joined
+11-07 11:16:57 -- Raccoon(이)가 에이전트다
+11-07 11:30:29 -- Connected to Master - Online
+11-07 11:30:30 -- Lobby Join Success - Online
+11-07 11:30:52 -- Connected to Master - Online
+11-07 11:30:52 -- Lobby Join Success - Online
+11-07 11:31:04 -- Room Join Failed
+11-07 11:31:04 -- Room Create Success
+11-07 11:31:04 -- Room Joined
+11-07 11:31:05 -- Buffalo(이)가 에이전트다
+11-07 11:33:59 -- Connected to Master - Online
+11-07 11:33:59 -- Lobby Join Success - Online
+11-07 11:34:10 -- Room Join Failed
+11-07 11:34:10 -- Room Create Success
+11-07 11:34:10 -- Room Joined
+11-07 11:34:11 -- Rabbit(이)가 에이전트다
+11-07 11:36:14 -- Connected to Master - Online
+11-07 11:36:15 -- Lobby Join Success - Online
+11-07 11:36:20 -- Room Create Success
+11-07 11:36:20 -- Room Joined
+11-07 11:36:21 -- Sloth(이)가 에이전트다
+11-07 11:37:03 -- Connected to Master - Online
+11-07 11:37:03 -- Lobby Join Success - Online
+11-07 11:38:32 -- Connected to Master - Online
+11-07 11:38:32 -- Lobby Join Success - Online
+11-07 11:38:36 -- Room Create Success
+11-07 11:38:36 -- Room Joined
+11-07 11:38:37 -- Raccoon(이)가 에이전트다

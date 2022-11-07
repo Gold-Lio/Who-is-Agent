@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 842b7a34-498a-4f2e-88f8-01fa60f35d35
+    AppIdRealtime: 1983ebd1-9d50-47e3-8ad1-abed34804835
     AppIdFusion: 
     AppIdChat: 
     AppIdVoice: 0e2a2324-780a-4117-a788-f33ead4bee07
@@ -72,6 +72,7 @@ MonoBehaviour:
   - PunRotateToPointer
   - PunPlayerXFlip
   - PunPlayerYFlip
+  - AnimateCharacter
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

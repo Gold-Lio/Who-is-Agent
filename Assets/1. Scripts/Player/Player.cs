@@ -137,7 +137,11 @@ public class Player : MonoBehaviourPun
 
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
-        AnimateCharacter();
+        //AnimateCharacter();
+        PV.RPC("AnimateCharacter", RpcTarget.AllBuffered);
+        
+
+
         
         if(NM.isGameStart)
         {
@@ -208,14 +212,14 @@ public class Player : MonoBehaviourPun
         }
     }
 
-
+    [PunRPC]
     private void AnimateCharacter()
     {
         if (!photonView.IsMine) return;
 
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         
-        playerAnim.RotateToPointer(lookDirection.x); //바라보는 플립. 
+        playerAnim.RotateToPointer(lookDirection.x); //바라보는 플립
         playerAnim.PlayRunning(MovementInput); // 움직애님 
     }
 
