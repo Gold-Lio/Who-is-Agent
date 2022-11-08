@@ -51,49 +51,36 @@ public class PlayerInput_ : MonoBehaviourPun
 
     private void PointerMove(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
+
         pointerPos = obj.ReadValue<Vector2>();
     }
 
     private void Move(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
 
         movementPos = obj.ReadValue<Vector2>().normalized;
     }
 
     private void PerformAttack(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
 
         OnAttack?.Invoke();
     }
 
     private void ItemPickUp(InputAction.CallbackContext obj)
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
 
         OnItemPickUp?.Invoke();
     }
 
     private void ItemUse(InputAction.CallbackContext obj)
     {
-        if(!photonView.IsMine)
-        {
-            return;
-        }
+        if (!photonView.IsMine) return;
+
         OnItemUse?.Invoke();
     }
 

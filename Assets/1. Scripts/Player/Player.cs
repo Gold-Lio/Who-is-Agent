@@ -128,6 +128,7 @@ public class Player : MonoBehaviourPun
         {
             playerInvenUI.InitializeInventory(inven);
         }
+
         yield return null;
     }
 
@@ -137,11 +138,8 @@ public class Player : MonoBehaviourPun
 
         PlayerMove();
         weaponParent.PointerPosition = pointerInput;
-        //AnimateCharacter();
-        PV.RPC("AnimateCharacter", RpcTarget.AllBuffered);
-        
-
-
+        AnimateCharacter();
+        //PV.RPC("AnimateCharacter", RpcTarget.AllBuffered);
         
         if(NM.isGameStart)
         {

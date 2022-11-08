@@ -18572,3 +18572,27 @@
 11-07 11:38:36 -- Room Create Success
 11-07 11:38:36 -- Room Joined
 11-07 11:38:37 -- Raccoon(이)가 에이전트다
+11-08 04:26:44 -- Connected to Master - Online
+11-08 04:26:44 -- Lobby Join Success - Online
+11-08 06:13:01 -- Connected to Master - Online
+11-08 06:13:01 -- Lobby Join Success - Online
+11-08 06:13:02 -- Room Create Success
+11-08 06:13:02 -- Room Joined
+11-08 06:13:05 -- Monkey(이)가 에이전트다
+11-08 06:13:12 -- 스파이 승리
+11-08 06:13:17 -- Connected to Master - Online
+11-08 06:13:18 -- Lobby Join Success - Online
+11-08 06:47:34 -- Connected to Master - Online
+11-08 06:47:34 -- Lobby Join Success - Online
+11-08 06:47:36 -- Room Create Success
+11-08 06:47:36 -- Room Joined
+11-08 06:47:37 -- Buffalo(이)가 에이전트다
+11-08 08:24:54 -- Connected to Master - Online
+11-08 08:24:54 -- Lobby Join Success - Online
+11-08 08:25:02 -- Room Joined
+11-08 08:25:04 -- Goat(이)가 에이전트다
+11-08 08:34:31 -- Connected to Master - Online
+11-08 08:34:31 -- Lobby Join Success - Online
+11-08 08:34:31 -- Room Create Success
+11-08 08:34:31 -- Room Joined
+11-08 08:34:32 -- Monkey(이)가 에이전트다

@@ -173,11 +173,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         selectCountdown = baseTime;
     }
 
-    void SetAttackPlayer()
-    {
-
-    }
-
     void SetPlayerType()
     {
         int maxplayer = System.Convert.ToInt32(RoomManager.instance.PNum);

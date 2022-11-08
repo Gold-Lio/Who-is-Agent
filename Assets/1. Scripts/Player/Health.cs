@@ -13,7 +13,6 @@ public class Health : MonoBehaviourPun
 
     [SerializeField]
     private float currentHealth, maxHealth;
-
     public float CurrentHealth => currentHealth;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;

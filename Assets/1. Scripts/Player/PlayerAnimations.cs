@@ -12,7 +12,6 @@ public class PlayerAnimations : MonoBehaviourPun
 
     private Animator animator;
 
-
     private void Awake()
     {
         instance = this;

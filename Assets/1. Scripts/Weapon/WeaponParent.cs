@@ -97,10 +97,8 @@ public class WeaponParent : MonoBehaviourPun
     [PunRPC]
     public void Attack()
     {
-        //if (!photonView.IsMine) { return; }  
+        if (attackBlocked) return;
 
-        if (attackBlocked)
-            return;
         animator.SetTrigger("Attack");
         IsAttacking = true;
         attackBlocked = true;
