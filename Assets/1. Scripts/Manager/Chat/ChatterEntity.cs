@@ -5,7 +5,6 @@ using Photon.Pun;
 public class ChatterEntity : MonoBehaviourPunCallbacks
 {
     PhotonView PV;
-
     public static ChatterEntity Local { get; private set; }
     [Header("Chat Bubble")]
     public float chatBubbleVisibleDuration = 2f;
@@ -30,13 +29,11 @@ public class ChatterEntity : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        // Hide chat bubble
         if (Time.realtimeSinceStartup - lastShowChatBubbleTime >= chatBubbleVisibleDuration)
         {
             if (chatBubbleRoot != null)
                 chatBubbleRoot.SetActive(false);
         }
-       
     }
 
     public void CmdSendChat(string message)
@@ -47,7 +44,6 @@ public class ChatterEntity : MonoBehaviourPunCallbacks
     [PunRPC]
     public void RpcShowChat(string message)
     {
-        // Set chat text and show chat bubble
         if (chatBubbleText != null)
             chatBubbleText.text = message;
 
@@ -55,7 +51,5 @@ public class ChatterEntity : MonoBehaviourPunCallbacks
             chatBubbleRoot.SetActive(true);
 
         lastShowChatBubbleTime = Time.realtimeSinceStartup;
-
-        // TODO: Add chat message to chat history (maybe in any network manager)
     }
 }

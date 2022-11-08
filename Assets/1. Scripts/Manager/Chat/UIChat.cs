@@ -13,7 +13,7 @@ public class UIChat : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(enterChatKey))
+        if (Input.GetKeyDown(enterChatKey)) //엔터ㅡ 근데 왜 엔터가 잘 안먹지? 흠.
         {
             SendChatMessage();
         }
@@ -21,8 +21,6 @@ public class UIChat : MonoBehaviour
 
     public void ShowEnterChatField()
     {
-        //if (enterChatRoot != null)
-        //    enterChatRoot.SetActive(true);
         if (enterChatField != null)
         {
             enterChatField.Select();
