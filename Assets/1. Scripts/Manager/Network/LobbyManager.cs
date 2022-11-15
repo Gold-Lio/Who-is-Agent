@@ -30,8 +30,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         // 접속에 필요한 정보(게임 버전) 설정
         PhotonNetwork.GameVersion = gameVersion;
 
-        Screen.SetResolution(800, 600, false); // Test를 위해서 1000,800
-        //Screen.SetResolution(1920, 1080,true); // 항상 FullScreen 입니다.
+        //Screen.SetResolution(800, 600, false); // Test를 위해서 1000,800
+        Screen.SetResolution(1920, 1080,true); // 항상 FullScreen 입니다.
         
         PhotonNetwork.SendRate = 60; // 포톤으로 주고 받는 통신간격
         PhotonNetwork.SerializationRate = 30; // 데이터를 받아쓰는 빈도
