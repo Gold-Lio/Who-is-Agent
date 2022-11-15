@@ -6,7 +6,7 @@ using Photon.Pun;
 using Photon.Realtime;
 
 
-public class KnockbackFeedback : MonoBehaviourPun 
+public class KnockbackFeedback : MonoBehaviourPun
 {
     PhotonView PV;
     [SerializeField]
@@ -23,18 +23,12 @@ public class KnockbackFeedback : MonoBehaviourPun
     }
 
     public void PlayFeedback(GameObject sender)
-    {   
-        if (PV.IsMine)
-        {
-            StopAllCoroutines();
-            OnBegin?.Invoke();
-            Vector2 direction = (transform.position - sender.transform.position).normalized;
-            rb2d.AddForce(direction * strength, ForceMode2D.Impulse);
-            StartCoroutine(Reset());
-        }
-        ////그 외의 것들은 부드럽게 위치 동기화
-        //else if ((transform.position - curPos).sqrMagnitude >= 100) transform.position = curPos;
-        //else transform.position = Vector3.Lerp(transform.position, curPos, Time.deltaTime * 10);
+    {
+        StopAllCoroutines();
+        OnBegin?.Invoke();
+        Vector2 direction = (transform.position - sender.transform.position).normalized;
+        rb2d.AddForce(direction * strength, ForceMode2D.Impulse);
+        StartCoroutine(Reset());
     }
 
     private IEnumerator Reset()
