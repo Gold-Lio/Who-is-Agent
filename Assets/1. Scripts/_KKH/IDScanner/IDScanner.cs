@@ -3,34 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Box : MonoBehaviour
+public class IDScanner : MonoBehaviour
 {
-    public int boxNum = 0;
+    public int scannerNum = 0;
 
     private Inventory inven;
 
-    private BoxUI boxInvenUI;
-    public BoxUI BoxInvenUI => boxInvenUI;
+    private IDScannerUI idScannerUI;
+    public IDScannerUI IdScannerUI => idScannerUI;
 
     private PhotonView pv = null;
 
     public int ItemID = 999999;
 
-    public const int boxSize = 3;
+    public const int scannerSize = 1;
 
-    private GameObject BoxInteractGameObj;
+    private GameObject ScannerInteractGameObj;
 
     private void Awake()
     {
-        boxInvenUI = transform.GetComponentInChildren<BoxUI>();
+        idScannerUI = transform.GetComponentInChildren<IDScannerUI>();
         pv = GetComponent<PhotonView>();
-        BoxInteractGameObj = transform.Find("BoxInteract").gameObject;
+        ScannerInteractGameObj = transform.Find("ScannerInteract").gameObject;
     }
 
     void Start()
     {
-        inven = new Inventory(SlotType.Box, boxSize);
-        boxInvenUI.InitializeInventory(inven, boxNum);
+        inven = new Inventory(SlotType.IDScanner, scannerSize);
+        idScannerUI.InitializeInventory(inven, scannerNum);
     }
 
     public void CreateItem()
@@ -57,7 +57,7 @@ public class Box : MonoBehaviour
     public void OnInteractionUI(bool onoff)
     {
         GameObject interactionUI = null;
-        interactionUI = BoxInteractGameObj.transform.GetChild(0).gameObject;
+        interactionUI = ScannerInteractGameObj.transform.GetChild(0).gameObject;
         interactionUI.SetActive(onoff);
     }
 }

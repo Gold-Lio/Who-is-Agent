@@ -18604,3 +18604,56 @@
 11-16 12:02:49 -- Lobby Join Success - Online
 11-16 12:02:50 -- Room Joined
 11-16 12:02:52 -- Sloth(이)가 에이전트다
+11-17 04:35:32 -- Connected to Master - Online
+11-17 04:35:33 -- Lobby Join Success - Online
+11-17 04:35:35 -- Room Create Success
+11-17 04:35:35 -- Room Joined
+11-17 04:36:37 -- Connected to Master - Online
+11-17 04:36:37 -- Lobby Join Success - Online
+11-17 04:36:38 -- Room Create Success
+11-17 04:36:38 -- Room Joined
+11-17 04:37:42 -- Connected to Master - Online
+11-17 04:37:42 -- Lobby Join Success - Online
+11-17 04:37:43 -- Room Create Success
+11-17 04:37:43 -- Room Joined
+11-17 04:37:44 -- Sloth(이)가 에이전트다
+11-17 04:38:10 -- Connected to Master - Online
+11-17 04:38:10 -- Lobby Join Success - Online
+11-17 04:38:11 -- Room Create Success
+11-17 04:38:11 -- Room Joined
+11-17 04:38:33 -- Goat(이)가 에이전트다
+11-17 04:43:05 -- Connected to Master - Online
+11-17 04:43:05 -- Lobby Join Success - Online
+11-17 04:43:05 -- Room Create Success
+11-17 04:43:05 -- Room Joined
+11-17 04:43:15 -- Goat(이)가 에이전트다
+11-17 04:43:42 -- 스파이 승리
+11-17 04:43:45 -- Connected to Master - Online
+11-17 04:43:45 -- Lobby Join Success - Online
+11-17 04:45:22 -- Connected to Master - Online
+11-17 04:45:22 -- Lobby Join Success - Online
+11-17 04:45:23 -- Room Create Success
+11-17 04:45:23 -- Room Joined
+11-17 04:46:35 -- Goat(이)가 에이전트다
+11-17 04:52:01 -- Connected to Master - Online
+11-17 04:52:01 -- Lobby Join Success - Online
+11-17 04:52:03 -- Room Create Success
+11-17 04:52:03 -- Room Joined
+11-17 04:52:04 -- Monkey(이)가 에이전트다
+11-17 04:53:04 -- Connected to Master - Online
+11-17 04:53:04 -- Lobby Join Success - Online
+11-17 04:53:05 -- Room Create Success
+11-17 04:53:05 -- Room Joined
+11-17 04:53:06 -- Rabbit(이)가 에이전트다
+11-17 04:55:35 -- Connected to Master - Online
+11-17 04:55:35 -- Lobby Join Success - Online
+11-17 04:55:36 -- Room Joined
+11-17 04:55:37 -- Monkey(이)가 에이전트다
+11-17 05:05:41 -- Connected to Master - Online
+11-17 05:05:41 -- Lobby Join Success - Online
+11-17 05:05:41 -- Room Joined
+11-17 05:05:42 -- Raccoon(이)가 에이전트다
+11-17 05:19:04 -- Connected to Master - Online
+11-17 05:19:04 -- Lobby Join Success - Online
+11-17 05:19:04 -- Room Joined
+11-17 05:19:05 -- Sloth(이)가 에이전트다

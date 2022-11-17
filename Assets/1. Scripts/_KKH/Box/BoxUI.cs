@@ -51,10 +51,25 @@ public class BoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDragHandl
         {
             // 크기가 같을 경우 슬롯UI들의 초기화만 진행
             boxSlotUIs = slotParent.GetComponentsInChildren<BoxItemSlotUI>();
-            for (int i = 0; i < inven.SlotCount; i++)
+
+            if (boxSlotUIs.Length == 0)
             {
-                boxSlotUIs[i].Initialize((uint)i, inven[i], SlotType.Box, boxId);
+                boxSlotUIs = new BoxItemSlotUI[inven.SlotCount];
+                for (int i = 0; i < inven.SlotCount; i++)
+                {
+                    GameObject obj = Instantiate(slotPrefab, slotParent);
+                    obj.name = $"{slotPrefab.name}_{i}";            // 이름 지어주고
+                    boxSlotUIs[i] = obj.GetComponent<BoxItemSlotUI>();
+                    boxSlotUIs[i].Initialize((uint)i, inven[i], SlotType.Box, boxId);       // 각 슬롯UI들도 초기화
+                }
             }
+            else
+            {
+                for (int i = 0; i < inven.SlotCount; i++)
+                {
+                    boxSlotUIs[i].Initialize((uint)i, inven[i], SlotType.Box, boxId);
+                }
+            }            
         }
 
         RefreshAllSlots();  // 전체 슬롯UI 갱신

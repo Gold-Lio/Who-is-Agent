@@ -43,5 +43,6 @@ public enum SlotType : byte
     Box,
     NPC,
     WeaponBox,
+    IDScanner,
     Temp,
 }

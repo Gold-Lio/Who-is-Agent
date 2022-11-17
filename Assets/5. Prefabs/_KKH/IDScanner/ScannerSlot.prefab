@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8010959862259345975}
   - component: {fileID: 8010959862259345968}
   - component: {fileID: 5105695437113434599}
-  - component: {fileID: 8617318697475282622}
+  - component: {fileID: 4872691928027652400}
   m_Layer: 5
-  m_Name: BoxSlot
+  m_Name: ScannerSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
---- !u!114 &8617318697475282622
+--- !u!114 &4872691928027652400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,10 +147,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8010959862259345970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3fef57d6e164d43a1ff74f953772db, type: 3}
+  m_Script: {fileID: 11500000, guid: 62c799bec6c373245b44e4b18c4e56c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotType: 1
+  slotType: 4
 --- !u!1 &8593039380131080727
 GameObject:
   m_ObjectHideFlags: 0

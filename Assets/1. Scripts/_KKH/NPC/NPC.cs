@@ -27,6 +27,8 @@ public class NPC : MonoBehaviourPun
 
     private GameObject NPCInteractGameObj;
 
+    public const int npcSize = 3;
+
     private void Awake()
     {
         messageText = GameObject.Find("All_Message").GetComponent<TextMeshProUGUI>();

@@ -30,6 +30,12 @@ public class Player : MonoBehaviourPun
     private bool isWeapon = false;
     public bool IsWeapon => isWeapon;
 
+    private bool isBell = false;
+    public bool IsBell => isBell;
+
+    private bool isIdScanner = false;
+    public bool IsIdScanner => isIdScanner;
+
     private GameObject BoxInteractGameObj;
     private GameObject WeaponboxInteractGameObj;
 
@@ -39,9 +45,6 @@ public class Player : MonoBehaviourPun
 
     private GameObject boxLoadingGameObj;
     private BoxLoading boxLoading;
-
-    private bool isBell = false;
-    private Bell bell;
 
     //private PlayerMover playerMover;
     private PlayerAnimations playerAnim;
@@ -85,6 +88,12 @@ public class Player : MonoBehaviourPun
 
     private WeaponBox weaponBox;
     public WeaponBox WeaponBox => weaponBox;
+
+    private Bell bell;
+    public Bell Bell => bell;
+
+    private IDScanner idScanner;
+    public IDScanner IdScanner => idScanner;
 
     public bool isConnect = true;
 
@@ -425,6 +434,14 @@ public class Player : MonoBehaviourPun
             isBell = true;
             bell = col.gameObject.GetComponent<Bell>();
         }
+        else if (col.gameObject.CompareTag("IDScanner"))
+        {
+            if (idScanner != null) return;
+            isIdScanner = true;
+            idScanner = col.gameObject.GetComponent<IDScanner>();
+        }
+
+
         //플레이어끼리 서로 겹치지 않도록 하는 Col - 나중에 맵 수정하면서 지워도 괜찮음. 
         if (!col.gameObject.CompareTag("Player")) return;
         Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), col.gameObject.GetComponent<CapsuleCollider2D>());
@@ -482,6 +499,11 @@ public class Player : MonoBehaviourPun
         {
             isBell = false;
             bell = null;
+        }
+        else if (col.gameObject.CompareTag("IDScanner"))
+        {
+            isIdScanner = false;
+            idScanner = null;
         }
     }
     #endregion

@@ -28,6 +28,8 @@ public class WeaponBox : MonoBehaviour
 
     private GameObject WeaponboxInteractGameObj;
 
+    public const int weaponBoxSize = 3;
+
     private void Awake()
     {
         weaponBoxInvenUI = transform.GetComponentInChildren<WeaponBoxUI>();

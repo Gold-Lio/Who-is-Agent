@@ -52,9 +52,24 @@ public class NPCUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDragHandl
         {
             // 크기가 같을 경우 슬롯UI들의 초기화만 진행
             npcSlotUIs = slotParent.GetComponentsInChildren<NPCItemSlotUI>();
-            for (int i = 0; i < inven.SlotCount; i++)
+
+            if (npcSlotUIs.Length == 0)
             {
-                npcSlotUIs[i].Initialize((uint)i, inven[i], SlotType.NPC, npcId);
+                npcSlotUIs = new NPCItemSlotUI[inven.SlotCount];
+                for (int i = 0; i < inven.SlotCount; i++)
+                {
+                    GameObject obj = Instantiate(slotPrefab, slotParent);
+                    obj.name = $"{slotPrefab.name}_{i}";            // 이름 지어주고
+                    npcSlotUIs[i] = obj.GetComponent<NPCItemSlotUI>();
+                    npcSlotUIs[i].Initialize((uint)i, inven[i], SlotType.NPC, npcId);       // 각 슬롯UI들도 초기화
+                }
+            }
+            else
+            {
+                for (int i = 0; i < inven.SlotCount; i++)
+                {
+                    npcSlotUIs[i].Initialize((uint)i, inven[i], SlotType.NPC, npcId);
+                }
             }
         }
 

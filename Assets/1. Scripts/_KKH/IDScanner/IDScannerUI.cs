@@ -1,77 +1,74 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
-using UnityEngine.Networking.Types;
 
-public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class IDScannerUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     /// 이 인벤토리가 가지고 있는 슬롯UI들
-    private WeaponBoxItemSlotUI[] weaponSlotUIs;
+    private IDScannerSlotUI[] scannerSlotUIs;
 
     // 박스 구분을 위한 ID
-    private int weaponBoxId = 0;
+    private int scannerId = 0;
 
     // 박스 구분을 위한 ID 프로퍼티
-    public int WeaponBoxID => weaponBoxId;
-
-    private bool WeaponStill = false;
-
-    protected override void Awake()
-    {
-        base.Awake();
-    }
+    public int ScannerID => scannerId;
 
     protected override void Start()
     {
         Close();
     }
 
-    public void InitializeInventory(Inventory newInven, int weaponboxid)
+    public void InitializeInventory(Inventory newInven, int scannerid)
     {
-        weaponBoxId = weaponboxid;
+        scannerId = scannerid;
         inven = newInven;   //즉시 할당
         if (Inventory.Default_Inventory_Size != inven.SlotCount)    // 기본 사이즈와 다르면 기본 슬롯UI 삭제
         {
             // 기존 슬롯UI 전부 삭제
-            WeaponBoxItemSlotUI[] slots = GetComponentsInChildren<WeaponBoxItemSlotUI>();
+            IDScannerSlotUI[] slots = GetComponentsInChildren<IDScannerSlotUI>();
             foreach (var slot in slots)
             {
                 Destroy(slot.gameObject);
             }
 
             // 새로 만들기
-            weaponSlotUIs = new WeaponBoxItemSlotUI[inven.SlotCount];
+            scannerSlotUIs = new IDScannerSlotUI[inven.SlotCount];
             for (int i = 0; i < inven.SlotCount; i++)
             {
                 GameObject obj = Instantiate(slotPrefab, slotParent);
                 obj.name = $"{slotPrefab.name}_{i}";            // 이름 지어주고
-                weaponSlotUIs[i] = obj.GetComponent<WeaponBoxItemSlotUI>();
-                weaponSlotUIs[i].Initialize((uint)i, inven[i], SlotType.WeaponBox, weaponBoxId);       // 각 슬롯UI들도 초기화
+                scannerSlotUIs[i] = obj.GetComponent<IDScannerSlotUI>();
+                scannerSlotUIs[i].Initialize((uint)i, inven[i], SlotType.IDScanner, scannerId);       // 각 슬롯UI들도 초기화
             }
         }
         else
         {
             // 크기가 같을 경우 슬롯UI들의 초기화만 진행
-            weaponSlotUIs = slotParent.GetComponentsInChildren<WeaponBoxItemSlotUI>();
+            scannerSlotUIs = slotParent.GetComponentsInChildren<IDScannerSlotUI>();
 
-            if (weaponSlotUIs.Length == 0)
+            if (scannerSlotUIs.Length == 0)
             {
-                weaponSlotUIs = new WeaponBoxItemSlotUI[inven.SlotCount];
+                // 새로 만들기
+                scannerSlotUIs = new IDScannerSlotUI[inven.SlotCount];
                 for (int i = 0; i < inven.SlotCount; i++)
                 {
                     GameObject obj = Instantiate(slotPrefab, slotParent);
                     obj.name = $"{slotPrefab.name}_{i}";            // 이름 지어주고
-                    weaponSlotUIs[i] = obj.GetComponent<WeaponBoxItemSlotUI>();
-                    weaponSlotUIs[i].Initialize((uint)i, inven[i], SlotType.WeaponBox, weaponBoxId);       // 각 슬롯UI들도 초기화
+                    scannerSlotUIs[i] = obj.GetComponent<IDScannerSlotUI>();
+                    scannerSlotUIs[i].Initialize((uint)i, inven[i], SlotType.IDScanner, scannerId);       // 각 슬롯UI들도 초기화
                 }
             }
             else
             {
                 for (int i = 0; i < inven.SlotCount; i++)
                 {
-                    weaponSlotUIs[i].Initialize((uint)i, inven[i], SlotType.WeaponBox, weaponBoxId);
+                    scannerSlotUIs[i].Initialize((uint)i, inven[i], SlotType.IDScanner, scannerId);
                 }
             }
         }
@@ -81,7 +78,7 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
 
     protected override void RefreshAllSlots()
     {
-        foreach (var slotUI in weaponSlotUIs)
+        foreach (var slotUI in scannerSlotUIs)
         {
             slotUI.Refresh();
         }
@@ -111,7 +108,7 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                         inven.TempRemoveItem(dragStartID);   // 드래그 시작한 위치의 아이템을 TempSlot으로 옮김
                         TempItemSlotUI.TempSlotUI.Open();  // 드래그 시작할 때 TempSlot 열기
                         photonView.RPC("PunRemoveItem", RpcTarget.AllBuffered,
-                        ((WeaponBoxItemSlotUI)slotUI).BoxID.ToString(),
+                        ((IDScannerSlotUI)slotUI).ScannerID.ToString(),
                         slotUI.ID.ToString(),
                         slotUI.slotType.ToString());
                         GameManager.instance.Detail.Close();         // 상세정보창 닫기
@@ -122,6 +119,7 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
         }
     }
 
+    /// <summary>
     /// 드래그 끝
     /// </summary>
     /// <param name="eventData"></param>
@@ -132,20 +130,20 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
             if (dragStartID != InvalideID)  // 드래그가 정상적으로 시작되었을 때만 처리
             {
                 GameObject endObj = eventData.pointerCurrentRaycast.gameObject; // 드래그 끝난 위치에 있는 게임 오브젝트 가져오기
-                ItemSlotUI fromslotUI = startObj.GetComponent<ItemSlotUI>();  // 아이템을 빼는곳
+                ItemSlotUI fromslotUI = startObj.GetComponent<ItemSlotUI>();  // ItemSlotUI 컴포넌트 가져오기   // 아이템을 빼는곳
                 if (endObj != null)
                 {
                     // 드래그 끝난 위치에 게임 오브젝트가 있으면
-                    ItemSlotUI toslotUI = endObj.GetComponent<ItemSlotUI>();  // 아이템을 보내는곳
+                    ItemSlotUI toslotUI = endObj.GetComponent<ItemSlotUI>();  // ItemSlotUI 컴포넌트 가져오기   // 아이템을 보내는곳
                     if (toslotUI != null && fromslotUI != null && toslotUI != fromslotUI)
                     {
-                        if (toslotUI.slotType == SlotType.WeaponBox) 
+                        if (toslotUI.slotType == SlotType.IDScanner)             // 아이템을 빼는곳이 scanner일때
                         {
                             photonView.RPC("PunAddItem", RpcTarget.AllBuffered,
-                                    ((WeaponBoxItemSlotUI)toslotUI).BoxID.ToString(),
+                                    ((IDScannerSlotUI)toslotUI).ScannerID.ToString(),
                                     TempItemSlotUI.TempSlotUI.TempSlot.SlotItemData.id.ToString(),
                                     toslotUI.ID.ToString(),
-                                    toslotUI.slotType.ToString()); 
+                                    toslotUI.slotType.ToString());
                         }
                         else
                         {
@@ -158,12 +156,6 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                                     {
                                         IDCardManager.instance.npcIDCard[(int)idcard.NPCID].Open();
                                     }
-
-                                    if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
-                                    {
-                                        BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
-                                    }
-
                                     inven.MoveItem(TempItemSlotUI.TempSlotUI, toslotUI);
                                 }
                                 else
@@ -179,27 +171,22 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
                     }
                     else if (toslotUI != null && fromslotUI != null && toslotUI == fromslotUI)
                     {
-                        if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
-                        {
-                            BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
-                        }
                         TempItemSlotUI.TempSlotUI.Drop();
                     }
                     GameManager.instance.Detail.Open(toslotUI.ItemSlot.SlotItemData);      // 상세정보창 열기                        
                 }
-                else if (fromslotUI.slotType == SlotType.WeaponBox)
+                else if(fromslotUI.slotType == SlotType.IDScanner)
                 {
-                    if (TempItemSlotUI.TempSlotUI.ItemSlot.SlotItemData.id == (uint)ItemIDCode.Syringe)  // 주사기 쓰레기 표출
-                    {
-                        BoxManager.instance.Weaponboxs[weaponBoxId].OnSteal();
-                    }
                     TempItemSlotUI.TempSlotUI.Drop();
                 }
                 dragStartID = InvalideID;                       // 드래그 시작 id를 될 수 없는 값으로 설정(드래그가 끝났음을 표시)
                 GameManager.instance.Detail.IsPause = false;                         // 상세정보창 다시 열릴 수 있게 하기
             }
 
-            TempItemSlotUI.TempSlotUI.Close(); // 드래그를 끝내고 tempSlot이 비어지면 닫기
+            if (TempItemSlotUI.TempSlotUI.IsEmpty())
+            {
+                TempItemSlotUI.TempSlotUI.Close(); // 드래그를 끝내고 tempSlot이 비어지면 닫기
+            }
 
             startObj = null;
         }
@@ -214,8 +201,7 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
     [PunRPC]
     protected override void PunAddItem(string num, string itemId, string slotIndex, string type)
     {
-        Debug.Log($"WeaponBox.PunAddItem : {num}, {itemId}, {slotIndex}, {type}");
-        BoxManager.instance.Weaponboxs[int.Parse(num)].WeaponBoxInvenUI.inven.AddItem(uint.Parse(itemId), uint.Parse(slotIndex));
+        BoxManager.instance.Scanners[int.Parse(num)].IdScannerUI.inven.AddItem(uint.Parse(itemId), uint.Parse(slotIndex));
     }
 
     /// <summary>
@@ -226,7 +212,6 @@ public class WeaponBoxUI : InventoryUI, IDragHandler, IBeginDragHandler, IEndDra
     [PunRPC]
     protected override void PunRemoveItem(string num, string slotIndex, string type)
     {
-        Debug.Log($"WeaponBox.PunRemoveItem : {num}, {slotIndex}, {type}");
-        BoxManager.instance.Weaponboxs[int.Parse(num)].WeaponBoxInvenUI.inven.RemoveItem(uint.Parse(slotIndex));
+        BoxManager.instance.Scanners[int.Parse(num)].IdScannerUI.inven.RemoveItem(uint.Parse(slotIndex));
     }
 }

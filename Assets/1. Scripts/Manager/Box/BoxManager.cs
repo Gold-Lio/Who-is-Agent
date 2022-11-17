@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-using UnityEngine.XR;
 
 public class BoxManager : MonoBehaviourPunCallbacks
 {
@@ -16,6 +13,10 @@ public class BoxManager : MonoBehaviourPunCallbacks
 
     private NPC agent;
     public NPC Agent => agent;
+
+    public GameObject scannerParent;
+    private IDScanner[] scanners;
+    public IDScanner[] Scanners => scanners;
 
     public GameObject weaponboxParent;
     private WeaponBox[] weaponboxs;
@@ -50,8 +51,23 @@ public class BoxManager : MonoBehaviourPunCallbacks
         itemCount = GameManager.instance.ItemData.Length;
 
         boxs = boxParent.GetComponentsInChildren<Box>();
+        if (boxs != null && boxs.Length > 0) 
+        {
+            for (int i = 0; i < boxs.Length; i++)
+            {
+                boxs[i].boxNum = i;
+            }
+        }
         npcs = npcParent.GetComponentsInChildren<NPC>();
         weaponboxs = weaponboxParent.GetComponentsInChildren<WeaponBox>();
+        scanners = scannerParent.GetComponentsInChildren<IDScanner>();
+        if (scanners != null && scanners.Length > 0)
+        {
+            for (int i = 0; i < scanners.Length; i++)
+            {
+                scanners[i].scannerNum = i;
+            }
+        }
 
         isItemArrangement = new bool[itemCount];
         isBoxArrangement = new bool[Boxs.Length];
